@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pure theme for Hugo</title>
+    <link>https://zhihao2020.github.io/</link>
+    <description>Recent content on Pure theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 20 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://zhihao2020.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://zhihao2020.github.io/about/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/about/</guid>
+      <description>一个不断学习的菜鸟。</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://zhihao2020.github.io/2020/04/%E5%8F%8C%E6%8B%BC%E4%B9%8B%E8%B7%AF/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E5%8F%8C%E6%8B%BC%E4%B9%8B%E8%B7%AF/</guid>
+      <description>我是今年3.13开始的双拼使用，从那之后一发不可收拾。</description>
+    </item>
+    
+  </channel>
+</rss>
