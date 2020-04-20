@@ -310,6 +310,7 @@
 <section id="comments">
     <div id="vcomments"></div>
 </section>
+
 </div><nav class="bar bar-footer clearfix" data-stick-bottom>
     <div class="bar-inner">
         <ul class="pager pull-left">
@@ -419,18 +420,17 @@
     meta = meta.split(',').filter(function (item) {
         return GUEST.indexOf(item) > -1;
     });
-    new Valine({
-        el: '#vcomments',
-        verify: null ,
-        notify: null ,
-        appId: 'cbb8ajQIRK8ShsDhksAalS5e-gzGzoHsz',
-        appKey: 'H605TalWcvAnd5HAY0z9aS67# your leancloud application appkey',
-        placeholder: '来评论吧~',
-        avatar: 'mm',
-        meta: meta,
-        pageSize: '10' || 10,
-        visitor: true 
+   
+new Valine({
+    el: '#vcomments' ,
+    appId: 'cbb8ajQIRK8ShsDhksAalS5e-gzGzoHsz',
+    appKey: 'H605TalWcvAnd5HAY0z9aS67',
+    notify:false, 
+    verify:false, 
+    avatar:'mp', 
 });
+
+
 </script>
 
   </body>
