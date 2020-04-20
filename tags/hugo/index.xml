@@ -37,5 +37,23 @@
       <description>简单介绍一下 汉语拼音，分为声母与韵母。全拼打字的时候，是将它们都打出来，比如[双]字 就需要打出shuang，相比双拼效率就低了。 双拼，是将声</description>
     </item>
     
+    <item>
+      <title>关于自学的感想（1）</title>
+      <link>https://zhihao2020.github.io/2020/04/%E5%85%B3%E4%BA%8E%E8%87%AA%E5%AD%A61/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E5%85%B3%E4%BA%8E%E8%87%AA%E5%AD%A61/</guid>
+      <description>def teach_yourself(anything): while not creat(something): learn() practice() return teach_yourself(another) teach_yourself(something) 我挺赞同这个伪代码的，自学的过程就是不断学习、不断创造的过程，并将能否进行创造作为自学成功与否的关键。 自学是时代的要求 在</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zhihao2020.github.io/1/01/%E7%8F%8D%E6%83%9C%E6%97%B6%E9%97%B4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/1/01/%E7%8F%8D%E6%83%9C%E6%97%B6%E9%97%B4/</guid>
+      <description>author = &amp;ldquo;Zhihao&amp;rdquo; title = &amp;ldquo;爱惜自己的时间&amp;rdquo; date = &amp;ldquo;2020-04-20&amp;rdquo; description = &amp;ldquo;时间与精力是人进步的动力&amp;rdquo; tags = [ &amp;ldquo;爱自己</description>
+    </item>
+    
   </channel>
 </rss>
