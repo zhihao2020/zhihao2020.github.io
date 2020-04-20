@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>双拼 on Zhihao&#39;s Blog</title>
@@ -7,26 +7,8 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 20 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://zhihao2020.github.io/tags/%E5%8F%8C%E6%8B%BC/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zhihao2020.github.io/tags/%E5%8F%8C%E6%8B%BC/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About</title>
-      <link>https://zhihao2020.github.io/about/</link>
-      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/about/</guid>
-      <description>一个不断学习的菜鸟。</description>
-    </item>
-    
-    <item>
-      <title>Hugo的操作</title>
-      <link>https://zhihao2020.github.io/2020/04/%E6%9B%B4%E6%96%B0hugo/</link>
-      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/%E6%9B%B4%E6%96%B0hugo/</guid>
-      <description>更新文章 hugo --theme= --baseUrl=&amp;quot;&amp;quot; --buildDrafts git remote add origin https://github.com/XXX/XXX.github.io.git cd public git add . git commit -m &amp;quot;XXXX/XX/XX&amp;quot; git push -u origin master</description>
-    </item>
     
     <item>
       <title>从全拼到双拼</title>
