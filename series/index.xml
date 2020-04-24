@@ -10,6 +10,33 @@
     
     
     <item>
+      <title>Python 参数解析 Parser 的使用方法</title>
+      <link>https://zhihao2020.github.io/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+      <description>argparse可以让人编写对用户友好的命令行接口。程序定义好它需要的参数，然后argparse将从sys.argv解析出那些参数。 argp</description>
+    </item>
+    
+    <item>
+      <title>Python中的sys</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84sys/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84sys/</guid>
+      <description>sys.argv 传递给Python脚本的命令行参数列表。 例如 import sys print(sys.argv[0]) print(sys.argv[1]) 运行它： python temp.py argv1 sys.py argv1 sys.exit([arg]) 功能：执行到主程序末尾，解释器自动退出，但是如果需要中途退出程序，</description>
+    </item>
+    
+    <item>
+      <title>精读代码(1)</title>
+      <link>https://zhihao2020.github.io/2020/04/%E7%B2%BE%E8%AF%BB%E4%BB%A3%E7%A0%811/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E7%B2%BE%E8%AF%BB%E4%BB%A3%E7%A0%811/</guid>
+      <description>#!/usr/bin/env python3 &amp;quot;&amp;quot;&amp;quot; A Python version of the classic &amp;quot;bottles of beer on the wall&amp;quot; programming example. By Guido van Rossum, demystified after a version by Fredrik Lundh. &amp;quot;&amp;quot;&amp;quot; import sys n = 100 if sys.argv[1:]: n = int(sys.argv[1]) def bottle(n): if n == 0: return &amp;quot;no more bottles of beer&amp;quot; if n == 1: return &amp;quot;one bottle of beer&amp;quot; return str(n) + &amp;quot; bottles of beer&amp;quot; for i in</description>
+    </item>
+    
+    <item>
       <title>Git基本操作(1)</title>
       <link>https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>

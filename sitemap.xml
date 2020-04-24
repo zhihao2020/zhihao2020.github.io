@@ -4,7 +4,70 @@
   
   <url>
     <loc>https://zhihao2020.github.io/categories/</loc>
-    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/posts/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/tags/python/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/categories/python/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84sys/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/tags/python%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/tags/python%E6%A0%87%E5%87%86%E5%BA%93/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/tags/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/2020/04/%E7%B2%BE%E8%AF%BB%E4%BB%A3%E7%A0%811/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -39,27 +102,6 @@
   
   <url>
     <loc>https://zhihao2020.github.io/2020/04/pep-8python%E4%BB%A3%E7%A0%81%E7%9A%84%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%AF%BC/</loc>
-    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhihao2020.github.io/posts/</loc>
-    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhihao2020.github.io/tags/python/</loc>
-    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhihao2020.github.io/tags/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
