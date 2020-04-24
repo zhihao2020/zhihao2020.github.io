@@ -2,146 +2,146 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>生活 on Zhihao&#39;s Blog</title>
-    <link>https://zhihao2020.github.io/categories/%E7%94%9F%E6%B4%BB/</link>
+    <link>https://zhihao2020.github,io/categories/%E7%94%9F%E6%B4%BB/</link>
     <description>Recent content in 生活 on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 20 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://zhihao2020.github.io/categories/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://zhihao2020.github,io/categories/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python 参数解析 Parser 的使用方法</title>
-      <link>https://zhihao2020.github.io/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+      <link>https://zhihao2020.github,io/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+      <guid>https://zhihao2020.github,io/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
       <description>argparse可以让人编写对用户友好的命令行接口。程序定义好它需要的参数，然后argparse将从sys.argv解析出那些参数。 argp</description>
     </item>
     
     <item>
       <title>Python中的sys</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84sys/</link>
+      <link>https://zhihao2020.github,io/2020/04/python%E4%B8%AD%E7%9A%84sys/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84sys/</guid>
+      <guid>https://zhihao2020.github,io/2020/04/python%E4%B8%AD%E7%9A%84sys/</guid>
       <description>sys.argv 传递给Python脚本的命令行参数列表。 例如 import sys print(sys.argv[0]) print(sys.argv[1]) 运行它： python temp.py argv1 sys.py argv1 sys.exit([arg]) 功能：执行到主程序末尾，解释器自动退出，但是如果需要中途退出程序，</description>
     </item>
     
     <item>
       <title>用Python模拟生命</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/</link>
+      <link>https://zhihao2020.github,io/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/</guid>
+      <guid>https://zhihao2020.github,io/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/</guid>
       <description>这个项目会创建一个N×N的细胞网格，随时间推移，模拟Conway生命游戏。 在这个游戏中，细胞处于ON或OFF状态。游戏从一个初始状态开始，每</description>
     </item>
     
     <item>
       <title>精读代码(1)</title>
-      <link>https://zhihao2020.github.io/2020/04/%E7%B2%BE%E8%AF%BB%E4%BB%A3%E7%A0%811/</link>
+      <link>https://zhihao2020.github,io/2020/04/%E7%B2%BE%E8%AF%BB%E4%BB%A3%E7%A0%811/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/%E7%B2%BE%E8%AF%BB%E4%BB%A3%E7%A0%811/</guid>
+      <guid>https://zhihao2020.github,io/2020/04/%E7%B2%BE%E8%AF%BB%E4%BB%A3%E7%A0%811/</guid>
       <description>#!/usr/bin/env python3 &amp;quot;&amp;quot;&amp;quot; A Python version of the classic &amp;quot;bottles of beer on the wall&amp;quot; programming example. By Guido van Rossum, demystified after a version by Fredrik Lundh. &amp;quot;&amp;quot;&amp;quot; import sys n = 100 if sys.argv[1:]: n = int(sys.argv[1]) def bottle(n): if n == 0: return &amp;quot;no more bottles of beer&amp;quot; if n == 1: return &amp;quot;one bottle of beer&amp;quot; return str(n) + &amp;quot; bottles of beer&amp;quot; for i in</description>
     </item>
     
     <item>
       <title>Git基本操作(1)</title>
-      <link>https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
+      <link>https://zhihao2020.github,io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
+      <guid>https://zhihao2020.github,io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
       <description>配置并初始化一个仓库（repository）、开始或停止跟踪（track）文件、暂存（stage）或提交（commit）更改。配置Git来忽</description>
     </item>
     
     <item>
       <title>Mrakdown中插入数学公式</title>
-      <link>https://zhihao2020.github.io/2020/04/markdown%E4%B8%AD%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</link>
+      <link>https://zhihao2020.github,io/2020/04/markdown%E4%B8%AD%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/markdown%E4%B8%AD%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</guid>
+      <guid>https://zhihao2020.github,io/2020/04/markdown%E4%B8%AD%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</guid>
       <description>行内与独行 行内公式：将公式插入到本行内，符号：$公式内容$，如：$xyz$ 独行公式：将公式插入到新的一行内，并且居中，符号：$$公式内容$$</description>
     </item>
     
     <item>
       <title>PEP-8——Python代码的风格指导</title>
-      <link>https://zhihao2020.github.io/2020/04/pep-8python%E4%BB%A3%E7%A0%81%E7%9A%84%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%AF%BC/</link>
+      <link>https://zhihao2020.github,io/2020/04/pep-8python%E4%BB%A3%E7%A0%81%E7%9A%84%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%AF%BC/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/pep-8python%E4%BB%A3%E7%A0%81%E7%9A%84%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%AF%BC/</guid>
+      <guid>https://zhihao2020.github,io/2020/04/pep-8python%E4%BB%A3%E7%A0%81%E7%9A%84%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%AF%BC/</guid>
       <description>常量通常定义在代码前面，并且全都大写，分割的时候用_（下划线）分割。比如想，MAX_OVERFLOW和TOTAL这样。 Constants are usually defined on a module level and written in</description>
     </item>
     
     <item>
       <title>定额计价与清单计价</title>
-      <link>https://zhihao2020.github.io/2020/04/%E5%AE%9A%E9%A2%9D%E8%AE%A1%E4%BB%B7%E4%B8%8E%E6%B8%85%E5%8D%95%E8%AE%A1%E4%BB%B7/</link>
+      <link>https://zhihao2020.github,io/2020/04/%E5%AE%9A%E9%A2%9D%E8%AE%A1%E4%BB%B7%E4%B8%8E%E6%B8%85%E5%8D%95%E8%AE%A1%E4%BB%B7/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/%E5%AE%9A%E9%A2%9D%E8%AE%A1%E4%BB%B7%E4%B8%8E%E6%B8%85%E5%8D%95%E8%AE%A1%E4%BB%B7/</guid>
+      <guid>https://zhihao2020.github,io/2020/04/%E5%AE%9A%E9%A2%9D%E8%AE%A1%E4%BB%B7%E4%B8%8E%E6%B8%85%E5%8D%95%E8%AE%A1%E4%BB%B7/</guid>
       <description>定额计价法 定额计价法的概念 定额计价是根据招标文件，按照各国家建设行政主管部门发布的建设工程预算定额的“工程量计算规则”，同时参照省级建设主管</description>
     </item>
     
     <item>
       <title>得到真正的业务ID</title>
-      <link>https://zhihao2020.github.io/2020/04/%E5%8F%8D%E6%89%92id%E4%B9%8Bhashids/</link>
+      <link>https://zhihao2020.github,io/2020/04/%E5%8F%8D%E6%89%92id%E4%B9%8Bhashids/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/%E5%8F%8D%E6%89%92id%E4%B9%8Bhashids/</guid>
+      <guid>https://zhihao2020.github,io/2020/04/%E5%8F%8D%E6%89%92id%E4%B9%8Bhashids/</guid>
       <description>对于爬虫来说，知道了网站的数据自增ID，那么就能将整个站点爬取下来。不过，那些大站，比如油管之类的，他们绝不会把业务的自增ID暴露出来，而是</description>
     </item>
     
     <item>
       <title>为什么要使用Git</title>
-      <link>https://zhihao2020.github.io/2020/04/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8git/</link>
+      <link>https://zhihao2020.github,io/2020/04/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8git/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8git/</guid>
+      <guid>https://zhihao2020.github,io/2020/04/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8git/</guid>
       <description>Git介绍 Git其实就是一个版本控制系统。它记录着文件内容的变化，你可以查阅每次修改的情况。 其实很多人就一直在使用版本控制系统，许多人习惯把</description>
     </item>
     
     <item>
       <title>About Me</title>
-      <link>https://zhihao2020.github.io/about/</link>
+      <link>https://zhihao2020.github,io/about/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/about/</guid>
+      <guid>https://zhihao2020.github,io/about/</guid>
       <description>一个不断学习、不断精进的普通人。</description>
     </item>
     
     <item>
       <title>Hugo的操作</title>
-      <link>https://zhihao2020.github.io/2020/04/%E6%9B%B4%E6%96%B0hugo/</link>
+      <link>https://zhihao2020.github,io/2020/04/%E6%9B%B4%E6%96%B0hugo/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/%E6%9B%B4%E6%96%B0hugo/</guid>
+      <guid>https://zhihao2020.github,io/2020/04/%E6%9B%B4%E6%96%B0hugo/</guid>
       <description>更新文章 hugo --theme= --baseUrl=&amp;quot;&amp;quot; --buildDrafts git remote add origin https://github.com/XXX/XXX.github.io.git cd public git add . git commit -m &amp;quot;XXXX/XX/XX&amp;quot; git push -u origin master</description>
     </item>
     
     <item>
       <title>从全拼到双拼</title>
-      <link>https://zhihao2020.github.io/2020/04/%E4%BB%8E%E5%85%A8%E6%8B%BC%E5%88%B0%E5%8F%8C%E6%8B%BC/</link>
+      <link>https://zhihao2020.github,io/2020/04/%E4%BB%8E%E5%85%A8%E6%8B%BC%E5%88%B0%E5%8F%8C%E6%8B%BC/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/%E4%BB%8E%E5%85%A8%E6%8B%BC%E5%88%B0%E5%8F%8C%E6%8B%BC/</guid>
+      <guid>https://zhihao2020.github,io/2020/04/%E4%BB%8E%E5%85%A8%E6%8B%BC%E5%88%B0%E5%8F%8C%E6%8B%BC/</guid>
       <description>简单介绍一下 汉语拼音，分为声母与韵母。全拼打字的时候，是将它们都打出来，比如[双]字 就需要打出shuang，相比双拼效率就低了。 双拼，是将声</description>
     </item>
     
     <item>
       <title>关于自学的感想（1）</title>
-      <link>https://zhihao2020.github.io/2020/04/%E5%85%B3%E4%BA%8E%E8%87%AA%E5%AD%A6%E7%9A%84%E6%84%9F%E6%83%B31/</link>
+      <link>https://zhihao2020.github,io/2020/04/%E5%85%B3%E4%BA%8E%E8%87%AA%E5%AD%A6%E7%9A%84%E6%84%9F%E6%83%B31/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/%E5%85%B3%E4%BA%8E%E8%87%AA%E5%AD%A6%E7%9A%84%E6%84%9F%E6%83%B31/</guid>
+      <guid>https://zhihao2020.github,io/2020/04/%E5%85%B3%E4%BA%8E%E8%87%AA%E5%AD%A6%E7%9A%84%E6%84%9F%E6%83%B31/</guid>
       <description>def teach_yourself(anything): while not creat(something): learn() practice() return teach_yourself(another) teach_yourself(something) 我挺赞同这个伪代码的，自学的过程就是不断学习、不断创造的过程，并将能否进行创造作为自学成功与否的关键。 自学是时代的要求 在</description>
     </item>
     
     <item>
       <title>爱惜自己的时间</title>
-      <link>https://zhihao2020.github.io/2020/04/%E7%88%B1%E6%83%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%B6%E9%97%B4/</link>
+      <link>https://zhihao2020.github,io/2020/04/%E7%88%B1%E6%83%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%B6%E9%97%B4/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/%E7%88%B1%E6%83%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%B6%E9%97%B4/</guid>
+      <guid>https://zhihao2020.github,io/2020/04/%E7%88%B1%E6%83%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%B6%E9%97%B4/</guid>
       <description>人生而就是不平等的，但是在时间上却是平等的 珍惜自己的时间，远离焦虑 这个世界上又这么一个银行，他每天给你1440的资产，让你去消费，而且过了今</description>
     </item>
     
