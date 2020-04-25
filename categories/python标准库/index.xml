@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>双拼 on Zhihao&#39;s Blog</title>
-    <link>https://zhihao2020/github.io/tags/%E5%8F%8C%E6%8B%BC/</link>
-    <description>Recent content in 双拼 on Zhihao&#39;s Blog</description>
+    <title>Python标准库 on Zhihao&#39;s Blog</title>
+    <link>https://zhihao2020/github.io/categories/python%E6%A0%87%E5%87%86%E5%BA%93/</link>
+    <description>Recent content in Python标准库 on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 20 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://zhihao2020/github.io/tags/%E5%8F%8C%E6%8B%BC/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://zhihao2020/github.io/categories/python%E6%A0%87%E5%87%86%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
