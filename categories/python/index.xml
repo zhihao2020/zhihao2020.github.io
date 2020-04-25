@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>JupyterLab快捷键</title>
+      <link>https://zhihao2020.github.io/2020/04/jupyterlab%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/jupyterlab%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <description>JupyterLab 有两种键盘输入模式，分别为编辑模式和命令模式。 一、命令行模式 (按键 Esc 开启) 命令行模式：键盘输入运行程序命令；这时的单元框线是灰色。 快捷键 实</description>
+    </item>
+    
+    <item>
       <title>Python 参数解析 Parser 的使用方法</title>
       <link>https://zhihao2020.github.io/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>

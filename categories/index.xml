@@ -5,10 +5,19 @@
     <link>https://zhihao2020.github.io/categories/</link>
     <description>Recent content in Categories on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Apr 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zhihao2020.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JupyterLab快捷键</title>
+      <link>https://zhihao2020.github.io/2020/04/jupyterlab%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/jupyterlab%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <description>JupyterLab 有两种键盘输入模式，分别为编辑模式和命令模式。 一、命令行模式 (按键 Esc 开启) 命令行模式：键盘输入运行程序命令；这时的单元框线是灰色。 快捷键 实</description>
+    </item>
     
     <item>
       <title>Python 参数解析 Parser 的使用方法</title>
