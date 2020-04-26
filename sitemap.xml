@@ -17,13 +17,6 @@
   </url>
   
   <url>
-    <loc>https://zhihao2020.github.io/tags/python/</loc>
-    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://zhihao2020.github.io/categories/python/</loc>
     <lastmod>2020-04-26T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -220,13 +213,6 @@
   </url>
   
   <url>
-    <loc>https://zhihao2020.github.io/tags/%E5%8F%8D%E7%88%AC/</loc>
-    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://zhihao2020.github.io/2020/04/%E5%AE%9A%E9%A2%9D%E8%AE%A1%E4%BB%B7%E4%B8%8E%E6%B8%85%E5%8D%95%E8%AE%A1%E4%BB%B7/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -318,14 +304,7 @@
   </url>
   
   <url>
-    <loc>https://zhihao2020.github.io/tags/%E5%8F%8C%E6%8B%BC/</loc>
-    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhihao2020.github.io/categories/%E5%AD%A6%E4%B9%A0%E8%83%BD%E5%8A%9B/</loc>
+    <loc>https://zhihao2020.github.io/categories/%E6%80%9D%E8%80%83/</loc>
     <lastmod>2020-04-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -339,28 +318,7 @@
   </url>
   
   <url>
-    <loc>https://zhihao2020.github.io/tags/%E7%88%B1%E8%87%AA%E5%B7%B1/</loc>
-    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://zhihao2020.github.io/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhihao2020.github.io/tags/%E8%87%AA%E5%AD%A6/</loc>
-    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhihao2020.github.io/tags/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/</loc>
     <lastmod>2020-04-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
