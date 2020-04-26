@@ -5,10 +5,64 @@
     <link>https://zhihao2020.github.io/categories/</link>
     <description>Recent content in Categories on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 25 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zhihao2020.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python中的__call__方法</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__call__/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__call__/</guid>
+      <description>调用 关于 __call__ 方法，不得不先提到一个概念，就是可调用对象（callable），我们平时自定义的函数、内置函数和类都属于可调用对象，但凡是可以把一</description>
+    </item>
+    
+    <item>
+      <title>Python中的new方法</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__new__/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__new__/</guid>
+      <description>在python中方法名如果是__xxxx__()的，那么就有特殊的功能，因此叫做“魔法”方法 __new__的作用 在Python中__new_</description>
+    </item>
+    
+    <item>
+      <title>Python中的staticmethod和classmethod</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84staticmethod%E5%92%8Cclassmethod/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84staticmethod%E5%92%8Cclassmethod/</guid>
+      <description>@classmethod 返回函数的类方法 classmethod修饰符对应的函数不需要实例化，不需要self参数，但第一个参数需要是表示自身类的cls参数，可以调用</description>
+    </item>
+    
+    <item>
+      <title>Python中的str方法</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__str__/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__str__/</guid>
+      <description>在python中方法名如果是__xxxx__()的，那么就有特殊的功能，因此叫做“魔法”方法 class Cat: def __init__(self, new_name, new_age): &amp;quot;&amp;quot;&amp;quot;</description>
+    </item>
+    
+    <item>
+      <title>Python中的super()函数</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84super%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84super%E5%87%BD%E6%95%B0/</guid>
+      <description>介绍 **super()**函数是用于条用父类（超类)的一个方法。 super 是用来解决多重继承问题的，直接用类名调用父类方法在使用单继承的时候没问题，</description>
+    </item>
+    
+    <item>
+      <title>Python的函数工具(1)</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E5%87%BD%E6%95%B0%E5%B7%A5%E5%85%B71/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E5%87%BD%E6%95%B0%E5%B7%A5%E5%85%B71/</guid>
+      <description>函数也是对象 首先要明确一个概念，函数也是对象。 于是，函数本身其实可以与其他的数据类型一样，作为其他函数的参数或者返回值。 def decorator(func): def wrapper(): print(&amp;quot;we can do sth.Befor the func()</description>
+    </item>
     
     <item>
       <title>JupyterLab快捷键</title>
@@ -134,33 +188,6 @@
       
       <guid>https://zhihao2020.github.io/2020/04/%E6%9B%B4%E6%96%B0hugo/</guid>
       <description>更新文章 hugo --theme= --baseUrl=&amp;quot;&amp;quot; --buildDrafts git remote add origin https://github.com/XXX/XXX.github.io.git cd public git add . git commit -m &amp;quot;XXXX/XX/XX&amp;quot; git push -u origin master</description>
-    </item>
-    
-    <item>
-      <title>从全拼到双拼</title>
-      <link>https://zhihao2020.github.io/2020/04/%E4%BB%8E%E5%85%A8%E6%8B%BC%E5%88%B0%E5%8F%8C%E6%8B%BC/</link>
-      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/%E4%BB%8E%E5%85%A8%E6%8B%BC%E5%88%B0%E5%8F%8C%E6%8B%BC/</guid>
-      <description>简单介绍一下 汉语拼音，分为声母与韵母。全拼打字的时候，是将它们都打出来，比如[双]字 就需要打出shuang，相比双拼效率就低了。 双拼，是将声</description>
-    </item>
-    
-    <item>
-      <title>关于自学的感想（1）</title>
-      <link>https://zhihao2020.github.io/2020/04/%E5%85%B3%E4%BA%8E%E8%87%AA%E5%AD%A6%E7%9A%84%E6%84%9F%E6%83%B31/</link>
-      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/%E5%85%B3%E4%BA%8E%E8%87%AA%E5%AD%A6%E7%9A%84%E6%84%9F%E6%83%B31/</guid>
-      <description>def teach_yourself(anything): while not creat(something): learn() practice() return teach_yourself(another) teach_yourself(something) 我挺赞同这个伪代码的，自学的过程就是不断学习、不断创造的过程，并将能否进行创造作为自学成功与否的关键。 自学是时代的要求 在</description>
-    </item>
-    
-    <item>
-      <title>爱惜自己的时间</title>
-      <link>https://zhihao2020.github.io/2020/04/%E7%88%B1%E6%83%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%B6%E9%97%B4/</link>
-      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/%E7%88%B1%E6%83%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%B6%E9%97%B4/</guid>
-      <description>人生而就是不平等的，但是在时间上却是平等的 珍惜自己的时间，远离焦虑 这个世界上又这么一个银行，他每天给你1440的资产，让你去消费，而且过了今</description>
     </item>
     
   </channel>

@@ -4,7 +4,98 @@
   
   <url>
     <loc>https://zhihao2020.github.io/categories/</loc>
-    <lastmod>2020-04-25T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/posts/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/tags/python/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/categories/python/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__call__/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__new__/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84staticmethod%E5%92%8Cclassmethod/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__str__/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84super%E5%87%BD%E6%95%B0/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/tags/python%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/tags/python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E5%87%BD%E6%95%B0%E5%B7%A5%E5%85%B71/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/tags/python%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/tags/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -24,35 +115,7 @@
   </url>
   
   <url>
-    <loc>https://zhihao2020.github.io/posts/</loc>
-    <lastmod>2020-04-25T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhihao2020.github.io/tags/python/</loc>
-    <lastmod>2020-04-25T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhihao2020.github.io/categories/python/</loc>
-    <lastmod>2020-04-25T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhihao2020.github.io/tags/python%E4%B8%AD%E7%9A%84%E6%B5%8B%E8%AF%95%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91%E6%A8%A1%E5%9D%97/</loc>
-    <lastmod>2020-04-25T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhihao2020.github.io/categories/python%E6%A0%87%E5%87%86%E5%BA%93/</loc>
+    <loc>https://zhihao2020.github.io/tags/python%E6%A0%87%E5%87%86%E5%BA%93/</loc>
     <lastmod>2020-04-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -60,13 +123,6 @@
   
   <url>
     <loc>https://zhihao2020.github.io/2020/04/python%E7%9A%84unittest%E6%A8%A1%E5%9D%97/</loc>
-    <lastmod>2020-04-25T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhihao2020.github.io/tags/</loc>
     <lastmod>2020-04-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -95,13 +151,6 @@
   
   <url>
     <loc>https://zhihao2020.github.io/tags/python%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhihao2020.github.io/tags/python%E6%A0%87%E5%87%86%E5%BA%93/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
