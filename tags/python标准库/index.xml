@@ -5,7 +5,7 @@
     <link>https://zhihao2020.github.io/tags/python%E6%A0%87%E5%87%86%E5%BA%93/</link>
     <description>Recent content in Python标准库 on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 25 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zhihao2020.github.io/tags/python%E6%A0%87%E5%87%86%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
     
@@ -20,12 +20,21 @@
     </item>
     
     <item>
-      <title>Python中的new方法</title>
+      <title>Python中的__new__方法</title>
       <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__new__/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__new__/</guid>
       <description>在python中方法名如果是__xxxx__()的，那么就有特殊的功能，因此叫做“魔法”方法 __new__的作用 在Python中__new_</description>
+    </item>
+    
+    <item>
+      <title>Python中的__str__方法</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__str__/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__str__/</guid>
+      <description>在python中方法名如果是__xxxx__()的，那么就有特殊的功能，因此叫做“魔法”方法 class Cat: def __init__(self, new_name, new_age): &amp;quot;&amp;quot;&amp;quot;</description>
     </item>
     
     <item>
@@ -38,15 +47,6 @@
     </item>
     
     <item>
-      <title>Python中的str方法</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__str__/</link>
-      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__str__/</guid>
-      <description>在python中方法名如果是__xxxx__()的，那么就有特殊的功能，因此叫做“魔法”方法 class Cat: def __init__(self, new_name, new_age): &amp;quot;&amp;quot;&amp;quot;</description>
-    </item>
-    
-    <item>
       <title>Python中的super()函数</title>
       <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84super%E5%87%BD%E6%95%B0/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
@@ -56,12 +56,30 @@
     </item>
     
     <item>
+      <title>Python的一种简单配置文件的方法</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/</guid>
+      <description>配置文件： [numbers] pi: 3.1415926 [messages] greeting: welcome to the area calculation program! question: Please emter the radius result_message: The area is 使用示例 from ConfigParser import ConfigParser CONFIGFILE = ‘XXX.txt&#39; config = ConfigParser() #读取配置文件 config.read(CONFIGFILE) #打印初始问候语 #要查看的区段</description>
+    </item>
+    
+    <item>
       <title>Python的函数工具(1)</title>
       <link>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E5%87%BD%E6%95%B0%E5%B7%A5%E5%85%B71/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E5%87%BD%E6%95%B0%E5%B7%A5%E5%85%B71/</guid>
       <description>函数也是对象 首先要明确一个概念，函数也是对象。 于是，函数本身其实可以与其他的数据类型一样，作为其他函数的参数或者返回值。 def decorator(func): def wrapper(): print(&amp;quot;we can do sth.Befor the func()</description>
+    </item>
+    
+    <item>
+      <title>面向对象的三大特性和五大原则</title>
+      <link>https://zhihao2020.github.io/2020/04/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7%E5%92%8C%E4%BA%94%E5%A4%A7%E5%8E%9F%E5%88%99/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7%E5%92%8C%E4%BA%94%E5%A4%A7%E5%8E%9F%E5%88%99/</guid>
+      <description>面向对象的三大基本特性，五大基本原则 透切理解面向对象三大基本特性是理解面向对象五大基本原则的基础. 三大特性是：封装,继承,多态 封装 封装最好理</description>
     </item>
     
     <item>
@@ -170,24 +188,6 @@
       
       <guid>https://zhihao2020.github.io/2020/04/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8git/</guid>
       <description>Git介绍 Git其实就是一个版本控制系统。它记录着文件内容的变化，你可以查阅每次修改的情况。 其实很多人就一直在使用版本控制系统，许多人习惯把</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://zhihao2020.github.io/about/</link>
-      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/about/</guid>
-      <description>一个不断学习、不断精进的普通人。</description>
-    </item>
-    
-    <item>
-      <title>Hugo的操作</title>
-      <link>https://zhihao2020.github.io/2020/04/%E6%9B%B4%E6%96%B0hugo/</link>
-      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/%E6%9B%B4%E6%96%B0hugo/</guid>
-      <description>更新文章 hugo --theme= --baseUrl=&amp;quot;&amp;quot; --buildDrafts git remote add origin https://github.com/XXX/XXX.github.io.git cd public git add . git commit -m &amp;quot;XXXX/XX/XX&amp;quot; git push -u origin master</description>
     </item>
     
   </channel>

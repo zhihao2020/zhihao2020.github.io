@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        Zhihao&#39;s Blog</title>
+        Python的一种简单配置文件的方法 - Zhihao&#39;s Blog
+      </title>
     <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,25 +23,32 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  
+  <meta name="description" content="使用configParser标准库" />
   <meta name="generator" content="Hugo 0.69.0 with theme pure" />
-  <title>Zhihao&#39;s Blog</title>
+  <title>Python的一种简单配置文件的方法 - Zhihao&#39;s Blog</title>
   
-  <link rel="alternate" type="application/rss+xml" href="https://zhihao2020.github.io/index.xml" title="Zhihao's Blog" />
   
   <link rel="stylesheet" href="https://zhihao2020.github.io/css/style.min.c4bc7071f132c964c2116bca53b392933f377e5ca7b7051ed245187c621a2d3e.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="Zhihao&#39;s Blog" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://zhihao2020.github.io/" />
-<meta property="og:updated_time" content="2020-04-20T00:00:00+00:00" />
-<meta itemprop="name" content="Zhihao&#39;s Blog">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Zhihao&#39;s Blog"/>
-<meta name="twitter:description" content=""/>
+  <meta property="og:title" content="Python的一种简单配置文件的方法" />
+<meta property="og:description" content="使用configParser标准库" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhihao2020.github.io/2020/04/python%E7%9A%84%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/" />
+<meta property="article:published_time" content="2020-04-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-26T00:00:00+00:00" />
+<meta itemprop="name" content="Python的一种简单配置文件的方法">
+<meta itemprop="description" content="使用configParser标准库">
+<meta itemprop="datePublished" content="2020-04-26T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-04-26T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="369">
+
+
+
+<meta itemprop="keywords" content="Python标准库," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python的一种简单配置文件的方法"/>
+<meta name="twitter:description" content="使用configParser标准库"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -57,7 +65,7 @@
   
   
 
-  <body class="main-center theme-black main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
     <div class="slimContent">
       <div class="navbar-header">
         <div class="profile-block text-center">
@@ -299,111 +307,37 @@
 
     
     
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
 
-<main class="main" role="main">
-  
-  <div class="content article-list">
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
     
-    
-    
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
+    <div class="article-header">
+      <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2020/04/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7%E5%92%8C%E4%BA%94%E5%A4%A7%E5%8E%9F%E5%88%99/"
-    >面向对象的三大特性和五大原则</a
+    href="/2020/04/python%E7%9A%84%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/"
+    >Python的一种简单配置文件的方法</a
   >
 </h1>
 
-      </div>
-      <div class="article-entry text-muted" itemprop="description">不妨了解一下</div>
-      
-      <p class="article-meta">
+      <div class="article-meta">
+        
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://zhihao2020.github.io/2020/04/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7%E5%92%8C%E4%BA%94%E5%A4%A7%E5%8E%9F%E5%88%99/" class="">
+<a href="https://zhihao2020.github.io/2020/04/python%E7%9A%84%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/" class="article-date">
   <time datetime="2020-04-26 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-26</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/"> 杂七杂八 </a>
-</span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2020/04/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7%E5%92%8C%E4%BA%94%E5%A4%A7%E5%8E%9F%E5%88%99/#comments" class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1349字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3分 </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2020/04/jupyterlab%E5%BF%AB%E6%8D%B7%E9%94%AE/"
-    >JupyterLab快捷键</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">数据分析的好工具——JupyterLab</div>
-      
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://zhihao2020.github.io/2020/04/jupyterlab%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="">
-  <time datetime="2020-04-25 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-25</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/"> 效率工具 </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/jupyterlab/"> JupyterLab </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2020/04/jupyterlab%E5%BF%AB%E6%8D%B7%E9%94%AE/#comments" class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 730字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2分 </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2020/04/python%E7%9A%84unittest%E6%A8%A1%E5%9D%97/"
-    >Python的Unittest模块</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">Python中的测试驱动开发模块</div>
-      
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://zhihao2020.github.io/2020/04/python%E7%9A%84unittest%E6%A8%A1%E5%9D%97/" class="">
-  <time datetime="2020-04-25 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-25</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
   <a class="article-category-link" href="/categories/python/"> Python </a>
 </span>  
   <span class="article-tag">
@@ -411,178 +345,140 @@
     <a class="article-tag-link" href="/tags/python%E6%A0%87%E5%87%86%E5%BA%93/"> Python标准库 </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2020/04/python%E7%9A%84unittest%E6%A8%A1%E5%9D%97/#comments" class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2343字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 5分 </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/"
-    >Python 参数解析 Parser 的使用方法</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">介绍Parser的使用</div>
-      
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://zhihao2020.github.io/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" class="">
-  <time datetime="2020-04-24 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-24</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/python/"> Python </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/python%E6%A0%87%E5%87%86%E5%BA%93/"> Python标准库 </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/#comments" class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 718字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2分 </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2020/04/python%E4%B8%AD%E7%9A%84sys/"
-    >Python中的sys</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">System-specific parameters and functions</div>
-      
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84sys/" class="">
-  <time datetime="2020-04-24 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-24</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/python/"> Python </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/python%E6%A0%87%E5%87%86%E5%BA%93/"> Python标准库 </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2020/04/python%E4%B8%AD%E7%9A%84sys/#comments" class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 416字</span>
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+	<span class="article-read hidden-xs">
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="https://zhihao2020.github.io/2020/04/python%E7%9A%84%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/" class="leancloud_visitors"  data-flag-title="Python的一种简单配置文件的方法">0</span>
+    </span>
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/04/python%E7%9A%84%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 369字</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1分 </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/"
-    >用Python模拟生命</a
-  >
-</h1>
-
       </div>
-      <div class="article-entry text-muted" itemprop="description">这次我来玩玩Conyway生命游戏</div>
-      
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://zhihao2020.github.io/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/" class="">
-  <time datetime="2020-04-24 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-24</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/python/"> Python </a>
-</span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/#comments" class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1094字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3分 </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2020/04/%E7%B2%BE%E8%AF%BB%E4%BB%A3%E7%A0%811/"
-    >精读代码(1)</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">Python源码中的Demo</div>
-      
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://zhihao2020.github.io/2020/04/%E7%B2%BE%E8%AF%BB%E4%BB%A3%E7%A0%811/" class="">
-  <time datetime="2020-04-24 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-24</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/python/"> Python </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/python%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/"> Python代码学习 </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2020/04/%E7%B2%BE%E8%AF%BB%E4%BB%A3%E7%A0%811/#comments" class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 144字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1分 </span>
-      </p>
-    </article></div>
-  
-<nav class="bar bar-footer clearfix" data-stick-bottom>
-  <div class="bar-inner">
-    <ul class="pager pull-left"><li class="prev">
-        <a href="/">
-          <i class="icon icon-angle-left"></i>
-          
-        </a>
-      </li><li class="next">
-        <a href="/page/3/">
-          <i class="icon icon-angle-right"></i>
-          
-        </a>
-      </li>
-    </ul>
-    <div class="total-article bar-right">
-      Page:2/4
     </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h2 id="配置文件">配置文件：</h2>
+<pre><code>[numbers]
+pi: 3.1415926
+
+[messages]
+greeting: welcome to the area calculation program!
+question: Please emter the radius
+result_message: The area is
+</code></pre>
+<h2 id="使用示例">使用示例</h2>
+<pre><code class="language-python">from ConfigParser import ConfigParser
+CONFIGFILE = ‘XXX.txt'
+
+config = ConfigParser()
+#读取配置文件
+config.read(CONFIGFILE)
+
+#打印初始问候语
+#要查看的区段是’messages‘
+print(config.get('messages','greeting'))
+
+#使用配置文件的一个问题读取半径：
+radius = input(config.get('messages','question')+' ')
+
+#打印配置文件中的结果信息
+#以逗号结束，以在同一行显示
+print(config.get('messages','result_message'))
+
+#getfloat()将config值转换为float类型
+print(config.getfloat('numbers','pi') * radius **2)
+</code></pre>
+<h2 id="方法">方法</h2>
+<p>写入:</p>
+<pre><code class="language-python">import configparser
+config = configparser.ConfigParser()
+config['DEFAULT'] = {'ServerAliveInterval': '45',
+                     'Compression': 'yes',
+                     'CompressionLevel': '9'}
+config['bitbucket.org'] = {}
+config['bitbucket.org']['User'] = 'hg'
+config['topsecret.server.com'] = {}
+topsecret = config['topsecret.server.com']
+topsecret['Port'] = '50022'     # mutates the parser
+topsecret['ForwardX11'] = 'no'  # same here
+config['DEFAULT']['ForwardX11'] = 'yes'
+with open('example.ini', 'w') as configfile:
+   config.write(configfile)
+</code></pre>
+<h2 id="注意">注意：</h2>
+<p>它不去猜测配置文件中值得数据类型，而是始终将他们内部存储为字符串。</p>
+<p>于是提供了<code>getint()</code>、<code>getfloat</code>和<code>getboolean()</code>方法。</p>
+<p>例如，<code>gwtboolean()</code>用于处理布尔值，此方法不区分大小写，并从并从<code>'yes'</code>/ <code>'no'</code>，<code>'on'</code>/ <code>'off'</code>， <code>'true'</code>/ <code>'false'</code>和<code>'1'</code>/ <code>'0'</code> 识别布尔值。</p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接: </strong>
+      <a href="https://zhihao2020.github.io/2020/04/python%E7%9A%84%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/" title="Python的一种简单配置文件的方法" target="_blank" rel="external">https://zhihao2020.github.io/2020/04/python%E7%9A%84%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://zhihao2020.github.io" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://zhihao2020.github.io/cat.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://zhihao2020.github.io" target="_blank"><span class="text-dark">Zhihao</span><small class="ml-1x">专业是一种习惯</small></a></h3>
+        <div>Up up up！</div>
+      </div>
+    </figure>
   </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+    <div id="vcomments"></div>
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://zhihao2020.github.io/2020/04/python%E7%9A%84%E5%87%BD%E6%95%B0%E5%B7%A5%E5%85%B71/" title="Python的函数工具(1)"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84super%E5%87%BD%E6%95%B0/"
+                    title="Python中的super()函数"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
 </nav>
 
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -660,6 +556,29 @@
         
         hasInnerContainers: true,
     });
+</script>
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine"></script>
+<script type="text/javascript">
+    var GUEST = ['nick', 'mail', 'link'];
+    var meta = 'nick,mail';
+    meta = meta.split(',').filter(function (item) {
+        return GUEST.indexOf(item) > -1;
+    });
+   
+new Valine({
+    el: '#vcomments' ,
+    appId: 'cbb8ajQIRK8ShsDhksAalS5e-gzGzoHsz',
+    appKey: 'H605TalWcvAnd5HAY0z9aS67',
+    notify:false, 
+    recordIP:true,
+    verify:false, 
+    avatar:'mp', 
+});
+
+
 </script>
 
 <script type="application/javascript">
