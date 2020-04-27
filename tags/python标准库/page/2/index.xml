@@ -5,10 +5,19 @@
     <link>https://zhihao2020.github.io/tags/python%E6%A0%87%E5%87%86%E5%BA%93/</link>
     <description>Recent content in Python标准库 on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zhihao2020.github.io/tags/python%E6%A0%87%E5%87%86%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>为什么要使用Git</title>
+      <link>https://zhihao2020.github.io/2020/04/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8git/</link>
+      <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8git/</guid>
+      <description>Git介绍 Git其实就是一个版本控制系统。它记录着文件内容的变化，你可以查阅每次修改的情况。 其实很多人就一直在使用版本控制系统，许多人习惯把</description>
+    </item>
     
     <item>
       <title>About Me</title>
