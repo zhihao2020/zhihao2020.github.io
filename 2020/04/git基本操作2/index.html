@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Git基本操作(2) - Zhihao&#39;s Blog
+      </title>
+    <head>
+<script data-ad-client="ca-pub-5137727031357129" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="介绍Git打标签、别名" />
+  <meta name="generator" content="Hugo 0.69.0 with theme pure" />
+  <title>Git基本操作(2) - Zhihao&#39;s Blog</title>
+  
+  
+  <link rel="stylesheet" href="https://zhihao2020.github.io/css/style.min.c4bc7071f132c964c2116bca53b392933f377e5ca7b7051ed245187c621a2d3e.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="Git基本操作(2)" />
+<meta property="og:description" content="介绍Git打标签、别名" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C2/" />
+<meta property="article:published_time" content="2020-04-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-28T00:00:00+00:00" />
+<meta itemprop="name" content="Git基本操作(2)">
+<meta itemprop="description" content="介绍Git打标签、别名">
+<meta itemprop="datePublished" content="2020-04-28T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-04-28T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1683">
+
+
+
+<meta itemprop="keywords" content="Git," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Git基本操作(2)"/>
+<meta name="twitter:description" content="介绍Git打标签、别名"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+<meta name="google-site-verification" content="0gQ8sWKd4zLsJXwb0ZltECHLMlc_BsTe0i-UlxiVC_E" />
+
+<script data-ad-client="ca-pub-5137727031357129" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://zhihao2020.github.io" target="_blank">
+            <img class="img-circle img-rotate" src="https://zhihao2020.github.io/cat.jpg" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Zhihao</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">“教”是最好的学习方式</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Weifang, China</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>Welcom~</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/python/" class="category-list-link">python</a><span class="category-list-count">16</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E5%BB%BA%E7%AD%91%E6%96%B9%E9%9D%A2/" class="category-list-link">建筑方面</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E6%80%9D%E8%80%83/" class="category-list-link">思考</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/" class="category-list-link">效率工具</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" class="category-list-link">数据分析</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" class="category-list-link">杂七杂八</a><span class="category-list-count">4</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E7%94%9F%E6%B4%BB/" class="category-list-link">生活</a><span class="category-list-count">1</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/git/" class="tag-list-link">git</a><span
+                    class="tag-list-count">6</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/hugo/" class="tag-list-link">hugo</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/jupyterlab/" class="tag-list-link">jupyterlab</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/markown/" class="tag-list-link">markown</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/pyqt5/" class="tag-list-link">pyqt5</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/python%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/" class="tag-list-link">python代码学习</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/python%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0/" class="tag-list-link">python内建函数</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/python%E6%A0%87%E5%87%86%E5%BA%93/" class="tag-list-link">python标准库</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/python%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95/" class="tag-list-link">python魔法方法</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/%E5%B7%A5%E7%A8%8B%E9%80%A0%E4%BB%B7/" class="tag-list-link">工程造价</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/%E7%88%AC%E8%99%AB/" class="tag-list-link">爬虫</a><span
+                    class="tag-list-count">1</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C2/" class="title">Git基本操作(2)</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-28</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://zhihao2020.github.io/2020/04/git%E9%94%99%E8%AF%AFnon-fast-forward%E5%90%8E%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" class="title">Git错误non-fast-forward后的解决方案</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-28</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://zhihao2020.github.io/2020/04/%E5%88%9B%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAgui/" class="title">创建你的第一个GUI</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-28</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://zhihao2020.github.io/2020/04/git%E5%88%86%E6%94%AF1/" class="title">Git分支(1)</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-27 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-27</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84shelve/" class="title">Python中的shelve</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-27 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-27</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C2/"
+    >Git基本操作(2)</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C2/" class="article-date">
+  <time datetime="2020-04-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-28</time>
+</a>
+</span>
+  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/git/"> Git </a>
+  </span>
+
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+	<span class="article-read hidden-xs">
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C2/" class="leancloud_visitors"  data-flag-title="Git基本操作(2)">0</span>
+    </span>
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C2/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1683字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 4分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h1 id="打标签">打标签</h1>
+<p>打标签就是用于给历史中的某一个提交打上标签。</p>
+<h2 id="列出标签">列出标签</h2>
+<p>在Git中列出已有的标签是非常直观的。只需要输入<code>git tag</code>。</p>
+<p>当然，你可以使用特定的模式，查看标签。例如，Git自身的源代码仓库包含标签超过500个。如果只对1.8.5系列感兴趣，可以运行：</p>
+<pre><code>git tag -l 'v1.8.5*'
+</code></pre>
+<h2 id="创建标签">创建标签</h2>
+<p>Git使用两种主要类型的标签：轻量标签（lightweight）与附注标签（annotated）。</p>
+<p>一个轻量标签很像一个不会改变的分支——它只是一个特定提交的引用。</p>
+<p>然而。附注标签是存储在Git数据库中的一个完整对象。它们是可以被校验的；其中包含打标签的名字、电子邮件地址、日期时间；还有一个标签信息；并且可以使用GNU Privacy Guard（GPG）签名与验证。</p>
+<p><strong>建议</strong>：创建附注标签，你可以拥有上述的所有信息；如果，你住需要说和临时标签。那么就使用轻量标签。</p>
+<h3 id="附注标签">附注标签</h3>
+<p>创建的方法就是，在<code>运行tag命令时指定-a选项</code>：</p>
+<pre><code>git tag -a v1.4 -m &quot;my version 1.4&quot;
+</code></pre>
+<p><code>-m</code>选项指定了一条将会存储在标签中的信息。如果没有为附注标签指定一条信息，Git会运行编辑器要求你输入信息。</p>
+<p>通过使用<code>git show</code>命令可以看到标签信息与对应的提交信息：</p>
+<pre><code>$ git show v1.4
+tag v1.4
+Tagger: Ben Straub &lt;ben@straub.cc&gt;
+Date: Sat May 3 20:19:12 2014 -0700
+
+my version 1.4
+
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date: Mon Mar 17 21:52:11 2008 -0700
+
+changed the version number
+</code></pre>
+<p>输出显示了打标签者的消息、打标签的日期时间、附注信息。然后显示具体的提交信息。</p>
+<h3 id="轻量标签">轻量标签</h3>
+<p>本质上是将提交校验和存储到一个文件中——没有保存其他信息、创建轻量级标签，不需要其他的选项，只需要提供标签名字：</p>
+<pre><code>git tag v1.4
+</code></pre>
+<p>这时，如果在标签上运行 git show，你不会看到额外的标签信息。 命令只会显示出提交信息：</p>
+<pre><code>$ git show v1.4-lw
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date: Mon Mar 17 21:52:11 2008 -0700
+  changed the version number
+
+</code></pre>
+<h2 id="后期打标签">后期打标签</h2>
+<p>你可以对过去的提交打标签。</p>
+<p>比如这样：</p>
+<pre><code>$ git log --pretty=oneline
+15027957951b64cf874c3557a0f3547bd83b3ff6 Merge branch 'experiment'
+a6b4c97498bd301d84096da251c98a07c7723e65 beginning write support
+0d52aaab4479697da7686c15f77a3d64d9165190 one more thing
+6d52a271eda8725415634dd79daabbc4d9b6008e Merge branch 'experiment'
+0b7434d86859cc7b8c3d5e1dddfed66ff742fcbc added a commit function
+4682c3261057305bdd616e23b64b0857d832627b added a todo file
+166ae0c4d3f420721acbb115cc33848dfcc2121a started write support
+9fceb02d0ae598e95dc970b74767f19372d61af8 updated rakefile
+964f16d36dfccde844893cac5b347e7b3d44abbc commit the todo
+8a5cbc430f1a9c3d00faaeffd07798508422908a updated readme
+</code></pre>
+<p>现在，假设在 v1.2 时你忘记给项目打标签，也就是在 “updated rakefile” 提交。 你可以在之后补上标签。 要 在那个提交上打标签，你需要在命令的末尾指定提交的校验和（或部分校验和）：</p>
+<pre><code>git tag -a v1.2 9fceb02
+</code></pre>
+<h2 id="共享标签">共享标签</h2>
+<p>默认情况下，<code>git push</code> 命令并不会传送标签到远程仓库服务器上。 在创建完标签后你必须显式地推送标签到 共享服务器上。 这个过程就像共享远程分支一样——你可以运行 <code>git push origin [tagname]</code>。</p>
+<pre><code>$ git push origin v1.5
+Counting objects: 14, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (14/14), 2.05 KiB | 0 bytes/s, done.
+Total 14 (delta 3), reused 0 (delta 0)
+To git@github.com:schacon/simplegit.git
+ * [new tag] v1.5 -&gt; v1.5
+</code></pre>
+<p>如果想要一次性推送很多标签，也可以使用带有 <code>--tags</code> 选项的 <code>git push</code> 命令。 这将会把所有不在远程仓库 服务器上的标签全部传送到那里。</p>
+<pre><code> git push origin --tags
+</code></pre>
+<h2 id="删除标签">删除标签</h2>
+<h3 id="删除掉你本地仓库上的标签">删除掉你本地仓库上的标签</h3>
+<p>可以使用命令 <code>git tag -d</code> 。例如，可以使用下面的命令删除掉 一个轻量级标签：</p>
+<pre><code>$ git tag -d v1.4-lw
+Deleted tag 'v1.4-lw' (was e7d5add)
+</code></pre>
+<h3 id="删除任何远程仓库的标签">删除任何远程仓库的标签</h3>
+<p>首先，<code>删除你本地的标签</code>，</p>
+<p>然后，使用<code>git push &lt;remote&gt;:refs/tags/&lt;tagname&gt;</code>来更新你的远程仓库。</p>
+<pre><code>$ git push origin :refs/tags/v1.4-lw
+To /git@github.com:schacon/simplegit.git
+ - [deleted] v1.4-lw
+</code></pre>
+<h2 id="检出标签">检出标签</h2>
+<p>如果你想查看某个标签指向的文件版本，可以使用<code>git checkout</code>命令。注意这样会使你的仓库处于“分离头指针（detached HEAD)”状态。</p>
+<pre><code>$ git checkout 2.0.0
+Note: checking out '2.0.0'.
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+  git checkout -b &lt;new-branch&gt;
+HEAD is now at 99ada87... Merge pull request #89 from schacon/appendixfinal
+$ git checkout 2.0-beta-0.1
+Previous HEAD position was 99ada87... Merge pull request #89 from
+schacon/appendix-final
+HEAD is now at df3f601... add atlas.json and cover image
+</code></pre>
+<p>在“分离头指针”状态下，如果你做了某些更改然后提交它们，标签不会发生变化，但你的新提交将不属于任何 分支，并且将无法访问，除非确切的提交哈希。因此，如果你需要进行更改——比如说你正在修复旧版本的错 误——这通常需要创建一个新分支：</p>
+<pre><code>$ git checkout -b version2 v2.0.0
+Switched to a new branch 'version2'
+</code></pre>
+<p>当然，如果在这之后又进行了一次提交，version2 分支会因为这个改动向前移动，version2 分支就会和 v2.0.0 标签稍微有些不同，这时就应该当心了。</p>
+<h1 id="git别名">Git别名</h1>
+<p>如果不想每次都输入完整的Git命令，可以通过<code>git config</code>文件来为每一个命令设置一个别名。</p>
+<p>比如：</p>
+<pre><code>$ git config --global alias.co checkout
+$ git config --global alias.br branch
+$ git config --global alias.ci commit
+$ git config --global alias.st status
+</code></pre>
+<p>这意味，当要输入<code>git commit</code>时，只需要输入<code>git ci</code>。</p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接: </strong>
+      <a href="https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C2/" title="Git基本操作(2)" target="_blank" rel="external">https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C2/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://zhihao2020.github.io" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://zhihao2020.github.io/cat.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://zhihao2020.github.io" target="_blank"><span class="text-dark">Zhihao</span><small class="ml-1x">“教”是最好的学习方式</small></a></h3>
+        <div>Up up up！</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+    <div id="vcomments"></div>
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://zhihao2020.github.io/2020/04/git%E9%94%99%E8%AF%AFnon-fast-forward%E5%90%8E%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" title="Git错误non-fast-forward后的解决方案"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/zhihao2020" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://zhihao2020.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+    <li><a href="http://weibo.com/D2016X" target="_blank" title="weibo" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-weibo"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2020  -
+    2020
+    <div class="publishby">
+       xuzhihao
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://zhihao2020.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://zhihao2020.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(未命名)',
+            },
+            ROOT_URL: 'https:\/\/zhihao2020.github.io',
+            CONTENT_URL: 'https:\/\/zhihao2020.github.io\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://zhihao2020.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine"></script>
+<script type="text/javascript">
+    var GUEST = ['nick', 'mail', 'link'];
+    var meta = 'nick,mail';
+    meta = meta.split(',').filter(function (item) {
+        return GUEST.indexOf(item) > -1;
+    });
+   
+new Valine({
+    el: '#vcomments' ,
+    appId: 'cbb8ajQIRK8ShsDhksAalS5e-gzGzoHsz',
+    appKey: 'H605TalWcvAnd5HAY0z9aS67',
+    notify:false, 
+    recordIP:true,
+    verify:false, 
+    avatar:'mp', 
+});
+
+
+</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-164183479-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

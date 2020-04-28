@@ -5,10 +5,46 @@
     <link>https://zhihao2020.github.io/posts/</link>
     <description>Recent content in Posts on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 27 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zhihao2020.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git基本操作(2)</title>
+      <link>https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C2/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C2/</guid>
+      <description>打标签 打标签就是用于给历史中的某一个提交打上标签。 列出标签 在Git中列出已有的标签是非常直观的。只需要输入git tag。 当然，你可以使用特定</description>
+    </item>
+    
+    <item>
+      <title>Git错误non-fast-forward后的解决方案</title>
+      <link>https://zhihao2020.github.io/2020/04/git%E9%94%99%E8%AF%AFnon-fast-forward%E5%90%8E%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/git%E9%94%99%E8%AF%AFnon-fast-forward%E5%90%8E%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
+      <description>在Push文件到github时候，出现了这个问题。这个问题是本地和Github中Repository中的文件出现冲突所造成的。在提交之前你需</description>
+    </item>
+    
+    <item>
+      <title>创建你的第一个GUI</title>
+      <link>https://zhihao2020.github.io/2020/04/%E5%88%9B%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAgui/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E5%88%9B%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAgui/</guid>
+      <description>from PyQt5 import QtWidgets import sys if __name__ == &amp;quot;__main__&amp;quot;: app = QtWidgets.QApplication(sys.argv) w = QtWidgets.QWidgst() w.resize(600,600) w.move(600,600) w.setWindowTitle(&amp;quot;第一个Qt程序&amp;quot;) w.show() sys.exit(app.exec_()) 其中， app = QtWidgets.QApplication(sys.argv) 每一个PyQt</description>
+    </item>
+    
+    <item>
+      <title>Git分支(1)</title>
+      <link>https://zhihao2020.github.io/2020/04/git%E5%88%86%E6%94%AF1/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/git%E5%88%86%E6%94%AF1/</guid>
+      <description>使用分支意味着你可以把你的工作从开发主线上分离开来，以免影响开发主线。 分支简介 在进行提交操作时，Git会保存一个提交对象（commit obj</description>
+    </item>
     
     <item>
       <title>Python中的shelve</title>
@@ -152,42 +188,6 @@
       
       <guid>https://zhihao2020.github.io/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/</guid>
       <description>这个项目会创建一个N×N的细胞网格，随时间推移，模拟Conway生命游戏。 在这个游戏中，细胞处于ON或OFF状态。游戏从一个初始状态开始，每</description>
-    </item>
-    
-    <item>
-      <title>精读代码(1)</title>
-      <link>https://zhihao2020.github.io/2020/04/%E7%B2%BE%E8%AF%BB%E4%BB%A3%E7%A0%811/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/%E7%B2%BE%E8%AF%BB%E4%BB%A3%E7%A0%811/</guid>
-      <description>#!/usr/bin/env python3 &amp;quot;&amp;quot;&amp;quot; A Python version of the classic &amp;quot;bottles of beer on the wall&amp;quot; programming example. By Guido van Rossum, demystified after a version by Fredrik Lundh. &amp;quot;&amp;quot;&amp;quot; import sys n = 100 if sys.argv[1:]: n = int(sys.argv[1]) def bottle(n): if n == 0: return &amp;quot;no more bottles of beer&amp;quot; if n == 1: return &amp;quot;one bottle of beer&amp;quot; return str(n) + &amp;quot; bottles of beer&amp;quot; for i in</description>
-    </item>
-    
-    <item>
-      <title>Git基本操作(1)</title>
-      <link>https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
-      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
-      <description>配置并初始化一个仓库（repository）、开始或停止跟踪（track）文件、暂存（stage）或提交（commit）更改。配置Git来忽</description>
-    </item>
-    
-    <item>
-      <title>Mrakdown中插入数学公式</title>
-      <link>https://zhihao2020.github.io/2020/04/markdown%E4%B8%AD%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</link>
-      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/markdown%E4%B8%AD%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</guid>
-      <description>行内与独行 行内公式：将公式插入到本行内，符号：$公式内容$，如：$xyz$ 独行公式：将公式插入到新的一行内，并且居中，符号：$$公式内容$$</description>
-    </item>
-    
-    <item>
-      <title>PEP-8——Python代码的风格指导</title>
-      <link>https://zhihao2020.github.io/2020/04/pep-8python%E4%BB%A3%E7%A0%81%E7%9A%84%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%AF%BC/</link>
-      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/pep-8python%E4%BB%A3%E7%A0%81%E7%9A%84%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%AF%BC/</guid>
-      <description>常量通常定义在代码前面，并且全都大写，分割的时候用_（下划线）分割。比如想，MAX_OVERFLOW和TOTAL这样。 Constants are usually defined on a module level and written in</description>
     </item>
     
   </channel>
