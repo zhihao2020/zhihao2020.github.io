@@ -5,10 +5,37 @@
     <link>https://zhihao2020.github.io/categories/python/</link>
     <description>Recent content in Python on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 28 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zhihao2020.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python 参数解析 Parser 的使用方法</title>
+      <link>https://zhihao2020.github.io/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+      <description>argparse可以让人编写对用户友好的命令行接口。程序定义好它需要的参数，然后argparse将从sys.argv解析出那些参数。 argp</description>
+    </item>
+    
+    <item>
+      <title>Python中的sys</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84sys/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84sys/</guid>
+      <description>sys.argv 传递给Python脚本的命令行参数列表。 例如 import sys print(sys.argv[0]) print(sys.argv[1]) 运行它： python temp.py argv1 sys.py argv1 sys.exit([arg]) 功能：执行到主程序末尾，解释器自动退出，但是如果需要中途退出程序，</description>
+    </item>
+    
+    <item>
+      <title>用Python模拟生命</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/</guid>
+      <description>这个项目会创建一个N×N的细胞网格，随时间推移，模拟Conway生命游戏。 在这个游戏中，细胞处于ON或OFF状态。游戏从一个初始状态开始，每</description>
+    </item>
     
     <item>
       <title>精读代码(1)</title>

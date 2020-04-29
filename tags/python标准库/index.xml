@@ -5,10 +5,37 @@
     <link>https://zhihao2020.github.io/tags/python%E6%A0%87%E5%87%86%E5%BA%93/</link>
     <description>Recent content in Python标准库 on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 27 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zhihao2020.github.io/tags/python%E6%A0%87%E5%87%86%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>pip使用指南</title>
+      <link>https://zhihao2020.github.io/2020/04/pip%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/pip%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</guid>
+      <description>安装时，换个源 pip install -i http://pypi.tuna.tsinghua.edu.cn/simple XXX 显示版本和路径 pip --version 升级pip pip install -U pip 安装包 pip install SomePackage #这是下载最新版本 pip install SomePackage==1.0.4 #指定版本 pip install SomePackafe&amp;gt;=1.0.4 #最小版本 升级包 pip install --upgrade SomePackage 卸载</description>
+    </item>
+    
+    <item>
+      <title>Windows下CMD常用命令</title>
+      <link>https://zhihao2020.github.io/2020/04/windows%E4%B8%8Bcmd%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/windows%E4%B8%8Bcmd%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>1、进入某个盘 D: #进入D盘 2、查看目录文件 dir 3、创建目录和删除目录 md 目录名 //创建目录 rd 目录名 //删除目录 4、查看本机ip ipconfig 5、清楚屏幕 cls 6</description>
+    </item>
+    
+    <item>
+      <title>操作CSV表格</title>
+      <link>https://zhihao2020.github.io/2020/04/%E4%BD%BF%E7%94%A8csv%E6%A8%A1%E5%9D%97/</link>
+      <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E4%BD%BF%E7%94%A8csv%E6%A8%A1%E5%9D%97/</guid>
+      <description>CSV表示&amp;quot;Comma-Sparated Values（逗号分隔的值）&amp;quot;,CSV文件是简化的电子表格，保存为纯文本文件。 不</description>
+    </item>
     
     <item>
       <title>Git基本操作(2)</title>
@@ -161,33 +188,6 @@
       
       <guid>https://zhihao2020.github.io/2020/04/python%E7%9A%84unittest%E6%A8%A1%E5%9D%97/</guid>
       <description>测试驱动是先写测试代码，然后写功能代码，通过测试来推动整个开发的进行。这有助于编写简洁可用和高质量的代码 unittest最早由JUnit启发</description>
-    </item>
-    
-    <item>
-      <title>Python 参数解析 Parser 的使用方法</title>
-      <link>https://zhihao2020.github.io/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
-      <description>argparse可以让人编写对用户友好的命令行接口。程序定义好它需要的参数，然后argparse将从sys.argv解析出那些参数。 argp</description>
-    </item>
-    
-    <item>
-      <title>Python中的sys</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84sys/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84sys/</guid>
-      <description>sys.argv 传递给Python脚本的命令行参数列表。 例如 import sys print(sys.argv[0]) print(sys.argv[1]) 运行它： python temp.py argv1 sys.py argv1 sys.exit([arg]) 功能：执行到主程序末尾，解释器自动退出，但是如果需要中途退出程序，</description>
-    </item>
-    
-    <item>
-      <title>用Python模拟生命</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/</guid>
-      <description>这个项目会创建一个N×N的细胞网格，随时间推移，模拟Conway生命游戏。 在这个游戏中，细胞处于ON或OFF状态。游戏从一个初始状态开始，每</description>
     </item>
     
   </channel>
