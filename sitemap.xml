@@ -52,6 +52,13 @@
   </url>
   
   <url>
+    <loc>https://zhihao2020.github.io/2020/04/tensorflow%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98%E6%80%BB%E6%98%AF%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85tensorflowcould-not-find-a-version-that-satisfies-the-requirement-tensorflow/</loc>
+    <lastmod>2020-04-29T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://zhihao2020.github.io/tags/%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
     <lastmod>2020-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -67,6 +74,20 @@
   
   <url>
     <loc>https://zhihao2020.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</loc>
+    <lastmod>2020-04-29T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/categories/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2020-04-29T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/tags/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2020-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -249,6 +270,13 @@
   
   <url>
     <loc>https://zhihao2020.github.io/tags/python%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/2020/04/%E5%9C%A8%E5%8D%95%E5%85%83%E6%A0%BC%E9%87%8C%E6%94%BE%E7%BD%AE%E5%A4%8D%E9%80%89%E6%A1%86/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

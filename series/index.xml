@@ -15,7 +15,7 @@
       <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://zhihao2020.github.io/2020/04/pip%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</guid>
-      <description>安装时，换个源 pip install -i http://pypi.tuna.tsinghua.edu.cn/simple XXX 显示版本和路径 pip --version 升级pip pip install -U pip 安装包 pip install SomePackage #这是下载最新版本 pip install SomePackage==1.0.4 #指定版本 pip install SomePackafe&amp;gt;=1.0.4 #最小版本 升级包 pip install --upgrade SomePackage 卸载</description>
+      <description>安装时，换个源 pip install -i http://pypi.tuna.tsinghua.edu.cn/simple XXX https://pypi.douban.com/simple 豆瓣的源 显示版本和路径 pip --version 升级pip pip install -U pip 安装包 pip install SomePackage #这是下载最新版本 pip install SomePackage==1.0.4 #指定版本 pip install SomePackafe&amp;gt;=1.0.4 #最小版本 升级包 pip</description>
     </item>
     
     <item>
@@ -25,6 +25,15 @@
       
       <guid>https://zhihao2020.github.io/2020/04/windows%E4%B8%8Bcmd%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description>1、进入某个盘 D: #进入D盘 2、查看目录文件 dir 3、创建目录和删除目录 md 目录名 //创建目录 rd 目录名 //删除目录 4、查看本机ip ipconfig 5、清楚屏幕 cls 6</description>
+    </item>
+    
+    <item>
+      <title>【Tensorflow安装问题】总是无法安装tensorflow：Could not find a version that satisfies the requirement tensorflow</title>
+      <link>https://zhihao2020.github.io/2020/04/tensorflow%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98%E6%80%BB%E6%98%AF%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85tensorflowcould-not-find-a-version-that-satisfies-the-requirement-tensorflow/</link>
+      <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/tensorflow%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98%E6%80%BB%E6%98%AF%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85tensorflowcould-not-find-a-version-that-satisfies-the-requirement-tensorflow/</guid>
+      <description>我在使用pip 安装Tendorflow时，出现了错误。 我查阅了好多博客，发现他们大多都是一个版本的&amp;hellip;.. Tensorflow能</description>
     </item>
     
     <item>
@@ -178,15 +187,6 @@
       
       <guid>https://zhihao2020.github.io/2020/04/jupyterlab%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
       <description>JupyterLab 有两种键盘输入模式，分别为编辑模式和命令模式。 一、命令行模式 (按键 Esc 开启) 命令行模式：键盘输入运行程序命令；这时的单元框线是灰色。 快捷键 实</description>
-    </item>
-    
-    <item>
-      <title>Python的Unittest模块</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E7%9A%84unittest%E6%A8%A1%E5%9D%97/</link>
-      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/python%E7%9A%84unittest%E6%A8%A1%E5%9D%97/</guid>
-      <description>测试驱动是先写测试代码，然后写功能代码，通过测试来推动整个开发的进行。这有助于编写简洁可用和高质量的代码 unittest最早由JUnit启发</description>
     </item>
     
   </channel>
