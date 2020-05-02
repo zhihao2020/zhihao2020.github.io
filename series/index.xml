@@ -55,6 +55,24 @@
     </item>
     
     <item>
+      <title>Python的webbrowser</title>
+      <link>https://zhihao2020.github.io/2020/05/python%E7%9A%84webbrowser/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/python%E7%9A%84webbrowser/</guid>
+      <description>允许向用户显示基于Web的文档。在大多数情况下，只需要调用open()函数就可以。 脚本 webbrowser 可以用作模块的命令行界面。它接受一个 URL 作为参数。还接</description>
+    </item>
+    
+    <item>
+      <title>SQLite常用操作</title>
+      <link>https://zhihao2020.github.io/2020/05/sqlite%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/sqlite%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
+      <description>新建一个数据库文件 使用cd命令进入到数据库文件的目录下，用sqlite3命令创建数据库文件。 sqlite3 DatabaseName.db 查看已建立的数据库文件 使用database命</description>
+    </item>
+    
+    <item>
       <title>html转为图片</title>
       <link>https://zhihao2020.github.io/2020/04/html%E8%BD%AC%E4%B8%BA%E5%9B%BE%E7%89%87/</link>
       <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
@@ -169,24 +187,6 @@
       
       <guid>https://zhihao2020.github.io/2020/04/git%E5%88%86%E6%94%AF1/</guid>
       <description>使用分支意味着你可以把你的工作从开发主线上分离开来，以免影响开发主线。 分支简介 在进行提交操作时，Git会保存一个提交对象（commit obj</description>
-    </item>
-    
-    <item>
-      <title>Python中的shelve</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84shelve/</link>
-      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84shelve/</guid>
-      <description>shelve可以当做是简单的存储。 使用方法如下： import shelve d = shelve.open(filename) # open -- file may get suffix added by low-level # library d[key] = data # store data at key (overwrites old data if # using an existing key) data = d[key] # retrieve a COPY of data at key (raise</description>
-    </item>
-    
-    <item>
-      <title>打包Python程序</title>
-      <link>https://zhihao2020.github.io/2020/04/%E6%89%93%E5%8C%85python%E7%A8%8B%E5%BA%8F/</link>
-      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/%E6%89%93%E5%8C%85python%E7%A8%8B%E5%BA%8F/</guid>
-      <description>PyInstaller原理 PyInstaller其实就是把Python解释器和脚本打包成一个可执行文件，和编译成真正的机器码完全是两回事。所</description>
     </item>
     
   </channel>
