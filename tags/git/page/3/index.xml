@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Zhihao&#39;s Blog</title>
+    <link>https://zhihao2020.github.io/tags/git/</link>
+    <description>Recent content in Git on Zhihao&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 28 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://zhihao2020.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>得到真正的业务ID</title>
+      <link>https://zhihao2020.github.io/2020/04/%E5%8F%8D%E6%89%92id%E4%B9%8Bhashids/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E5%8F%8D%E6%89%92id%E4%B9%8Bhashids/</guid>
+      <description>对于爬虫来说，知道了网站的数据自增ID，那么就能将整个站点爬取下来。不过，那些大站，比如油管之类的，他们绝不会把业务的自增ID暴露出来，而是</description>
+    </item>
+    
+    <item>
+      <title>为什么要使用Git</title>
+      <link>https://zhihao2020.github.io/2020/04/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8git/</link>
+      <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8git/</guid>
+      <description>Git介绍 Git其实就是一个版本控制系统。它记录着文件内容的变化，你可以查阅每次修改的情况。 其实很多人就一直在使用版本控制系统，许多人习惯把</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://zhihao2020.github.io/about/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/about/</guid>
+      <description>一个不断学习、不断精进的普通人。</description>
+    </item>
+    
+    <item>
+      <title>Hugo的操作</title>
+      <link>https://zhihao2020.github.io/2020/04/%E6%9B%B4%E6%96%B0hugo/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E6%9B%B4%E6%96%B0hugo/</guid>
+      <description>更新文章 hugo --theme= --baseUrl=&amp;quot;&amp;quot; --buildDrafts git remote add origin https://github.com/XXX/XXX.github.io.git cd public git add . git commit -m &amp;quot;XXXX/XX/XX&amp;quot; git push -u origin master</description>
+    </item>
+    
+    <item>
+      <title>从全拼到双拼</title>
+      <link>https://zhihao2020.github.io/2020/04/%E4%BB%8E%E5%85%A8%E6%8B%BC%E5%88%B0%E5%8F%8C%E6%8B%BC/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E4%BB%8E%E5%85%A8%E6%8B%BC%E5%88%B0%E5%8F%8C%E6%8B%BC/</guid>
+      <description>简单介绍一下 汉语拼音，分为声母与韵母。全拼打字的时候，是将它们都打出来，比如[双]字 就需要打出shuang，相比双拼效率就低了。 双拼，是将声</description>
+    </item>
+    
+    <item>
+      <title>关于自学的感想（1）</title>
+      <link>https://zhihao2020.github.io/2020/04/%E5%85%B3%E4%BA%8E%E8%87%AA%E5%AD%A6%E7%9A%84%E6%84%9F%E6%83%B31/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E5%85%B3%E4%BA%8E%E8%87%AA%E5%AD%A6%E7%9A%84%E6%84%9F%E6%83%B31/</guid>
+      <description>def teach_yourself(anything): while not creat(something): learn() practice() return teach_yourself(another) teach_yourself(something) 我挺赞同这个伪代码的，自学的过程就是不断学习、不断创造的过程，并将能否进行创造作为自学成功与否的关键。 自学是时代的要求 在</description>
+    </item>
+    
+    <item>
+      <title>爱惜自己的时间</title>
+      <link>https://zhihao2020.github.io/2020/04/%E7%88%B1%E6%83%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%B6%E9%97%B4/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E7%88%B1%E6%83%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%B6%E9%97%B4/</guid>
+      <description>人生而就是不平等的，但是在时间上却是平等的 珍惜自己的时间，远离焦虑 这个世界上又这么一个银行，他每天给你1440的资产，让你去消费，而且过了今</description>
+    </item>
+    
+  </channel>
+</rss>
