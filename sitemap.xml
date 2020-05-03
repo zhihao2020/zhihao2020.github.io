@@ -3,28 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://zhihao2020.github.io/2020/05/ascii%E8%A1%A8-nonprintable-characters/</loc>
-    <lastmod>2020-05-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://zhihao2020.github.io/categories/</loc>
-    <lastmod>2020-05-02T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-03T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://zhihao2020.github.io/posts/</loc>
-    <lastmod>2020-05-02T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-03T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://zhihao2020.github.io/categories/python/</loc>
+    <lastmod>2020-05-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/</loc>
+    <lastmod>2020-05-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/2020/05/python%E7%BB%84%E7%BB%87%E6%96%87%E4%BB%B6/</loc>
+    <lastmod>2020-05-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/tags/</loc>
+    <lastmod>2020-05-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/tags/%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
+    <lastmod>2020-05-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/2020/05/ascii%E8%A1%A8-nonprintable-characters/</loc>
     <lastmod>2020-05-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -81,13 +109,6 @@
   
   <url>
     <loc>https://zhihao2020.github.io/2020/05/sqlite%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</loc>
-    <lastmod>2020-05-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhihao2020.github.io/tags/</loc>
     <lastmod>2020-05-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -172,13 +193,6 @@
   
   <url>
     <loc>https://zhihao2020.github.io/2020/04/tensorflow%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98%E6%80%BB%E6%98%AF%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85tensorflowcould-not-find-a-version-that-satisfies-the-requirement-tensorflow/</loc>
-    <lastmod>2020-04-29T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhihao2020.github.io/tags/%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
     <lastmod>2020-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

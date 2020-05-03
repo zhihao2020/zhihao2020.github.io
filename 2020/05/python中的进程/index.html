@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        Zhihao&#39;s Blog</title>
+        Python中的进程(1) - Zhihao&#39;s Blog
+      </title>
     <head>
 <script data-ad-client="ca-pub-5137727031357129" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <meta charset="utf-8">
@@ -23,25 +24,32 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  
+  <meta name="description" content="简单介绍multiprocessing创建进程" />
   <meta name="generator" content="Hugo 0.69.0 with theme pure" />
-  <title>Zhihao&#39;s Blog</title>
+  <title>Python中的进程(1) - Zhihao&#39;s Blog</title>
   
-  <link rel="alternate" type="application/rss+xml" href="https://zhihao2020.github.io/tags/jupyterlab/index.xml" title="Zhihao's Blog" />
   
   <link rel="stylesheet" href="https://zhihao2020.github.io/css/style.min.c4bc7071f132c964c2116bca53b392933f377e5ca7b7051ed245187c621a2d3e.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="JupyterLab" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://zhihao2020.github.io/tags/jupyterlab/" />
-<meta property="og:updated_time" content="2020-04-25T00:00:00+00:00" />
-<meta itemprop="name" content="JupyterLab">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="JupyterLab"/>
-<meta name="twitter:description" content=""/>
+  <meta property="og:title" content="Python中的进程(1)" />
+<meta property="og:description" content="简单介绍multiprocessing创建进程" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/" />
+<meta property="article:published_time" content="2020-05-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-05-03T00:00:00+00:00" />
+<meta itemprop="name" content="Python中的进程(1)">
+<meta itemprop="description" content="简单介绍multiprocessing创建进程">
+<meta itemprop="datePublished" content="2020-05-03T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-05-03T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="452">
+
+
+
+<meta itemprop="keywords" content="," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python中的进程(1)"/>
+<meta name="twitter:description" content="简单介绍multiprocessing创建进程"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -302,51 +310,175 @@
 
     
     
-<main class="main" role="main">
-    <article class="content article article-tags post-type-list" itemscope="">
-        <header class="article-header">
-            <h1 itemprop="name" class="hidden-xs">JupyterLab</h1>
-            <p class="text-muted hidden-xs">共 15 个标签</p>
-            <nav role="navigation" id="nav-main" class="okayNav">
-                <ul>
-                    <li><a href="https://zhihao2020.github.io/tags">All</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/git/">Git</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/hugo/">Hugo</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/jupyterlab/">JupyterLab</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/markown/">Markown</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/pyqt5/">PyQt5</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/python%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/">Python代码学习</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/python%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0/">Python内建函数</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/python%E6%A0%87%E5%87%86%E5%BA%93/">Python标准库</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/python%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95/">Python魔法方法</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/sqlite/">SQLite</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/">办公自动化</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/">可视化</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/%E5%B7%A5%E7%A8%8B%E9%80%A0%E4%BB%B7/">工程造价</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/%E7%88%AC%E8%99%AB/">爬虫</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/">错误记录</a></li>
-                </ul>
-            </nav>
-        </header>
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/"
+    >Python中的进程(1)</a
+  >
+</h1>
+
+      <div class="article-meta">
         
-        <div class="article-body">
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-04-25 00:00:00 &#43;0000 UTC"
-                itemprop="datePublished">2020-04-25</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://zhihao2020.github.io/2020/04/jupyterlab%E5%BF%AB%E6%8D%B7%E9%94%AE/">JupyterLab快捷键</a>
-        </h3>
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/" class="article-date">
+  <time datetime="2020-05-03 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-03</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/python/"> Python </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags//">  </a>
+  </span>
+
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+	<span class="article-read hidden-xs">
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/" class="leancloud_visitors"  data-flag-title="Python中的进程(1)">0</span>
+    </span>
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 452字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1分 </span>
+      </div>
     </div>
-    <div class="panel-footer">
-        <a href="https://zhihao2020.github.io/tags/jupyterlab" class="label label-default mb">JupyterLab</a>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <p>当你运行独立的程序时，你的计算机就会生产一个简单的进程。他使用系统的资源（CPU、内存、硬盘存储）和你运行操作系统中的数据结构。</p>
+<p>你的计算机看起来能够多程序同时运行，其实，它是不同的程序不断运行、不断切换，看起来好像是同时运行，其实每时刻只运行一个程序。</p>
+<p>你可以从你的计算机中获得进程的数据。Python的标准库OS就可以提供关于系统的信息。例如这样：</p>
+<pre><code class="language-python">&gt;&gt;&gt;import os
+&gt;&gt;&gt;os.getpid()  #获得进程的ID
+76051
+&gt;&gt;&gt;os,getcwd()  #现在运行的Python解释器的工作路径
+'/Users/wil'
+</code></pre>
+<h2 id="通过multiprocessing创建进程">通过multiprocessing创建进程</h2>
+<p>通过<code>multiprocessing</code>模块，可以将一些任务分配给多个进程，这样更节省时间。当然这就包括了，排队时间、使进程之间能够通信、等待所有过程完成。</p>
+<p>例如这样：</p>
+<pre><code class="language-python">import multiprocessing
+import os
+
+def do_this(what):
+	whoami(what)
+
+def whoami(what):
+	print(&quot;Process %s says:%s&quot;%(os.getid(),what))
+	
+if __name__ == &quot;__main__&quot;:
+	whoami(&quot;I am the main program&quot;)
+	for n in range(4):
+		p = multiprocessing.Process(target=do_this,args=(&quot;I'm function %s&quot;%n))
+		p.start()
+</code></pre>
+<h2 id="通过terminate结束进程">通过terminate()结束进程</h2>
+<p>如果你创建了一个或更多的进程，但是因为某些过程你想去结束这些进程，你可以用<code>terminate()</code></p>
+<p>例如：</p>
+<pre><code class="language-python">import multiprocessing
+import os
+import time
+
+def whoami(what):
+	print(&quot;I'm %s ,in process %s&quot;%(what,os.getpid()))
+
+def loopy(name):
+	whoami(name)
+	start = 1
+	stop = 100000
+	for num in range(start,stop):
+		print(&quot;\t Number %s of %s .Hok!&quot;%(num,stop))
+		time.sleep(1)
+
+if __name__ == &quot;__main__&quot;:
+	whoami(&quot;main&quot;)
+	p = multiprocessing.Process(target=loopy,args=(&quot;loopy&quot;,))
+	p.start()
+	time.sleep(5)
+	p.terminate()
+</code></pre>
+
     </div>
-</article>
-            </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接: </strong>
+      <a href="https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/" title="Python中的进程(1)" target="_blank" rel="external">https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://zhihao2020.github.io" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://zhihao2020.github.io/cat.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://zhihao2020.github.io" target="_blank"><span class="text-dark">Zhihao</span><small class="ml-1x">“教”是最好的学习方式</small></a></h3>
+        <div>Up up up！</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+    <div id="vcomments"></div>
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://zhihao2020.github.io/2020/05/python%E7%BB%84%E7%BB%87%E6%96%87%E4%BB%B6/" title="Python组织文件"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
         </div>
-    </article>
+    </div>
+</nav>
+
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
     <li><a href="https://github.com/zhihao2020" target="_blank" title="github" data-toggle=tooltip data-placement=top >
@@ -422,6 +554,29 @@
         
         hasInnerContainers: true,
     });
+</script>
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine"></script>
+<script type="text/javascript">
+    var GUEST = ['nick', 'mail', 'link'];
+    var meta = 'nick,mail';
+    meta = meta.split(',').filter(function (item) {
+        return GUEST.indexOf(item) > -1;
+    });
+   
+new Valine({
+    el: '#vcomments' ,
+    appId: 'cbb8ajQIRK8ShsDhksAalS5e-gzGzoHsz',
+    appKey: 'H605TalWcvAnd5HAY0z9aS67',
+    notify:false, 
+    recordIP:true,
+    verify:false, 
+    avatar:'mp', 
+});
+
+
 </script>
 
 <script type="application/javascript">
