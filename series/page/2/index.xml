@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>Git错误non-fast-forward后的解决方案</title>
+      <link>https://zhihao2020.github.io/2020/04/git%E9%94%99%E8%AF%AFnon-fast-forward%E5%90%8E%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/git%E9%94%99%E8%AF%AFnon-fast-forward%E5%90%8E%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
+      <description>在Push文件到github时候，出现了这个问题。这个问题是本地和Github中Repository中的文件出现冲突所造成的。在提交之前你需</description>
+    </item>
+    
+    <item>
       <title>创建你的第一个GUI</title>
       <link>https://zhihao2020.github.io/2020/04/%E5%88%9B%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAgui/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
@@ -178,15 +187,6 @@
       
       <guid>https://zhihao2020.github.io/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/</guid>
       <description>这个项目会创建一个N×N的细胞网格，随时间推移，模拟Conway生命游戏。 在这个游戏中，细胞处于ON或OFF状态。游戏从一个初始状态开始，每</description>
-    </item>
-    
-    <item>
-      <title>精读代码(1)</title>
-      <link>https://zhihao2020.github.io/2020/04/%E7%B2%BE%E8%AF%BB%E4%BB%A3%E7%A0%811/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/%E7%B2%BE%E8%AF%BB%E4%BB%A3%E7%A0%811/</guid>
-      <description>#!/usr/bin/env python3 &amp;quot;&amp;quot;&amp;quot; A Python version of the classic &amp;quot;bottles of beer on the wall&amp;quot; programming example. By Guido van Rossum, demystified after a version by Fredrik Lundh. &amp;quot;&amp;quot;&amp;quot; import sys n = 100 if sys.argv[1:]: n = int(sys.argv[1]) def bottle(n): if n == 0: return &amp;quot;no more bottles of beer&amp;quot; if n == 1: return &amp;quot;one bottle of beer&amp;quot; return str(n) + &amp;quot; bottles of beer&amp;quot; for i in</description>
     </item>
     
   </channel>
