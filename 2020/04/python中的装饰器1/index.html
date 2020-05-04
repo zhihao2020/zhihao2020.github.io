@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Python中的装饰器(1) - Zhihao&#39;s Blog
+      </title>
+    <head>
+<script data-ad-client="ca-pub-5137727031357129" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="学会DIG是掌握Python的关键，这篇我来讲讲其中的G——装饰器" />
+  <meta name="generator" content="Hugo 0.69.0 with theme pure" />
+  <title>Python中的装饰器(1) - Zhihao&#39;s Blog</title>
+  
+  
+  <link rel="stylesheet" href="https://zhihao2020.github.io/css/style.min.c4bc7071f132c964c2116bca53b392933f377e5ca7b7051ed245187c621a2d3e.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="Python中的装饰器(1)" />
+<meta property="og:description" content="学会DIG是掌握Python的关键，这篇我来讲讲其中的G——装饰器" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A81/" />
+<meta property="article:published_time" content="2020-04-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-26T00:00:00+00:00" />
+<meta itemprop="name" content="Python中的装饰器(1)">
+<meta itemprop="description" content="学会DIG是掌握Python的关键，这篇我来讲讲其中的G——装饰器">
+<meta itemprop="datePublished" content="2020-04-26T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-04-26T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1094">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python中的装饰器(1)"/>
+<meta name="twitter:description" content="学会DIG是掌握Python的关键，这篇我来讲讲其中的G——装饰器"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+<meta name="google-site-verification" content="0gQ8sWKd4zLsJXwb0ZltECHLMlc_BsTe0i-UlxiVC_E" />
+
+<script data-ad-client="ca-pub-5137727031357129" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://zhihao2020.github.io" target="_blank">
+            <img class="img-circle img-rotate" src="https://zhihao2020.github.io/cat.jpg" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Zhihao</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">“教”是最好的学习方式</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Weifang, China</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>Welcom~</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/python/" class="category-list-link">python</a><span class="category-list-count">36</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E5%BB%BA%E7%AD%91%E6%96%B9%E9%9D%A2/" class="category-list-link">建筑方面</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E6%80%9D%E8%80%83/" class="category-list-link">思考</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/" class="category-list-link">效率工具</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" class="category-list-link">数据分析</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="category-list-link">数据库</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" class="category-list-link">杂七杂八</a><span class="category-list-count">6</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E7%94%9F%E6%B4%BB/" class="category-list-link">生活</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" class="category-list-link">神经网络</a><span class="category-list-count">1</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/git/" class="tag-list-link">git</a><span
+                    class="tag-list-count">6</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/hugo/" class="tag-list-link">hugo</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/jupyterlab/" class="tag-list-link">jupyterlab</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/markown/" class="tag-list-link">markown</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/pyqt5/" class="tag-list-link">pyqt5</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/python%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/" class="tag-list-link">python代码学习</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/python%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0/" class="tag-list-link">python内建函数</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/python%E6%A0%87%E5%87%86%E5%BA%93/" class="tag-list-link">python标准库</a><span
+                    class="tag-list-count">9</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/python%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95/" class="tag-list-link">python魔法方法</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/sqlite/" class="tag-list-link">sqlite</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/" class="tag-list-link">办公自动化</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/" class="tag-list-link">可视化</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/%E5%B7%A5%E7%A8%8B%E9%80%A0%E4%BB%B7/" class="tag-list-link">工程造价</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/%E7%88%AC%E8%99%AB/" class="tag-list-link">爬虫</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/" class="tag-list-link">错误记录</a><span
+                    class="tag-list-count">1</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://zhihao2020.github.io/2020/05/python%E4%B8%AD__slots__/" class="title">Python中__slots__</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-04 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-04</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E7%94%9F%E6%88%90%E5%99%A8/" class="title">Python中的生成器</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-04 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-04</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A82/" class="title">Python中的装饰器(2)</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-04 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-04</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/" class="title">Python中的进程(1)</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-03 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-03</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://zhihao2020.github.io/2020/05/python%E6%8E%A7%E5%88%B6%E9%94%AE%E7%9B%98%E5%92%8C%E9%BC%A0%E6%A0%87/" class="title">Python控制键盘和鼠标</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-03 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-03</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/04/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A81/"
+    >Python中的装饰器(1)</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A81/" class="article-date">
+  <time datetime="2020-04-26 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-26</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/python/"> Python </a>
+</span>
+
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+	<span class="article-read hidden-xs">
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A81/" class="leancloud_visitors"  data-flag-title="Python中的装饰器(1)">0</span>
+    </span>
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/04/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A81/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1094字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h1 id="函数也是对象">函数也是对象</h1>
+<p>首先要明确一个概念，函数也是对象。</p>
+<p>于是，函数本身其实可以与其他的数据类型一样，作为其他函数的参数或者返回值。</p>
+<pre><code class="language-python">def decorator(func):
+	def wrapper():
+		print(&quot;we can do sth.Befor the func() is called...&quot;)
+		func()
+		print(&quot;... and we can do sth. After it is called.. &quot;)
+	return wrapper()
+
+def func()
+	print(&quot;Hi, I'm func!&quot;)
+
+func()
+decorator(func)
+</code></pre>
+<p>输出如下：</p>
+<pre><code>Hi, I'm a_func!
+We can do sth. before a func is called...
+Hi, I'm a_func!
+... and we can do sth. after it is called...
+</code></pre>
+<p>但是，如果这样，那就不同了：</p>
+<pre><code class="language-python">def decorator(func):
+    def wrapper():
+        print('We can do sth. before a func is called...')
+        func()
+        print('... and we can do sth. after it is called...')
+    return wrapper  
+
+def func():
+    print(&quot;Hi, I'm a_func!&quot;)
+    
+func()
+decorator(func)
+</code></pre>
+<pre><code>Hi, I'm a_func!
+&lt;function __main__.a_decorator.&lt;locals&gt;.wrapper()&gt;
+</code></pre>
+<p>其实，这里 wrapper 是返回这个函数本身，而wrapper()则是返回这个函数的返回值。</p>
+<h1 id="装饰器操作符">装饰器操作符</h1>
+<p>Python提供了一个针对函数的操作符<code>@</code>。</p>
+<pre><code class="language-python">def decorator(func):
+    def wrapper():
+        print('We can do sth. before calling a_func...')
+        func()
+        print('... and we can do sth. after it was called...')
+    return wrapper
+@decorator
+def func():
+    print(&quot;Hi, I'm func!&quot;)
+func()
+</code></pre>
+<pre><code>We can do sth. before calling a_func...
+Hi, I'm a_func!
+... and we can do sth. after it was called...
+</code></pre>
+<blockquote>
+<p>注意：以上的代码中，<code>decorator(func)</code> 返回的是 <code>wrapper</code> 这个函数本身。而不是wrapper的返回值。</p>
+</blockquote>
+<p>其中， 被 <code>@</code> 调用的函数，叫做 “装饰器”（Decorator），比如，以上代码中的 <code>decorator(func)</code>。</p>
+<p>现在可以很简单直接地说清楚装饰器的作用了：</p>
+<pre><code class="language-python">@decorator
+def func():
+    ...
+</code></pre>
+<p>等价于</p>
+<pre><code class="language-python">def func():
+    ...
+func = decorator(func)
+</code></pre>
+<p>就是用 <code>decorator</code> 的调用结果替换掉原来的函数。<code>decorator</code> 返回值是什么，以后调用 <code>func</code> 时就是在调用这个返回值，而 <code>decorator</code> 本身此时已经执行完毕了。</p>
+<h1 id="装饰器的用途">装饰器的用途</h1>
+<p>Decorator 最常用的场景是什么呢？<strong>最常用的场景就是用来改变其它函数的行为。</strong></p>
+<pre><code class="language-python">def an_output():
+    return 'The quick brown fox jumps over the lazy dog.'
+print(an_output())
+</code></pre>
+<pre><code>The quick brown fox jumps over the lazy dog.
+</code></pre>
+<pre><code class="language-python">def uppercase(func):
+    def wrapper():
+        original_result = func()
+        modified_restult = original_result.upper()
+        return modified_restult
+    return wrapper
+
+@uppercase
+def an_output():
+    return 'The quick brown fox jumps over the lazy dog.'
+print(an_output())
+</code></pre>
+<pre><code>THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+</code></pre>
+<p>你还可以给一个函数加上一个以上的装饰器：</p>
+<pre><code class="language-python">def uppercase(func):
+    def wrapper():
+        original_result = func()
+        modified_restult = original_result.upper()
+        return modified_restult
+    return wrapper
+def strong(func):
+    def wrapper():
+        original_result = func()
+        modified_restult = '&lt;strong&gt;'+original_result+'&lt;/strong&gt;'
+        return modified_restult
+    return wrapper
+
+
+@uppercase
+@strong
+def an_output():
+    return 'The quick brown fox jumps over the lazy dog.'
+print(an_output())
+</code></pre>
+<pre><code>&lt;STRONG&gt;THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.&lt;/STRONG&gt;
+</code></pre>
+<p>你把两个装饰器的顺序调换一下写成下面这样试试：</p>
+<pre><code class="language-python">@uppercase
+@strong
+def an_output():
+...
+</code></pre>
+<p>装饰器的执行顺序是 “自下而上” —— 其实是 “由里到外” 更为准确。体会一下。</p>
+<h1 id="装饰带有参数的函数">装饰带有参数的函数</h1>
+<p>到现在我们见到的使用装饰器的函数都是没有参数的：<code>an_output</code> 以及之前的 <code>func</code>。</p>
+<p>如果被装饰的函数有参数怎么办？装饰器自身内部又应该怎么写？</p>
+<p>这时候，Python 的 <code>*args</code> and <code>**kwargs</code> 的威力就显现出来了。</p>
+<p>装饰器函数本身这么写：</p>
+<pre><code class="language-python">def decorator(func):
+    def wrapper(*args, **kwargs):
+        return original_result
+    # ...   
+    return wrapper
+</code></pre>
+<p>在这里，<code>(*args, **kwargs)</code> 非常强大，它可以匹配所有函数传进来的所有参数…… 准确地讲，<code>*args</code> 接收并处理所有传递进来的位置参数，<code>**kwargs</code> 接收并处理所有传递进来的关键字参数。</p>
+<p>假设我们有这么个函数：</p>
+<pre><code class="language-python">def say_hi(greeting, name=None):
+    return greeting + '! ' + name + '.'
+
+print(say_hi('Hello', 'Jack'))
+</code></pre>
+<pre><code>Hello! Jack.
+</code></pre>
+<p>如果我们想在装饰器里对函数名、参数，都做些事情 —— 比如，我们写个 <code>@trace</code> 用来告诉用户调用一个函数的时候都发生了什么……</p>
+<pre><code class="language-python">def trace(func):
+    def wrapper(*args, **kwargs):
+        print(f&quot;Trace: You've called a function: {func.__name__}(),&quot;,
+              f&quot;with args: {args}; kwargs: {kwargs}&quot;)
+    
+        original_result = func(*args, **kwargs)
+        print(f&quot;Trace: {func.__name__}{args} returned: {original_result}&quot;)
+        return original_result
+    return wrapper
+
+@trace
+def say_hi(greeting, name=None):
+    return greeting + '! ' + name + '.'
+
+print(say_hi('Hello', name = 'Jack'))
+</code></pre>
+<pre><code>Trace: You've called a function: say_hi(), with args: ('Hello',); kwargs: {'name': 'Jack'}
+Trace: say_hi('Hello',) returned: Hello! Jack.
+Hello! Jack.
+</code></pre>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接: </strong>
+      <a href="https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A81/" title="Python中的装饰器(1)" target="_blank" rel="external">https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A81/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://zhihao2020.github.io" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://zhihao2020.github.io/cat.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://zhihao2020.github.io" target="_blank"><span class="text-dark">Zhihao</span><small class="ml-1x">“教”是最好的学习方式</small></a></h3>
+        <div>Up up up！</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+    <div id="vcomments"></div>
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://zhihao2020.github.io/2020/04/python%E7%9A%84%E5%87%BD%E6%95%B0%E5%B7%A5%E5%85%B71/" title="Python中的装饰器(1)"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84super%E5%87%BD%E6%95%B0/"
+                    title="Python中的super()函数"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/zhihao2020" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://zhihao2020.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+    <li><a href="http://weibo.com/D2016X" target="_blank" title="weibo" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-weibo"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2020  -
+    2020
+    <div class="publishby">
+       xuzhihao
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://zhihao2020.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://zhihao2020.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(未命名)',
+            },
+            ROOT_URL: 'https:\/\/zhihao2020.github.io',
+            CONTENT_URL: 'https:\/\/zhihao2020.github.io\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://zhihao2020.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine"></script>
+<script type="text/javascript">
+    var GUEST = ['nick', 'mail', 'link'];
+    var meta = 'nick,mail';
+    meta = meta.split(',').filter(function (item) {
+        return GUEST.indexOf(item) > -1;
+    });
+   
+new Valine({
+    el: '#vcomments' ,
+    appId: 'cbb8ajQIRK8ShsDhksAalS5e-gzGzoHsz',
+    appKey: 'H605TalWcvAnd5HAY0z9aS67',
+    notify:false, 
+    recordIP:true,
+    verify:false, 
+    avatar:'mp', 
+});
+
+
+</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-164183479-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

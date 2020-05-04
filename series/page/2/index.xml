@@ -10,6 +10,33 @@
     
     
     <item>
+      <title>【Tensorflow安装问题】总是无法安装tensorflow：Could not find a version that satisfies the requirement tensorflow</title>
+      <link>https://zhihao2020.github.io/2020/04/tensorflow%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98%E6%80%BB%E6%98%AF%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85tensorflowcould-not-find-a-version-that-satisfies-the-requirement-tensorflow/</link>
+      <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/tensorflow%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98%E6%80%BB%E6%98%AF%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85tensorflowcould-not-find-a-version-that-satisfies-the-requirement-tensorflow/</guid>
+      <description>我在使用pip 安装Tendorflow时，出现了错误。 我查阅了好多博客，发现他们大多都是一个版本的&amp;hellip;.. Tensorflow能</description>
+    </item>
+    
+    <item>
+      <title>操作CSV表格</title>
+      <link>https://zhihao2020.github.io/2020/04/%E4%BD%BF%E7%94%A8csv%E6%A8%A1%E5%9D%97/</link>
+      <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E4%BD%BF%E7%94%A8csv%E6%A8%A1%E5%9D%97/</guid>
+      <description>CSV表示&amp;quot;Comma-Sparated Values（逗号分隔的值）&amp;quot;,CSV文件是简化的电子表格，保存为纯文本文件。 不</description>
+    </item>
+    
+    <item>
+      <title>Git基本操作(2)</title>
+      <link>https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C2/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C2/</guid>
+      <description>打标签 打标签就是用于给历史中的某一个提交打上标签。 列出标签 在Git中列出已有的标签是非常直观的。只需要输入git tag。 当然，你可以使用特定</description>
+    </item>
+    
+    <item>
       <title>Git错误non-fast-forward后的解决方案</title>
       <link>https://zhihao2020.github.io/2020/04/git%E9%94%99%E8%AF%AFnon-fast-forward%E5%90%8E%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
@@ -109,21 +136,30 @@
     </item>
     
     <item>
+      <title>Python中的装饰器(1)</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A81/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A81/</guid>
+      <description>函数也是对象 首先要明确一个概念，函数也是对象。 于是，函数本身其实可以与其他的数据类型一样，作为其他函数的参数或者返回值。 def decorator(func): def wrapper(): print(&amp;quot;we can do sth.Befor the func()</description>
+    </item>
+    
+    <item>
+      <title>Python中的装饰器(1)</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E5%87%BD%E6%95%B0%E5%B7%A5%E5%85%B71/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E5%87%BD%E6%95%B0%E5%B7%A5%E5%85%B71/</guid>
+      <description>函数也是对象 首先要明确一个概念，函数也是对象。 于是，函数本身其实可以与其他的数据类型一样，作为其他函数的参数或者返回值。 def decorator(func): def wrapper(): print(&amp;quot;we can do sth.Befor the func()</description>
+    </item>
+    
+    <item>
       <title>Python的一种简单配置文件的方法</title>
       <link>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/</guid>
       <description>配置文件： [numbers] pi: 3.1415926 [messages] greeting: welcome to the area calculation program! question: Please emter the radius result_message: The area is 使用示例 from ConfigParser import ConfigParser CONFIGFILE = ‘XXX.ini&#39; config = ConfigParser() #读取配置文件 config.read(CONFIGFILE) #打印初始问候语 #要查看的区段</description>
-    </item>
-    
-    <item>
-      <title>Python的函数工具(1)</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E5%87%BD%E6%95%B0%E5%B7%A5%E5%85%B71/</link>
-      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E5%87%BD%E6%95%B0%E5%B7%A5%E5%85%B71/</guid>
-      <description>函数也是对象 首先要明确一个概念，函数也是对象。 于是，函数本身其实可以与其他的数据类型一样，作为其他函数的参数或者返回值。 def decorator(func): def wrapper(): print(&amp;quot;we can do sth.Befor the func()</description>
     </item>
     
     <item>
@@ -151,42 +187,6 @@
       
       <guid>https://zhihao2020.github.io/2020/04/python%E7%9A%84unittest%E6%A8%A1%E5%9D%97/</guid>
       <description>测试驱动是先写测试代码，然后写功能代码，通过测试来推动整个开发的进行。这有助于编写简洁可用和高质量的代码 unittest最早由JUnit启发</description>
-    </item>
-    
-    <item>
-      <title>Python 参数解析 Parser 的使用方法</title>
-      <link>https://zhihao2020.github.io/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
-      <description>argparse可以让人编写对用户友好的命令行接口。程序定义好它需要的参数，然后argparse将从sys.argv解析出那些参数。 argp</description>
-    </item>
-    
-    <item>
-      <title>Python中的sys</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84sys/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84sys/</guid>
-      <description>sys.argv 传递给Python脚本的命令行参数列表。 例如 import sys print(sys.argv[0]) print(sys.argv[1]) 运行它： python temp.py argv1 sys.py argv1 sys.exit([arg]) 功能：执行到主程序末尾，解释器自动退出，但是如果需要中途退出程序，</description>
-    </item>
-    
-    <item>
-      <title>在单元格里放置复选框</title>
-      <link>https://zhihao2020.github.io/2020/04/%E5%9C%A8%E5%8D%95%E5%85%83%E6%A0%BC%E9%87%8C%E6%94%BE%E7%BD%AE%E5%A4%8D%E9%80%89%E6%A1%86/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/%E5%9C%A8%E5%8D%95%E5%85%83%E6%A0%BC%E9%87%8C%E6%94%BE%E7%BD%AE%E5%A4%8D%E9%80%89%E6%A1%86/</guid>
-      <description>放置 ck = QCheckBox() newItem = XX.setCellWidget(1,0,ck) 检查是否被选 lines = [] sum = 0 i = 0 if (i &amp;lt; self.name.rowCount()): lines.append([self.tableWidget.cellWidget(i, 0), self.tableWidget.item(i, 1), self.tableWidget.item(i, 2), self.tableWidget.cellWidget(i, 5)]) i += 1 for line in lines: if line[0].checkState()==Qt.Checked: pass</description>
-    </item>
-    
-    <item>
-      <title>用Python模拟生命</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/</guid>
-      <description>这个项目会创建一个N×N的细胞网格，随时间推移，模拟Conway生命游戏。 在这个游戏中，细胞处于ON或OFF状态。游戏从一个初始状态开始，每</description>
     </item>
     
   </channel>
