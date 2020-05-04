@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        Zhihao&#39;s Blog</title>
+        Python中的协程 - Zhihao&#39;s Blog
+      </title>
     <head>
 <script data-ad-client="ca-pub-5137727031357129" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <meta charset="utf-8">
@@ -23,25 +24,32 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  
+  <meta name="description" content="避免浪费，消耗我们所需要的" />
   <meta name="generator" content="Hugo 0.69.0 with theme pure" />
-  <title>Zhihao&#39;s Blog</title>
+  <title>Python中的协程 - Zhihao&#39;s Blog</title>
   
-  <link rel="alternate" type="application/rss+xml" href="https://zhihao2020.github.io/tags/git/index.xml" title="Zhihao's Blog" />
   
   <link rel="stylesheet" href="https://zhihao2020.github.io/css/style.min.c4bc7071f132c964c2116bca53b392933f377e5ca7b7051ed245187c621a2d3e.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="Git" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://zhihao2020.github.io/tags/git/" />
-<meta property="og:updated_time" content="2020-04-28T00:00:00+00:00" />
-<meta itemprop="name" content="Git">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Git"/>
-<meta name="twitter:description" content=""/>
+  <meta property="og:title" content="Python中的协程" />
+<meta property="og:description" content="避免浪费，消耗我们所需要的" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E5%8D%8F%E7%A8%8B/" />
+<meta property="article:published_time" content="2020-05-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-05-04T00:00:00+00:00" />
+<meta itemprop="name" content="Python中的协程">
+<meta itemprop="description" content="避免浪费，消耗我们所需要的">
+<meta itemprop="datePublished" content="2020-05-04T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-05-04T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="377">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python中的协程"/>
+<meta name="twitter:description" content="避免浪费，消耗我们所需要的"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -302,127 +310,159 @@
 
     
     
-<main class="main" role="main">
-    <article class="content article article-tags post-type-list" itemscope="">
-        <header class="article-header">
-            <h1 itemprop="name" class="hidden-xs">Git</h1>
-            <p class="text-muted hidden-xs">共 15 个标签</p>
-            <nav role="navigation" id="nav-main" class="okayNav">
-                <ul>
-                    <li><a href="https://zhihao2020.github.io/tags">All</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/git/">Git</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/hugo/">Hugo</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/jupyterlab/">JupyterLab</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/markown/">Markown</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/pyqt5/">PyQt5</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/python%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/">Python代码学习</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/python%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0/">Python内建函数</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/python%E6%A0%87%E5%87%86%E5%BA%93/">Python标准库</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/python%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95/">Python魔法方法</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/sqlite/">SQLite</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/">办公自动化</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/">可视化</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/%E5%B7%A5%E7%A8%8B%E9%80%A0%E4%BB%B7/">工程造价</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/%E7%88%AC%E8%99%AB/">爬虫</a></li>
-                    <li><a href="https://zhihao2020.github.io/tags/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/">错误记录</a></li>
-                </ul>
-            </nav>
-        </header>
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/05/python%E4%B8%AD%E7%9A%84%E5%8D%8F%E7%A8%8B/"
+    >Python中的协程</a
+  >
+</h1>
+
+      <div class="article-meta">
         
-        <div class="article-body">
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-04-28 00:00:00 &#43;0000 UTC"
-                itemprop="datePublished">2020-04-28</time>
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E5%8D%8F%E7%A8%8B/" class="article-date">
+  <time datetime="2020-05-04 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-04</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/python/"> Python </a>
+</span>
+
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+	<span class="article-read hidden-xs">
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E5%8D%8F%E7%A8%8B/" class="leancloud_visitors"  data-flag-title="Python中的协程">0</span>
+    </span>
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/05/python%E4%B8%AD%E7%9A%84%E5%8D%8F%E7%A8%8B/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 377字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <p>Python中的协程和生成器相似但又有不同。主要区别在于：</p>
+<ul>
+<li>生成器是数据的生成器</li>
+<li>协程则是数据的消费者</li>
+</ul>
+<p>首先，我们先来回顾下生成器的创建过程。</p>
+<pre><code class="language-python">def fib():
+	a,b = 0,1
+	while True:
+		yield a
+		a,b = b,a+b
+</code></pre>
+<p>使用的方法就是：</p>
+<pre><code class="language-python">for i in fib():
+	print(i)
+</code></pre>
+<p>这样做不仅快，而且不会给内存带来压力，因为我们所需要的值都是动态生成的而不是将他们存储在一个列表中。更概括的说如果现在我们在上面的例子中使用yield便可获得一个协程。协程会消费掉发送给它的值。</p>
+<pre><code class="language-python">def grep(pattern):
+    print(&quot;Searching for &quot;,pattern)
+    while True:
+        line = (yield)
+        if pattern in line:
+            print(line)
+</code></pre>
+<p>yield将不会包含任何初值，它需要从外部传值给它，我们可以用<code>send()</code>方法向他传值。</p>
+<pre><code>search = grep('coroutine')
+next(search)
+search.send(&quot;I love you&quot;)
+search.send(&quot;Don't you love me?&quot;)
+search.send(&quot;I Love coroutine instead!&quot;)
+#output:I Love coroutine instead!
+</code></pre>
+<p>这里，<code>next()</code>方法就是启动一个协程。因为协程中包含的生成器并不是立刻执行，而是通过<code>next()</code>方法来响应<code>send()</code>方法。</p>
+<p>所以，要用<code>next()</code>方法来执行<code>yield</code>表达式。</p>
+<p>可以通过调用<code>close()</code>来关闭一个协程。</p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接: </strong>
+      <a href="https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E5%8D%8F%E7%A8%8B/" title="Python中的协程" target="_blank" rel="external">https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E5%8D%8F%E7%A8%8B/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://zhihao2020.github.io" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://zhihao2020.github.io/cat.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://zhihao2020.github.io" target="_blank"><span class="text-dark">Zhihao</span><small class="ml-1x">“教”是最好的学习方式</small></a></h3>
+        <div>Up up up！</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+    <div id="vcomments"></div>
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E7%94%9F%E6%88%90%E5%99%A8/" title="Python中的生成器"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="https://zhihao2020.github.io/2020/05/python%E4%B8%AD__slots__/"
+                    title="Python中__slots__"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
         </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C2/">Git基本操作(2)</a>
-        </h3>
     </div>
-    <div class="panel-footer">
-        <a href="https://zhihao2020.github.io/tags/git" class="label label-default mb">Git</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-04-28 00:00:00 &#43;0000 UTC"
-                itemprop="datePublished">2020-04-28</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://zhihao2020.github.io/2020/04/git%E9%94%99%E8%AF%AFnon-fast-forward%E5%90%8E%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">Git错误non-fast-forward后的解决方案</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://zhihao2020.github.io/tags/git" class="label label-default mb">Git</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-04-27 00:00:00 &#43;0000 UTC"
-                itemprop="datePublished">2020-04-27</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://zhihao2020.github.io/2020/04/git%E5%88%86%E6%94%AF1/">Git分支(1)</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://zhihao2020.github.io/tags/git" class="label label-default mb">Git</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-04-23 00:00:00 &#43;0000 UTC"
-                itemprop="datePublished">2020-04-23</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C1/">Git基本操作(1)</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://zhihao2020.github.io/tags/git" class="label label-default mb">Git</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-04-22 00:00:00 &#43;0000 UTC"
-                itemprop="datePublished">2020-04-22</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://zhihao2020.github.io/2020/04/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8git/">为什么要使用Git</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://zhihao2020.github.io/tags/git" class="label label-default mb">Git</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-04-20 00:00:00 &#43;0000 UTC"
-                itemprop="datePublished">2020-04-20</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://zhihao2020.github.io/2020/04/%E6%9B%B4%E6%96%B0hugo/">Hugo的操作</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://zhihao2020.github.io/tags/hugo" class="label label-default mb">Hugo</a>
-        <a href="https://zhihao2020.github.io/tags/git" class="label label-default mb">Git</a>
-    </div>
-</article>
-            </div>
-        </div>
-    </article>
+</nav>
+
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
     <li><a href="https://github.com/zhihao2020" target="_blank" title="github" data-toggle=tooltip data-placement=top >
@@ -498,6 +538,29 @@
         
         hasInnerContainers: true,
     });
+</script>
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine"></script>
+<script type="text/javascript">
+    var GUEST = ['nick', 'mail', 'link'];
+    var meta = 'nick,mail';
+    meta = meta.split(',').filter(function (item) {
+        return GUEST.indexOf(item) > -1;
+    });
+   
+new Valine({
+    el: '#vcomments' ,
+    appId: 'cbb8ajQIRK8ShsDhksAalS5e-gzGzoHsz',
+    appKey: 'H605TalWcvAnd5HAY0z9aS67',
+    notify:false, 
+    recordIP:true,
+    verify:false, 
+    avatar:'mp', 
+});
+
+
 </script>
 
 <script type="application/javascript">
