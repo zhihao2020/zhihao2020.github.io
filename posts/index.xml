@@ -5,10 +5,46 @@
     <link>https://zhihao2020.github.io/posts/</link>
     <description>Recent content in Posts on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 04 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zhihao2020.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>docx转为PDF</title>
+      <link>https://zhihao2020.github.io/2020/05/docx%E8%BD%AC%E4%B8%BApdf/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/docx%E8%BD%AC%E4%B8%BApdf/</guid>
+      <description>这需要一个comtypes的简单示例,不过这个只能用于Windows import sys import os import comtypes.client wdFormatPDF = 17 in_file = os.path.abspath(sys.argv[1]) out_file = os.path.abspath(sys.argv[2]) word = comtypes.client.CreateObject(&#39;Word.Application&#39;) doc = word.Documents.Open(in_file) doc.SaveAs(out_file, FileFormat=wdFormatPDF) doc.Close() word.Quit()</description>
+    </item>
+    
+    <item>
+      <title>Error in converting file using python COM</title>
+      <link>https://zhihao2020.github.io/2020/05/error-in-converting-file-using-python-com/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/error-in-converting-file-using-python-com/</guid>
+      <description>这个问题其实就是 它在路径方面出现了问题。 文件路径输出为了D://\\demo,这当然是错误的了 解决方法是 import os os.chdir(&amp;quot;E:/demo&amp;quot;) file = os.getcwd()+&#39;\\&#39;+path</description>
+    </item>
+    
+    <item>
+      <title>Python中的迭代器</title>
+      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%AD%E4%BB%A3%E5%99%A8/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%AD%E4%BB%A3%E5%99%A8/</guid>
+      <description>Python中的容器都是可迭代的，准确说，这些容器都可以通过迭代器遍历每一个元素。 内建函数iter()就是用于把一个可迭代对象转换为迭代器。</description>
+    </item>
+    
+    <item>
+      <title>爬虫——BeautifulSoup</title>
+      <link>https://zhihao2020.github.io/2020/05/%E7%88%AC%E8%99%ABbeautifulsoup/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/%E7%88%AC%E8%99%ABbeautifulsoup/</guid>
+      <description>参考地址：https://beautifulsoup.readthedocs.io/zh_CN/ Beautiful Soup将复杂HTML文档转化为一个复杂的</description>
+    </item>
     
     <item>
       <title>Python中__slots__</title>
@@ -152,42 +188,6 @@
       
       <guid>https://zhihao2020.github.io/2020/04/html%E8%BD%AC%E4%B8%BA%E5%9B%BE%E7%89%87/</guid>
       <description>安装python-pdfkit： pip install pdfkit 安装wkhtmlopdf https://wkhtmltopdf.org/downloads.html下</description>
-    </item>
-    
-    <item>
-      <title>Python中的logging模块</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84logging%E6%A8%A1%E5%9D%97/</link>
-      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84logging%E6%A8%A1%E5%9D%97/</guid>
-      <description>使用日志模块要启用logging模块， 开始 在程序运行时将日志信息显示在屏幕上，请将下面的代码复制到程序顶部（但在Python的#!行之下） import</description>
-    </item>
-    
-    <item>
-      <title>ShellExecute简单控制打印机</title>
-      <link>https://zhihao2020.github.io/2020/04/shellexecute%E7%AE%80%E5%8D%95%E6%8E%A7%E5%88%B6%E6%89%93%E5%8D%B0%E6%9C%BA/</link>
-      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/shellexecute%E7%AE%80%E5%8D%95%E6%8E%A7%E5%88%B6%E6%89%93%E5%8D%B0%E6%9C%BA/</guid>
-      <description>使用ShellExecute方法，可以打印Microsoft Office文档，PDF文件，文本文件以及几乎搜友主要应用程序。 import tempfile import win32api import win32print filename =</description>
-    </item>
-    
-    <item>
-      <title>Window下安装SQLite</title>
-      <link>https://zhihao2020.github.io/2020/04/%E5%AE%89%E8%A3%85sqlite/</link>
-      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/%E5%AE%89%E8%A3%85sqlite/</guid>
-      <description>SQLite官方安装地址：http://www.sqlite.org/download.html 我下载了压缩包sqlite-tools-wi</description>
-    </item>
-    
-    <item>
-      <title>用Matplotlib画折线图</title>
-      <link>https://zhihao2020.github.io/2020/04/%E7%94%A8matplotlib%E7%94%BB%E6%8A%98%E7%BA%BF%E5%9B%BE/</link>
-      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/%E7%94%A8matplotlib%E7%94%BB%E6%8A%98%E7%BA%BF%E5%9B%BE/</guid>
-      <description>plt.plot()函数参数详解 plt.plot(x,y,linestyle, linewidth,color,marker, markersize,markeredgecolor, markerfactcolor,label,alpha) x：指定折现图的x轴数据 y：指定折线图的y轴数据 linestyle：指定折线类型，可以是实线、虚线、</description>
     </item>
     
   </channel>
