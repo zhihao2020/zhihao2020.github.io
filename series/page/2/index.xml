@@ -10,6 +10,24 @@
     
     
     <item>
+      <title>SQLite常用操作</title>
+      <link>https://zhihao2020.github.io/2020/05/sqlite%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/sqlite%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
+      <description>新建一个数据库文件 使用cd命令进入到数据库文件的目录下，用sqlite3命令创建数据库文件。 sqlite3 DatabaseName.db 查看已建立的数据库文件 使用database命</description>
+    </item>
+    
+    <item>
+      <title>html转为图片</title>
+      <link>https://zhihao2020.github.io/2020/04/html%E8%BD%AC%E4%B8%BA%E5%9B%BE%E7%89%87/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/html%E8%BD%AC%E4%B8%BA%E5%9B%BE%E7%89%87/</guid>
+      <description>安装python-pdfkit： pip install pdfkit 安装wkhtmlopdf https://wkhtmltopdf.org/downloads.html下</description>
+    </item>
+    
+    <item>
       <title>Python中的logging模块</title>
       <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84logging%E6%A8%A1%E5%9D%97/</link>
       <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
@@ -169,24 +187,6 @@
       
       <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__str__/</guid>
       <description>在python中方法名如果是__xxxx__()的，那么就有特殊的功能，因此叫做“魔法”方法 class Cat: def __init__(self, new_name, new_age): &amp;quot;&amp;quot;&amp;quot;</description>
-    </item>
-    
-    <item>
-      <title>Python中的staticmethod和classmethod</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84staticmethod%E5%92%8Cclassmethod/</link>
-      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84staticmethod%E5%92%8Cclassmethod/</guid>
-      <description>@classmethod 返回函数的类方法 classmethod修饰符对应的函数不需要实例化，不需要self参数，但第一个参数需要是表示自身类的cls参数，可以调用</description>
-    </item>
-    
-    <item>
-      <title>Python中的super()函数</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84super%E5%87%BD%E6%95%B0/</link>
-      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84super%E5%87%BD%E6%95%B0/</guid>
-      <description>介绍 **super()**函数是用于条用父类（超类)的一个方法。 super 是用来解决多重继承问题的，直接用类名调用父类方法在使用单继承的时候没问题，</description>
     </item>
     
   </channel>

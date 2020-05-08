@@ -10,6 +10,24 @@
     
     
     <item>
+      <title>Hugo的操作</title>
+      <link>https://zhihao2020.github.io/2020/04/%E6%9B%B4%E6%96%B0hugo/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E6%9B%B4%E6%96%B0hugo/</guid>
+      <description>更新文章 hugo --theme= --baseUrl=&amp;quot;&amp;quot; --buildDrafts git remote add origin https://github.com/XXX/XXX.github.io.git cd public git add . git commit -m &amp;quot;XXXX/XX/XX&amp;quot; git push -u origin master</description>
+    </item>
+    
+    <item>
+      <title>从全拼到双拼</title>
+      <link>https://zhihao2020.github.io/2020/04/%E4%BB%8E%E5%85%A8%E6%8B%BC%E5%88%B0%E5%8F%8C%E6%8B%BC/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E4%BB%8E%E5%85%A8%E6%8B%BC%E5%88%B0%E5%8F%8C%E6%8B%BC/</guid>
+      <description>简单介绍一下 汉语拼音，分为声母与韵母。全拼打字的时候，是将它们都打出来，比如[双]字 就需要打出shuang，相比双拼效率就低了。 双拼，是将声</description>
+    </item>
+    
+    <item>
       <title>关于自学的感想（1）</title>
       <link>https://zhihao2020.github.io/2020/04/%E5%85%B3%E4%BA%8E%E8%87%AA%E5%AD%A6%E7%9A%84%E6%84%9F%E6%83%B31/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>

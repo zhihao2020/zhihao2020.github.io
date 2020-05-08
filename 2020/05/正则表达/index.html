@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        正则表达 - Zhihao&#39;s Blog
+      </title>
+    <head>
+<script data-ad-client="ca-pub-5137727031357129" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="没有 没用的技能，只是你不会，你从来没有体会过拥有它的快感。" />
+  <meta name="generator" content="Hugo 0.69.0 with theme pure" />
+  <title>正则表达 - Zhihao&#39;s Blog</title>
+  
+  
+  <link rel="stylesheet" href="https://zhihao2020.github.io/css/style.min.c4bc7071f132c964c2116bca53b392933f377e5ca7b7051ed245187c621a2d3e.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="正则表达" />
+<meta property="og:description" content="没有 没用的技能，只是你不会，你从来没有体会过拥有它的快感。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhihao2020.github.io/2020/05/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE/" />
+<meta property="article:published_time" content="2020-05-08T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-05-08T00:00:00+00:00" />
+<meta itemprop="name" content="正则表达">
+<meta itemprop="description" content="没有 没用的技能，只是你不会，你从来没有体会过拥有它的快感。">
+<meta itemprop="datePublished" content="2020-05-08T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-05-08T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="4643">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="正则表达"/>
+<meta name="twitter:description" content="没有 没用的技能，只是你不会，你从来没有体会过拥有它的快感。"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+<meta name="google-site-verification" content="0gQ8sWKd4zLsJXwb0ZltECHLMlc_BsTe0i-UlxiVC_E" />
+
+<script data-ad-client="ca-pub-5137727031357129" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://zhihao2020.github.io" target="_blank">
+            <img class="img-circle img-rotate" src="https://zhihao2020.github.io/cat.jpg" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Zhihao</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">“教”是最好的学习方式</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Weifang, China</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>有时请联系我的邮箱：daxu1232018@outlook.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/pyhton/" class="category-list-link">pyhton</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/python/" class="category-list-link">python</a><span class="category-list-count">41</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E5%BB%BA%E7%AD%91%E6%96%B9%E9%9D%A2/" class="category-list-link">建筑方面</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E6%80%9D%E8%80%83/" class="category-list-link">思考</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/" class="category-list-link">效率工具</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" class="category-list-link">数据分析</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="category-list-link">数据库</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" class="category-list-link">杂七杂八</a><span class="category-list-count">7</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E7%94%9F%E6%B4%BB/" class="category-list-link">生活</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" class="category-list-link">神经网络</a><span class="category-list-count">1</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/git/" class="tag-list-link">git</a><span
+                    class="tag-list-count">6</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/hugo/" class="tag-list-link">hugo</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/jupyterlab/" class="tag-list-link">jupyterlab</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/markown/" class="tag-list-link">markown</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/pyqt5/" class="tag-list-link">pyqt5</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/python%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/" class="tag-list-link">python代码学习</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/python%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0/" class="tag-list-link">python内建函数</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/python%E6%A0%87%E5%87%86%E5%BA%93/" class="tag-list-link">python标准库</a><span
+                    class="tag-list-count">9</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/python%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95/" class="tag-list-link">python魔法方法</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/sqlite/" class="tag-list-link">sqlite</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/" class="tag-list-link">办公自动化</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/%E5%B7%A5%E7%A8%8B%E9%80%A0%E4%BB%B7/" class="tag-list-link">工程造价</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/" class="tag-list-link">数据可视化</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/%E7%88%AC%E8%99%AB/" class="tag-list-link">爬虫</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/" class="tag-list-link">错误记录</a><span
+                    class="tag-list-count">2</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://zhihao2020.github.io/2020/05/matplotlib%E7%BB%98%E5%88%B6%E5%8A%A8%E7%94%BB/" class="title">Matplotlib绘制动画</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-08 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-08</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://zhihao2020.github.io/2020/05/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE/" class="title">正则表达</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-08 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-08</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://zhihao2020.github.io/2020/05/docx%E8%BD%AC%E4%B8%BApdf/" class="title">docx转为PDF</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-06 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-06</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://zhihao2020.github.io/2020/05/error-in-converting-file-using-python-com/" class="title">Error in converting file using python COM</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-06 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-06</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%AD%E4%BB%A3%E5%99%A8/" class="title">Python中的迭代器</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-06 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-06</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/05/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE/"
+    >正则表达</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://zhihao2020.github.io/2020/05/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE/" class="article-date">
+  <time datetime="2020-05-08 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-08</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/python/"> Python </a>
+</span>
+
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+	<span class="article-read hidden-xs">
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="https://zhihao2020.github.io/2020/05/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE/" class="leancloud_visitors"  data-flag-title="正则表达">0</span>
+    </span>
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/05/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 4643字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 10分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <p>正则表达式本质上是个独立的语言，短小却格外强悍。</p>
+<p>他的含义就是：我们可以书写特定的规则，用来在文本中捕获与规则一致的字符串，而后对其进行操作&hellip;&hellip;</p>
+<p>例如</p>
+<pre><code class="language-python">import re
+str = 'The quick brown fox jumps over the lazy dog'
+pttn = re.compile(r'\wo\w')
+re.findall(pttn, str)
+</code></pre>
+<pre><code>['row', 'fox', 'dog']
+</code></pre>
+<p>其中，有人就已经总结过了：</p>
+<blockquote>
+<p><strong>规则表达式</strong>（Regular Expressions，通常缩写为 Regex）是最强大且不可或缺的文本处理工具 —— 它的用处就是在文本中<strong>扫描/搜索</strong>（Scan/Search）与某一<strong>规则</strong>（Pattern）<strong>匹配</strong>（Match，即，与规则一致）的所有实例，并且还可以按照规则<strong>捕获</strong>（Capture）其中的部分或者全部，对它们进行<strong>替换</strong>（Replace）。</p>
+</blockquote>
+<p>当然，有时候 大家使用正则表达式，并不是为了替换或搜索，而是为了检查格式，比如，可以用Regex检查用户输入的密码是否过于简单（比如，全部都由数字组成），比如可以用来验证用户输入的电话号码、证件是否符号特定格式等。</p>
+<h2 id="视觉体验">视觉体验</h2>
+<p>Python代码仓库里面有个简短的Demo程序，叫<code>redemo.py</code>，它使用Tcl/Tk作为图形界面，也可以用来测试正则表达。</p>
+<blockquote>
+<p><a href="https://raw.githubusercontent.com/python/cpython/master/Tools/demo/redemo.py">https://raw.githubusercontent.com/python/cpython/master/Tools/demo/redemo.py</a></p>
+</blockquote>
+<h2 id="准备工作">准备工作</h2>
+<p>这里我就借用了李老师的东西了。</p>
+<p>下面将使用文件<code>regex-target-text-simple.txt</code>。</p>
+<pre><code>&lt;ol&gt;
+    &lt;li&gt;&lt;pre&gt;begin began begun bigins begining&lt;/pre&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;pre&gt;google gooogle goooogle goooooogle&lt;/pre&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;pre&gt;coloured color coloring  colouring colored&lt;/pre&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;pre&gt;never ever verb however everest&lt;/pre&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;pre&gt;520 52000 5200000 520000000 520000000000&lt;/pre&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;pre&gt;error wonderer achroiocythaemia achroiocythemia&lt;/pre&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;pre&gt;The white dog wears a black hat.&lt;/pre&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;pre&gt;Handel, Händel, Haendel&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;dl&gt;(843) 542-4256&lt;/dl&gt; &lt;dl&gt;(431) 270-9664&lt;/dl&gt;
+&lt;dl&gt;3336741162&lt;/dl&gt; &lt;dl&gt;3454953965&lt;/dl&gt;
+&lt;ul&gt;
+&lt;li&gt;peoplesr@live.com&lt;/li&gt; &lt;li&gt;jaxweb@hotmail.com&lt;/li&gt;
+&lt;li&gt;dhwon@comcast.net&lt;/li&gt; &lt;li&gt;krueger@me.com&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;URLs&lt;/h3&gt;
+https://docs.python.org/3/howto/regex.html
+https://docs.python.org/3/library/re.html
+&lt;h3&gt;passwords&lt;/h3&gt;
+Pasw0rd~
+i*Eh,GF67E
+a$4Bh9XE&amp;E
+&lt;h3&gt;duplicate words&lt;/h3&gt;
+&lt;p&gt;It's very very big.&lt;/p&gt;
+&lt;p&gt;Keep it simple, simple, simple!&lt;/p&gt;
+</code></pre>
+<p><strong>基本实例</strong></p>
+<pre><code class="language-python">import re
+with open('regex-target-text-sample.txt','r') as f:
+	str = f.read()
+pattn = r'beg[iau]ns?'
+re.findall(pattn,str)
+</code></pre>
+<pre><code>['begin','began','begun','begin']
+</code></pre>
+<h2 id="优先级">优先级</h2>
+<p>编程语言无非就是用来运算的，而运算就要有操作符和操作元，操作符就有优先级之分。</p>
+<p>Regex也一样，它本身就是个迷你语音。在Regex中，操作符肯定有优先级。它的操作元有个专有的名称：<strong>原子</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>排列</th>
+<th>原子与操作符优先级</th>
+<th>（从高到低）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>转义符号 (Escaping Symbol)</td>
+<td><code>\</code>                                                          |</td>
+</tr>
+<tr>
+<td>2</td>
+<td>分组、捕获 (Grouping or Capturing)</td>
+<td><code>(...)</code> <code>(?:...)</code> <code>(?=...)</code> <code>(?!...)</code> <code>(?&lt;=...)</code> `(?         |</td>
+</tr>
+<tr>
+<td>3</td>
+<td>数量 (Quantifiers)</td>
+<td><code>a*</code> <code>a+</code> <code>a?</code> <code>a{n, m}</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td>序列与定位（Sequence and Anchor）</td>
+<td><code>abc</code> <code>^</code> <code>$</code> <code>\b</code> <code>\B</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>或（Alternation）</td>
+<td><code>a|b|c</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td>原子 (Atoms)</td>
+<td><code>a</code> <code>[^abc]</code> <code>\t</code> <code>\r</code> <code>\n</code> <code>\d</code> <code>\D</code> <code>\s</code> <code>\S</code> <code>\w</code> <code>\W</code> <code>.</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="原子">原子</h2>
+<p>在Regex的Patten中，操作元，即，被运算的“值”，被称为<strong>原子</strong>。</p>
+<h3 id="本义字符">本义字符</h3>
+<p>最基本的原子，就是本义字符，他们都是单个字符。</p>
+<p>本义字符包括从 <code>a</code> 到 <code>z</code>，<code>A</code> 到 <code>Z</code>，<code>0</code> 到 <code>9</code>，还有 <code>_</code> —— 它们所代表的就是它们的字面值。</p>
+<p>即，相当于，<code>string.ascii_letters</code> 和 <code>string.digits</code> 以及 <code>_</code>。</p>
+<p>以下字符在 Regex 中都有特殊含义：</p>
+<blockquote>
+<pre><code>\` `+` `*` `.` `?` `-` `^` `$` `|` `(` `)` `[` `]` `{` `}` `&lt;` `&gt;
+</code></pre>
+</blockquote>
+<p>当你在写 Regex 的时候，如果你需要搜索的字符不是本义字符，而是以上这些特殊字符时，<em>建议</em>都直接加上转义符号 <code>\</code> 来表示，比如，你想搜索 <code>'</code>，那你就写 <code>\'</code>，或者你想搜索 <code>#</code> 那你就写 <code>\#</code>（事实上，<code>#</code> 并不是 Regex 的特殊符号，所以，它之前的转义符号可有可无）—— 这对初学者来说可能是最安全的策略。</p>
+<h3 id="集合原子">集合原子</h3>
+<p>集合原子还是原子。</p>
+<p>标示集合原子，使用方括号 <code>[]</code>。<code>[abc]</code> 的意思是说，“<code>a</code> or <code>b</code> or <code>c</code>”，即，<code>abc</code> 中的任意一个字符。</p>
+<p>比如，<code>beg[iau]n</code> 能够代表 <code>begin</code>、<code>began</code>，以及 <code>begun</code></p>
+<pre><code class="language-python">str = 'begin began begun bigins begining'
+pttn = r'beg[iau]n'
+re.findall(pttn, str)
+</code></pre>
+<pre><code>['begin', 'began', 'begun', 'begin']
+</code></pre>
+<p>在方括号中，我们可以使用两个操作符：<code>-</code>（区间）和 <code>^</code>（非）。</p>
+<ul>
+<li><code>[a-z]</code> 表示从小写字母 <code>a</code> 到小写字母 <code>z</code> 中的任意一个字符。</li>
+<li><code>[^abc]</code> 表示 <code>abc</code> 以外的其它任意字符，即，非 <code>[abc]</code>。</li>
+</ul>
+<p>注意，一个集合原子中，<code>^</code> 符号只能用一次，只能紧跟在 <code>[</code> 之后。否则不起作用。</p>
+<h3 id="类别原子">类别原子</h3>
+<p>类别原子，是指那些能够代表 “一类字符” 的原子，它们都得使用转义符号再加上另外一个符号表达，包括：</p>
+<pre><code>\d` 任意数字；等价于 `[0-9]
+\D` 任意非数字；等价于 `[^0-9]
+\w` 任意本义字符；等价于 `[a-zA-Z0-9_]
+\W` 任意非本义字符；等价于 `[^a-zA-Z0-9_]
+</code></pre>
+<p><code>\s</code> 任意空白；相当于 <code>[ \f\n\r\t\v]</code>（注意，方括号内第一个字符是空格符号）</p>
+<p><code>\S</code> 任意非空白；相当于 <code>[^ \f\n\r\t\v]</code>（注意，紧随 <code>^</code> 之后的是一个空格符号）
+<code>.</code> 是除 <code>\r</code> <code>\n</code> 之外的任意字符；相当于 <code>\r\n</code></p>
+<p>类别原子挺好记忆的，如果你知道各个字母是哪个词的首字母的话：</p>
+<blockquote>
+<ul>
+<li><code>d</code> 是 digits</li>
+<li><code>w</code> 是 word characters</li>
+<li><code>s</code> 是 spaces</li>
+</ul>
+</blockquote>
+<p>另外，在空白的集合 <code>[ \f\n\r\t\v]</code> 中：<code>\f</code> 是分页符；<code>\n</code> <code>\r</code> 是换行符；<code>\t</code> 是制表符；<code>\v</code> 是纵向制表符（很少用到）。各种关于空白的转义符也同样挺好记忆的，如果你知道各个字母是那个词的首字母的话：</p>
+<blockquote>
+<ul>
+<li><code>f</code> 是 flip</li>
+<li><code>n</code> 是 new line</li>
+<li><code>r</code> 是 return</li>
+<li><code>t</code> 是 tab</li>
+<li><code>v</code> 是 vertical tab</li>
+</ul>
+</blockquote>
+<pre><code class="language-python">import re
+str = '&lt;dl&gt;(843) 542-4256&lt;/dl&gt; &lt;dl&gt;(431) 270-9664&lt;/dl&gt;'
+pttn = r'\d\d\d\-'
+re.findall(pttn, str)
+</code></pre>
+<pre><code>['542-', '270-']
+</code></pre>
+<h3 id="边界原子">边界原子</h3>
+<p>我们可以用边界原子指定边界。也可以称作 “定位操作符”。</p>
+<p><code>^</code> 匹配被搜索字符串的开始位置；</p>
+<p><code>$</code> 匹配被搜索字符串的结束位置；</p>
+<p><code>\b</code> 匹配单词的边界；<a href="https://regexper.com/#er%5Cb"><code>er\b</code></a>，能匹配 <code>coder</code> 中的 <code>er</code>，却不能匹配 <code>error</code> 中的 <code>er</code>；</p>
+<p><code>\B</code> 匹配非单词边界；<a href="https://regexper.com/#er%5CB"><code>er\B</code></a>，能匹配 <code>error</code> 中的 <code>er</code>，却不能匹配 <code>coder</code> 中的 <code>er</code>。</p>
+<pre><code class="language-python">import re
+
+str = 'never ever verb however everest'
+pttn = r'er\b'
+re.findall(pttn, str)
+pttn = r'er\B'
+re.findall(pttn, str)
+</code></pre>
+<pre><code>['er', 'er', 'er']
+['er', 'er']
+</code></pre>
+<p><strong>注意</strong>：<code>^</code> 和 <code>$</code> 在 Python 语言中被 <code>\A</code> 和 <code>\Z</code> 替代。</p>
+<p>事实上，每种语言或多或少都对 Regex 有自己的定制。不过，这里绝大多数细节，都是通用的。</p>
+<h3 id="组合原子">组合原子</h3>
+<p>我们可以用圆括号 <code>()</code> 将多个单字符原子组合成一个原子 —— 这么做的结果是，<code>()</code> 内的字符串将被当作一整个原子，可以被随后我们要讲解的数量操作符操作。</p>
+<p>另外，<code>()</code> 这个操作符，有两个作用：<strong>组合</strong>（Grouping），就是我们刚刚讲到的作用；而另外一个作用是<strong>捕获</strong>（Capturing)，后面会讲到。</p>
+<p>注意区别，<code>er</code>、<code>[er\]</code>和 <code>(er)</code>各不相同。</p>
+<blockquote>
+<ul>
+<li><code>er</code> 是两个原子，<code>'e'</code> 和紧随其后的 <code>'r'</code></li>
+<li><code>[er]</code> 是一个原子，或者 <code>'e'</code> 或者 <code>'r'</code>；</li>
+<li><code>(er)</code> 是一个原子，<code>'er'</code></li>
+</ul>
+</blockquote>
+<p>下一节中讲到数量操作符的时候，会再次强调这点。</p>
+<h3 id="数量操作符">数量操作符</h3>
+<p>数量操作符有：<code>+</code> <code>?</code> <code>*</code> <code>{n, m}</code>。</p>
+<p>它们是用来限定位于它们之前的原子允许出现的个数；不加数量限定则代表出现一次且仅出现一次：</p>
+<p><code>+</code> 代表前面的原子必须至少出现一次，即：`出现次数 ≧ 1</p>
+<blockquote>
+<p>例如，<a href="https://regexper.com/#go+gle"><code>go+gle</code></a>可以匹配 <code>google</code> <code>gooogle</code> <code>goooogle</code> 等；</p>
+</blockquote>
+<p><code>?</code> 代表前面的原子最多只可以出现一次，即：<code>0 ≦ 出现次数 ≦ 1</code></p>
+<blockquote>
+<p>例如，<code>colou?red</code>可以匹配 <code>colored</code> 或者 <code>coloured</code>;</p>
+</blockquote>
+<p><code>*</code> 代表前面的原子可以不出现，也可以出现一次或者多次，即：<code>出现次数 ≧ 0</code></p>
+<blockquote>
+<p>例如，<code>520*</code>可以匹配 <code>52</code> <code>520</code> <code>52000</code> <code>5200000</code> <code>520000000000</code> 等。</p>
+</blockquote>
+<p><code>{n}</code> 之前的原子出现确定的 <code>n</code> 次；</p>
+<p><code>{n,}</code> 之前的原子出现至少 <code>n</code> 次；</p>
+<p><code>{n, m}</code> 之前的原子出现至少 <code>n</code> 次，至多 <code>m</code> 次</p>
+<blockquote>
+<p>例如，<code>go{2,5}gle</code>，能匹配 <code>google</code> <code>gooogle</code> <code>goooogle</code> 或 <code>gooooogle</code>，但不能匹配 <code>gogle</code> 和 <code>gooooooogle</code></p>
+</blockquote>
+<pre><code>import re
+with open('regex-target-text-sample.txt', 'r') as f:
+    str = f.read()
+
+pttn = r'go+gle'
+re.findall(pttn, str)
+
+pttn = r'go{2,5}gle'
+re.findall(pttn, str)
+
+pttn = r'colou?red'
+re.findall(pttn, str)
+
+pttn = r'520*'
+re.findall(pttn, str)
+</code></pre>
+<pre><code>['google', 'gooogle', 'goooogle', 'goooooogle']
+['google', 'gooogle', 'goooogle']
+['coloured', 'colored']
+['520', '52000', '5200000', '520000000', '520000000000']
+</code></pre>
+<p>数量操作符是对它之前的原子进行操作的，换言之，数量操作符的操作元是操作符之前的原子。</p>
+<p>上一节提到，要注意区别：<code>er</code>、<code>[er]</code> 和 <code>(er)</code> 各不相同。</p>
+<blockquote>
+<ul>
+<li><code>er</code> 是两个原子，<code>'e'</code> 之后 <code>'r'</code></li>
+<li><code>[er]</code> 是一个原子，或者 <code>'e'</code> 或者 <code>'r'</code>；</li>
+<li><code>(er)</code> 是一个原子，<code>'er'</code></li>
+</ul>
+</blockquote>
+<pre><code class="language-python">import re
+
+str = 'error wonderer severeness'
+
+pttn = r'er'
+re.findall(pttn, str)
+
+pttn = r'[er]'
+re.findall(pttn, str)
+
+pttn = r'(er)'
+re.findall(pttn, str)
+</code></pre>
+<pre><code>['er', 'er', 'er', 'er']
+['e', 'r', 'r', 'r', 'e', 'r', 'e', 'r', 'e', 'e', 'r', 'e', 'e']
+['er', 'er', 'er', 'er']
+</code></pre>
+<p>在以上的例子中，看不出 <code>er</code> 和 <code>(er)</code> 的区别，但是，加上数量操作符就不一样了 —— 因为<em>数量操作符只对它之前的那一个原子进行操作</em>：</p>
+<pre><code class="language-python">import re
+
+str = 'error wonderer severeness'
+
+pttn = r'er+'
+re.findall(pttn, str)
+
+pttn = r'[er]+'
+re.findall(pttn, str)
+
+pttn = r'(er)+'
+re.findall(pttn, str)
+</code></pre>
+<p>[28]:</p>
+<pre><code>['err', 'er', 'er', 'er']
+['err', 'r', 'erer', 'e', 'ere', 'e']
+['er', 'er', 'er']
+</code></pre>
+<h3 id="或操作符-">或操作符 <code>|</code></h3>
+<p>或操作符 <code>|</code> 是所有操作符中优先级最低的，数量操作符的优先级比它高，所以，在 <code>|</code> 前后的原子被数量操作符（如果有的话）操作之后才交给 <code>|</code> 操作。</p>
+<p>于是，<code>begin|began|begun</code> 能够匹配 <code>begin</code> 或 <code>began</code> 或 <code>begun</code>。</p>
+<pre><code class="language-python">import re
+
+str = 'begin began begun begins beginn'
+pttn = r'begin|began|begun'
+re.findall(pttn, str)
+</code></pre>
+<pre><code>['begin', 'began', 'begun', 'begin', 'begin']
+</code></pre>
+<p>在集合原子中（即，<code>[]</code> 内的原子）各个原子之间的关系，只有 “或” —— 相当于方括号中的每个原子之间都有一个被省略的 <code>|</code>。</p>
+<p><strong>注意</strong>：方括号的 <code>|</code> 不被当作特殊符号，而是被当作 <code>|</code> 这个符号本身。在方括号中的圆括号，也被当作圆括号 <code>()</code> 本身，而无分组含义。</p>
+<pre><code class="language-python">import re
+
+str = 'achroiocythaemia achroiocythemia a|e'
+pttn = r'[a|ae]'
+re.findall(pttn, str)
+
+pttn = r'[a|e]'
+re.findall(pttn, str)
+
+pttn = r'[ae]'
+re.findall(pttn, str)
+
+pttn = r'[(ae)]'
+re.findall(pttn, str)
+
+pttn = r'[a|ae|(ae)]'
+re.findall(pttn, str)
+</code></pre>
+<pre><code>['a', 'a', 'e', 'a', 'a', 'e', 'a', 'a', '|', 'e']
+</code></pre>
+<h2 id="匹配并捕获">匹配并捕获</h2>
+<p>捕获（Capture），使用的是圆括号 <code>()</code>。使用圆括号得到的匹配的值被暂存成一个带有索引的列表，第一个是 <code>$1</code>，第二个是 <code>$2</code>…… 以此类推。随后，我们可以在替换的过程中使用 <code>$1</code> <code>$2</code> 中所保存的值。</p>
+<p><strong>注意</strong>：在 Python 语言中调用 <code>re</code> 模块之后，在 <code>re.sub()</code> 中调用被匹配的值，用的索引方法是 <code>\1</code>、<code>\2</code>…… 以此类推。</p>
+<pre><code class="language-python">import re
+str = 'The white dog wears a black hat.'
+pttn = r'The (white|black) dog wears a (white|black) hat.'
+re.findall(pttn, str)
+
+repl = r'The \2 dog wears a \1 hat.'
+re.sub(pttn, repl, str)
+
+repl = r'The \1 dog wears a \1 hat.'
+re.sub(pttn, repl, str)
+
+</code></pre>
+<pre><code>'The white dog wears a white hat.'
+</code></pre>
+<h3 id="非捕获匹配">非捕获匹配</h3>
+<p>有时，你并不想捕获圆括号中的内容，在那个地方你使用括号的目的只是分组，而非捕获，那么，你就在圆括号内最开头加上 <code>?:</code> —— <code>(?:...)</code>：</p>
+<pre><code class="language-python">import re
+str = 'The white dog wears a black hat.'
+pttn = r'The (?:white|black) dog wears a (white|black) hat.'
+re.findall(pttn, str)                   # 只捕获了一处，也就是说只有一个值将来可以被引用
+
+repl = r'The \1 dog wears a \1 hat.'    # 之前的一处捕获，在替换时可被多次引用
+re.sub(pttn, repl, str)
+
+</code></pre>
+<pre><code>['black']
+'The black dog wears a black hat.'
+</code></pre>
+<p>在 Python 代码中使用正则表达式，匹配和捕获以及随后的替换，有更灵活的方式，因为可以对那些值直接编程。<code>re.sub()</code> 中，<code>repl</code> 参数甚至可以接收另外一个函数作为参数 —— 以后你肯定会自行认真阅读以下页面中的所有内容：</p>
+<blockquote>
+<p><a href="https://docs.python.org/3/library/re.html">https://docs.python.org/3/library/re.html</a></p>
+</blockquote>
+<p>非捕获匹配，还有若干个操作符：</p>
+<pre><code>(?=pattern)
+</code></pre>
+<blockquote>
+<p>正向肯定预查（look ahead positive assert），在任何匹配规则的字符串开始处匹配查找字符串。这是一个非获取匹配，也就是说，该匹配不需要获取供以后使用。例如，<a href="https://regexper.com/#%60Windows(?=95%7C98%7CNT%7C2000)%60"><code>Windows(?=95|98|NT|2000)</code></a> 能匹配 <code>Windows2000</code> 中的 <code>Windows</code>，但不能匹配 <code>Windows3.1</code> 中的 <code>Windows</code>。预查不消耗字符，也就是说，在一个匹配发生后，在最后一次匹配之后立即开始下一次匹配的搜索，而不是从包含预查的字符之后开始。</p>
+</blockquote>
+<pre><code>(?!pattern)
+</code></pre>
+<blockquote>
+<p>正向否定预查（negative assert），在任何不匹配规则的字符串开始处匹配查找字符串。这是一个非获取匹配，也就是说，该匹配不需要获取供以后使用。例如<a href="https://regexper.com/#Windows(?=95%7C98%7CNT%7C2000)"><code>Windows(?!95|98|NT|2000)</code></a> 能匹配 <code>Windows3.1</code> 中的 <code>Windows</code>，但不能匹配 <code>Windows2000</code> 中的 <code>Windows</code>。预查不消耗字符，也就是说，在一个匹配发生后，在最后一次匹配之后立即开始下一次匹配的搜索，而不是从包含预查的字符之后开始。</p>
+</blockquote>
+<pre><code>(?&lt;=pattern)
+</code></pre>
+<blockquote>
+<p>反向（look behind）肯定预查，与正向肯定预查类似，只是方向相反。例如，<a href="https://regexper.com/#(?%3C=95%7C98%7CNT%7C2000)Windows"><code>(?&lt;=95|98|NT|2000)Windows</code></a> 能匹配 <code>2000Windows</code> 中的 <code>Windows</code>，但不能匹配 <code>3.1Windows</code> 中的 <code>Windows</code>。</p>
+</blockquote>
+<p>`(?</p>
+<blockquote>
+<p>反向否定预查，与正向否定预查类似，只是方向相反。例如 <code>(? 能匹配 </code>3.1Windows<code>中的</code>Windows<code>，但不能匹配 </code>2000Windows<code>中的</code>Windows`。</p>
+</blockquote>
+<h3 id="控制标记">控制标记</h3>
+<p>有几个全局控制标记（Flag）需要了解，其中最常默认指定的有 <code>G</code> 和 <code>M</code>：</p>
+<p><code>A</code>/<code>ASCII</code>，默认为 <code>False</code></p>
+<blockquote>
+<ul>
+<li><code>\d</code>, <code>\D</code>, <code>\w</code>, <code>\W</code>, <code>\s</code>, <code>\S</code>, <code>\b</code>, 和 <code>\B</code> 等只限于 ASCII 字符</li>
+<li>行内写法：<code>(?a)</code></li>
+<li>Python re 模块中的常量：<code>re.A</code> <code>re.ASCII</code></li>
+</ul>
+</blockquote>
+<p><code>I</code>/<code>IGNORECASE</code>，默认为 <code>False</code></p>
+<blockquote>
+<ul>
+<li>忽略字母大小写</li>
+<li>行内写法：<code>(?i)</code></li>
+<li>Python re 模块中的常量：<code>re.I</code> <code>re.IGNORECASE</code></li>
+</ul>
+</blockquote>
+<p><code>G</code>/<code>GLOBAL</code>，默认为 <code>True</code></p>
+<blockquote>
+<ul>
+<li>找到第一个 match 之后不返回</li>
+<li>行内写法：<code>(?g)</code></li>
+<li>Python re 模块中这个标记不能更改，默认为 TRUE</li>
+</ul>
+</blockquote>
+<p><code>L</code>/<code>LOCALE</code>，默认为 <code>False</code></p>
+<blockquote>
+<ul>
+<li>由本地语言设置决定 <code>\d</code>, <code>\D</code>, <code>\w</code>, <code>\W</code>, <code>\s</code>, <code>\S</code>, <code>\b</code>, 和 <code>\B</code> 等等的内容</li>
+<li>行内写法：<code>(?L)</code></li>
+<li>Python re 模块中的常量：<code>re.L</code> <code>re.LOCALE</code></li>
+</ul>
+</blockquote>
+<p><code>M</code>/<code>MULTILINE</code>，默认为 <code>True</code></p>
+<blockquote>
+<ul>
+<li>使用本标志后，<code>^</code> 和 <code>$</code> 匹配行首和行尾时，会增加换行符之前和之后的位置。</li>
+<li>行内写法：<code>(?m)</code></li>
+<li>Python re 模块中的常量：<code>re.M</code> <code>re.MULTILINE</code></li>
+</ul>
+</blockquote>
+<p><code>S</code>/<code>DOTALL</code>，默认为 <code>False</code></p>
+<blockquote>
+<ul>
+<li>使 <code>.</code> 完全匹配任何字符，包括换行；没有这个标志，<code>.</code> 匹配除了 <code>n</code> <code>r</code> 之外的任何字符。</li>
+<li>行内写法：<code>(?s)</code></li>
+<li>Python re 模块中的常量：<code>re.S</code> <code>re.DOTALL</code></li>
+</ul>
+</blockquote>
+<p><code>X</code>/<code>VERBOSE</code>，默认为 <code>False</code></p>
+<blockquote>
+<ul>
+<li>当该标志被指定时，Pattern 中的的空白符会被忽略，除非该空白符在圆括号或方括号中，或在反斜杠 <code>\</code> 之后。这样做的结果是允许将注释写入 Pattern，这些注释会被 Regex 解析引擎忽略。注释用 <code>#</code> 号来标识，不过该符号不能在字符串或反斜杠之后。</li>
+<li>行内写法：<code>(?x)</code></li>
+<li>Python re 模块中的常量：<code>re.X</code> <code>re.VERBOSE</code></li>
+</ul>
+</blockquote>
+<h2 id="几个最常用的-regex">几个最常用的 Regex</h2>
+<p>以下是几个常用的 Regex，值得保存：</p>
+<ul>
+<li>
+<p>matching username</p>
+<blockquote>
+<p><code>/^[a-z0-9_-\]{3,16}$/</code></p>
+</blockquote>
+</li>
+<li>
+<p>matching password[<a href="http://localhost:8888/lab#fn3">3]</a></p>
+<blockquote>
+<p><code>/^[a-z0-9_-\]{6,18}$/</code></p>
+</blockquote>
+</li>
+<li>
+<p>matching a HEX value</p>
+<blockquote>
+<p><code>/^#?([a-f0-9\]{6}|[a-f0-9]{3})$/</code></p>
+</blockquote>
+</li>
+<li>
+<p>matching a slug</p>
+<blockquote>
+<p><code>/^[a-z0-9-\]+$/</code></p>
+</blockquote>
+</li>
+<li>
+<p>matching email address</p>
+<blockquote>
+<p><code>/^([a-z0-9_\.-\]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/</code></p>
+</blockquote>
+</li>
+<li>
+<p>matching a URL</p>
+<blockquote>
+<p><code>/^(https?:\/\/)?([\da-z\.-\]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/</code></p>
+</blockquote>
+</li>
+<li>
+<p>matching an IP address</p>
+<blockquote>
+<p><code>/^(?:(?:25[0-5\]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/</code></p>
+</blockquote>
+</li>
+<li>
+<p>matching a HTML tag</p>
+<blockquote>
+<p><code>/^&lt;([a-z\]+)([^&lt;]+)*(?:&gt;(.*)&lt;\/\1&gt;|\s+\/&gt;)$/</code></p>
+</blockquote>
+</li>
+</ul>
+<p>感谢，李笑来老师</p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接: </strong>
+      <a href="https://zhihao2020.github.io/2020/05/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE/" title="正则表达" target="_blank" rel="external">https://zhihao2020.github.io/2020/05/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://zhihao2020.github.io" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://zhihao2020.github.io/cat.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://zhihao2020.github.io" target="_blank"><span class="text-dark">Zhihao</span><small class="ml-1x">“教”是最好的学习方式</small></a></h3>
+        <div>Up up up！</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+    <div id="vcomments"></div>
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://zhihao2020.github.io/2020/05/docx%E8%BD%AC%E4%B8%BApdf/" title="docx转为PDF"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="https://zhihao2020.github.io/2020/05/matplotlib%E7%BB%98%E5%88%B6%E5%8A%A8%E7%94%BB/"
+                    title="Matplotlib绘制动画"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/zhihao2020" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://zhihao2020.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2020  -
+    2020
+    <div class="publishby">
+       xuzhihao
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://zhihao2020.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://zhihao2020.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(未命名)',
+            },
+            ROOT_URL: 'https:\/\/zhihao2020.github.io',
+            CONTENT_URL: 'https:\/\/zhihao2020.github.io\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://zhihao2020.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine"></script>
+<script type="text/javascript">
+    var GUEST = ['nick', 'mail', 'link'];
+    var meta = 'nick,mail';
+    meta = meta.split(',').filter(function (item) {
+        return GUEST.indexOf(item) > -1;
+    });
+   
+new Valine({
+    el: '#vcomments' ,
+    appId: 'cbb8ajQIRK8ShsDhksAalS5e-gzGzoHsz',
+    appKey: 'H605TalWcvAnd5HAY0z9aS67',
+    notify:false, 
+    recordIP:true,
+    verify:false, 
+    avatar:'mp', 
+});
+
+
+</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-164183479-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>
