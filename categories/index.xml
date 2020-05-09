@@ -5,10 +5,19 @@
     <link>https://zhihao2020.github.io/categories/</link>
     <description>Recent content in Categories on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 08 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zhihao2020.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sympy解代数问题</title>
+      <link>https://zhihao2020.github.io/2020/05/sympy%E8%A7%A3%E4%BB%A3%E6%95%B0%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/sympy%E8%A7%A3%E4%BB%A3%E6%95%B0%E9%97%AE%E9%A2%98/</guid>
+      <description>我们大多数都是数学运算，其实我们还有另外一种方式——符号数学（symbolic math）。这个需要我们是要第三方库Sympy。 定义符号与运算</description>
+    </item>
     
     <item>
       <title>Matplotlib绘制动画</title>
@@ -179,15 +188,6 @@
       
       <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</guid>
       <description>捕捉异常 使用try/except语句实现。 except() except语句可以使用不止一次： try: xxx except ZeroDivisionError: print() except TypeError: print() 或者像这样 try: XXX except (ZeroDivisionError,TypeError): print() 如果你想记录原因的话，可以</description>
-    </item>
-    
-    <item>
-      <title>Python的webbrowser</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E7%9A%84webbrowser/</link>
-      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/05/python%E7%9A%84webbrowser/</guid>
-      <description>允许向用户显示基于Web的文档。在大多数情况下，只需要调用open()函数就可以。 脚本 webbrowser 可以用作模块的命令行界面。它接受一个 URL 作为参数。还接</description>
     </item>
     
   </channel>
