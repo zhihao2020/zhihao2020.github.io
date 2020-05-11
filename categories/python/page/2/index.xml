@@ -5,10 +5,28 @@
     <link>https://zhihao2020.github.io/categories/python/</link>
     <description>Recent content in Python on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 08 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zhihao2020.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python中的textwrap</title>
+      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84textwrap/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84textwrap/</guid>
+      <description>用于对文本字符串进行自动换行或填充。 textwrap.wrap(text,width=70,**kwargs) ​ 对text中的单独段落自动换行以使每行长度最多为width个字符。返回输出行组成的列表，行尾不带换行</description>
+    </item>
+    
+    <item>
+      <title>Python中的异常处理</title>
+      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</guid>
+      <description>捕捉异常 使用try/except语句实现。 except() except语句可以使用不止一次： try: xxx except ZeroDivisionError: print() except TypeError: print() 或者像这样 try: XXX except (ZeroDivisionError,TypeError): print() 如果你想记录原因的话，可以</description>
+    </item>
     
     <item>
       <title>Python的webbrowser</title>
@@ -170,24 +188,6 @@
       
       <guid>https://zhihao2020.github.io/2020/04/%E8%AE%A9google%E5%92%8C%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E5%88%B0%E4%BD%A0%E7%9A%84hugo%E5%8D%9A%E5%AE%A2/</guid>
       <description>提交给Google网站站长 打开 Google网站站长，点击 “SEARCH CONSOLE ” 进入，然后添加资源。 会要求下载一个html文件如google571</description>
-    </item>
-    
-    <item>
-      <title>Python中的__call__方法</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__call__/</link>
-      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__call__/</guid>
-      <description>调用 关于 __call__ 方法，不得不先提到一个概念，就是可调用对象（callable），我们平时自定义的函数、内置函数和类都属于可调用对象，但凡是可以把一</description>
-    </item>
-    
-    <item>
-      <title>Python中的__new__方法</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__new__/</link>
-      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__new__/</guid>
-      <description>在python中方法名如果是__xxxx__()的，那么就有特殊的功能，因此叫做“魔法”方法 __new__的作用 在Python中__new_</description>
     </item>
     
   </channel>

@@ -5,10 +5,28 @@
     <link>https://zhihao2020.github.io/tags/</link>
     <description>Recent content in Tags on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 09 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zhihao2020.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tkinker简单了解</title>
+      <link>https://zhihao2020.github.io/2020/05/tkinker%E7%AE%80%E5%8D%95%E4%BA%86%E8%A7%A3/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/tkinker%E7%AE%80%E5%8D%95%E4%BA%86%E8%A7%A3/</guid>
+      <description>tkinker编程就像是作画，先支起一个画架，放上画板，蒙上画布，构思内容，用铅笔画草图，组织结构和比例，调色板调色，最后画笔勾勒。这对应到</description>
+    </item>
+    
+    <item>
+      <title>爬虫解决乱码</title>
+      <link>https://zhihao2020.github.io/2020/05/%E7%88%AC%E8%99%AB%E8%A7%A3%E5%86%B3%E4%B9%B1%E7%A0%81/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/%E7%88%AC%E8%99%AB%E8%A7%A3%E5%86%B3%E4%B9%B1%E7%A0%81/</guid>
+      <description>方法一: 我们要使用到两个方法：decode解码 、encode编码 假设一个网站的编码是&amp;rsquo;iso-8859-1&amp;rsquo;，通过r</description>
+    </item>
     
     <item>
       <title>Sympy解代数问题</title>
@@ -170,24 +188,6 @@
       
       <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84enumerate/</guid>
       <description>enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中 写法 enumerate(sequence,[start=0]) 参数 sequen</description>
-    </item>
-    
-    <item>
-      <title>Python中的textwrap</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84textwrap/</link>
-      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84textwrap/</guid>
-      <description>用于对文本字符串进行自动换行或填充。 textwrap.wrap(text,width=70,**kwargs) ​ 对text中的单独段落自动换行以使每行长度最多为width个字符。返回输出行组成的列表，行尾不带换行</description>
-    </item>
-    
-    <item>
-      <title>Python中的异常处理</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</link>
-      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</guid>
-      <description>捕捉异常 使用try/except语句实现。 except() except语句可以使用不止一次： try: xxx except ZeroDivisionError: print() except TypeError: print() 或者像这样 try: XXX except (ZeroDivisionError,TypeError): print() 如果你想记录原因的话，可以</description>
     </item>
     
   </channel>
