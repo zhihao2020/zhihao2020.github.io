@@ -5,10 +5,28 @@
     <link>https://zhihao2020.github.io/tags/</link>
     <description>Recent content in Tags on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zhihao2020.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python中win32print</title>
+      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%ADwin32print/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%ADwin32print/</guid>
+      <description>OpenPrinter 打开打印机 win32print.OpenPrinter(string,Defaults) string就是打印机的名字，当为空的时候打开本地打印机 StartDocPrinter StartDocPrinter(hprinter, level , tuple ) level=1 tuple:对应于level参数的元组 ​ [0]:字符串：</description>
+    </item>
+    
+    <item>
+      <title>Python中的enumerate()</title>
+      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84enumerate/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84enumerate/</guid>
+      <description>enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中 写法 enumerate(sequence,[start=0]) 参数 sequen</description>
+    </item>
     
     <item>
       <title>Python中的textwrap</title>
@@ -170,24 +188,6 @@
       
       <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84shelve/</guid>
       <description>shelve可以当做是简单的存储。 使用方法如下： import shelve d = shelve.open(filename) # open -- file may get suffix added by low-level # library d[key] = data # store data at key (overwrites old data if # using an existing key) data = d[key] # retrieve a COPY of data at key (raise</description>
-    </item>
-    
-    <item>
-      <title>打包Python程序</title>
-      <link>https://zhihao2020.github.io/2020/04/%E6%89%93%E5%8C%85python%E7%A8%8B%E5%BA%8F/</link>
-      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/%E6%89%93%E5%8C%85python%E7%A8%8B%E5%BA%8F/</guid>
-      <description>PyInstaller原理 PyInstaller其实就是把Python解释器和脚本打包成一个可执行文件，和编译成真正的机器码完全是两回事。所</description>
-    </item>
-    
-    <item>
-      <title>让Google和百度搜索到你的Hugo博客</title>
-      <link>https://zhihao2020.github.io/2020/04/%E8%AE%A9google%E5%92%8C%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E5%88%B0%E4%BD%A0%E7%9A%84hugo%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/%E8%AE%A9google%E5%92%8C%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E5%88%B0%E4%BD%A0%E7%9A%84hugo%E5%8D%9A%E5%AE%A2/</guid>
-      <description>提交给Google网站站长 打开 Google网站站长，点击 “SEARCH CONSOLE ” 进入，然后添加资源。 会要求下载一个html文件如google571</description>
     </item>
     
   </channel>

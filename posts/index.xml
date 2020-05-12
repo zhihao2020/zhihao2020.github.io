@@ -5,10 +5,28 @@
     <link>https://zhihao2020.github.io/posts/</link>
     <description>Recent content in Posts on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zhihao2020.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Qtdesigner提升窗口控件</title>
+      <link>https://zhihao2020.github.io/2020/05/qtdesigner%E6%8F%90%E5%8D%87%E7%AA%97%E5%8F%A3%E6%8E%A7%E4%BB%B6/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/qtdesigner%E6%8F%90%E5%8D%87%E7%AA%97%E5%8F%A3%E6%8E%A7%E4%BB%B6/</guid>
+      <description>提升窗口控件，就是指有些窗口控件是用户自己基于PyQt定义的衍生窗口控件，这些窗口控件在Qt Designer中没有直接提供，但是可以通过提升</description>
+    </item>
+    
+    <item>
+      <title>在PyQt5中使用Matplotlib</title>
+      <link>https://zhihao2020.github.io/2020/05/%E5%9C%A8pyqt5%E4%B8%AD%E4%BD%BF%E7%94%A8matplotlib/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/%E5%9C%A8pyqt5%E4%B8%AD%E4%BD%BF%E7%94%A8matplotlib/</guid>
+      <description>使用MatplotlibWidget 设置绘图类 class Canvas(FigureCanvas): def __init__(self,parent=None,width=5,height=4,dpi=100): plt.rcParams[&#39;font.family&#39;] = [&#39;SimHei&#39;]#显示中文标签 plt.reParams[&#39;axes.unicode_minus&#39;] = False#显示负号 self.fig = Figure(figsize=(eidth,height),dpi=dpi) self.axes = self.fig.add_subplot(111) self.a</description>
+    </item>
     
     <item>
       <title>Tkinker简单了解</title>
@@ -170,24 +188,6 @@
       
       <guid>https://zhihao2020.github.io/2020/05/ascii%E8%A1%A8-nonprintable-characters/</guid>
       <description>ASCII Table &amp;ndash; Nonprintable Characters Control Character Python &amp;amp; Java Hexadecimal Decimal Description ^@ \0 00 0 Null character ^A \1 01 1 Start of heading ^B \2 02 2 Start of text ^C \3 03 3 End of text ^D \4 04 4 End of transmission ^E \5 05 5 Enquiry ^F \6 06 6 Acknowledge ^G \a 07 7 Audible bell ^H \b 08 8 Backspace ^I \t</description>
-    </item>
-    
-    <item>
-      <title>Python中win32print</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%ADwin32print/</link>
-      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%ADwin32print/</guid>
-      <description>OpenPrinter 打开打印机 win32print.OpenPrinter(string,Defaults) string就是打印机的名字，当为空的时候打开本地打印机 StartDocPrinter StartDocPrinter(hprinter, level , tuple ) level=1 tuple:对应于level参数的元组 ​ [0]:字符串：</description>
-    </item>
-    
-    <item>
-      <title>Python中的enumerate()</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84enumerate/</link>
-      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84enumerate/</guid>
-      <description>enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中 写法 enumerate(sequence,[start=0]) 参数 sequen</description>
     </item>
     
   </channel>
