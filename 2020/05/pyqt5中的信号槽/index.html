@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        创建你的第一个GUI - Zhihao&#39;s Blog
+        PyQt5中的信号槽 - Zhihao&#39;s Blog
       </title>
     <head>
 <script data-ad-client="ca-pub-5137727031357129" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -24,32 +24,32 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="用户界面的发明，让人类迈进了现代化" />
+  <meta name="description" content="PyQt5信号和PyQt4中信号不一样" />
   <meta name="generator" content="Hugo 0.69.0 with theme pure" />
-  <title>创建你的第一个GUI - Zhihao&#39;s Blog</title>
+  <title>PyQt5中的信号槽 - Zhihao&#39;s Blog</title>
   
   
   <link rel="stylesheet" href="https://zhihao2020.github.io/css/style.min.c4bc7071f132c964c2116bca53b392933f377e5ca7b7051ed245187c621a2d3e.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="创建你的第一个GUI" />
-<meta property="og:description" content="用户界面的发明，让人类迈进了现代化" />
+  <meta property="og:title" content="PyQt5中的信号槽" />
+<meta property="og:description" content="PyQt5信号和PyQt4中信号不一样" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://zhihao2020.github.io/2020/04/%E5%88%9B%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAgui/" />
-<meta property="article:published_time" content="2020-04-28T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-04-28T00:00:00+00:00" />
-<meta itemprop="name" content="创建你的第一个GUI">
-<meta itemprop="description" content="用户界面的发明，让人类迈进了现代化">
-<meta itemprop="datePublished" content="2020-04-28T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2020-04-28T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="799">
+<meta property="og:url" content="https://zhihao2020.github.io/2020/05/pyqt5%E4%B8%AD%E7%9A%84%E4%BF%A1%E5%8F%B7%E6%A7%BD/" />
+<meta property="article:published_time" content="2020-05-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-05-11T00:00:00+00:00" />
+<meta itemprop="name" content="PyQt5中的信号槽">
+<meta itemprop="description" content="PyQt5信号和PyQt4中信号不一样">
+<meta itemprop="datePublished" content="2020-05-11T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-05-11T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1577">
 
 
 
 <meta itemprop="keywords" content="PyQt5," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="创建你的第一个GUI"/>
-<meta name="twitter:description" content="用户界面的发明，让人类迈进了现代化"/>
+<meta name="twitter:title" content="PyQt5中的信号槽"/>
+<meta name="twitter:description" content="PyQt5信号和PyQt4中信号不一样"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -331,8 +331,8 @@
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2020/04/%E5%88%9B%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAgui/"
-    >创建你的第一个GUI</a
+    href="/2020/05/pyqt5%E4%B8%AD%E7%9A%84%E4%BF%A1%E5%8F%B7%E6%A7%BD/"
+    >PyQt5中的信号槽</a
   >
 </h1>
 
@@ -340,8 +340,8 @@
         
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://zhihao2020.github.io/2020/04/%E5%88%9B%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAgui/" class="article-date">
-  <time datetime="2020-04-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-28</time>
+<a href="https://zhihao2020.github.io/2020/05/pyqt5%E4%B8%AD%E7%9A%84%E4%BF%A1%E5%8F%B7%E6%A7%BD/" class="article-date">
+  <time datetime="2020-05-11 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-11</time>
 </a>
 </span>
 <span class="article-category">
@@ -361,46 +361,134 @@
 	</span>
 	<span class="article-read hidden-xs">
     	<i class="icon icon-eye-fill" aria-hidden="true"></i>
-    	<span id="https://zhihao2020.github.io/2020/04/%E5%88%9B%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAgui/" class="leancloud_visitors"  data-flag-title="创建你的第一个GUI">0</span>
+    	<span id="https://zhihao2020.github.io/2020/05/pyqt5%E4%B8%AD%E7%9A%84%E4%BF%A1%E5%8F%B7%E6%A7%BD/" class="leancloud_visitors"  data-flag-title="PyQt5中的信号槽">0</span>
     </span>
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/04/%E5%88%9B%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAgui/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/05/pyqt5%E4%B8%AD%E7%9A%84%E4%BF%A1%E5%8F%B7%E6%A7%BD/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 799字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2分 </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1577字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 4分 </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <pre><code class="language-python">from PyQt5 import QtWidgets
-import sys
-
-if __name__ == &quot;__main__&quot;:
-	app = QtWidgets.QApplication(sys.argv)
-	w = QtWidgets.QWidgst()
-	w.resize(600,600)
-	w.move(600,600)
-	w.setWindowTitle(&quot;第一个Qt程序&quot;)
-	w.show()
-	sys.exit(app.exec_())
-</code></pre>
-<p>其中，</p>
-<pre><code>app = QtWidgets.QApplication(sys.argv)
-</code></pre>
-<p>每一个PyQt5程序都需要一个QApplication对象，QApplication类包含在QTWidgets模块中。sys.argv是一个命令行参数列表。这个程序可以通过，双击.py文件，通过参数来选择启动脚本的方式。</p>
-<pre><code>sys.exit(app.exec_())
-</code></pre>
-<p>这是进入该程序的主循环。</p>
-<p>事件处理从本行代码开始，主循环接收事件消息并将其分发给程序的各个控件。如果调用 exit()或主控件被销毁，主循环就会结束。</p>
-<p>使用 sys.exit()方法退出可以确保程序完整地结束，在这种情况下系统的环境变量会记录程序是如何退出的。</p>
-<p>如果程序运行成功，那么exec_()的返回值为0，否则为非0。</p>
-<p>为什么程序主函数的返回值为0？ 无论是C还是C++，从main函数返回的结果都相当于调用了exit函数，main的返回值会作为传给exit函数的参数。 exit对参数的说明如下：</p>
+      <h1 id="介绍">介绍</h1>
+<p>信号（Signal）和信号槽（Slot）是Qt的核心机制，它是PyQT编程对象之间进行通信的机制。</p>
+<p>在Qt中，每一给QObject对象和PyQt中所有继承在QWidget的控件都支持信号与槽机制。当信号发射时，连接的槽函数将会自动执行。在PyQt5中信号与槽通过<code>object.singanl.connect()</code>方法连接。</p>
+<p><strong>信号与槽有下列特点</strong>：</p>
 <ul>
-<li>如果参数为0或EXIT_SUCCESS，则向外部环境报告程序运行圆满结束。</li>
-<li>如果参数为EXIT_FAILURE，则向外部环境报告程序运行以失败告终。</li>
-<li>如果参数为其他值，则结果由实现定义。</li>
+<li>一个信号可以连接多个槽</li>
+<li>一个信号可以连接另一个信号</li>
+<li>信号参数可以是任何Python类型</li>
+<li>一个槽可以监听多个信号</li>
+<li>信号与槽的连接方式可以使同步连接，也可以是异步连接</li>
+<li>信号与槽的连接可能会跨线程</li>
+<li>信号可能断开</li>
 </ul>
-<p>所以，return 0是有确定语义的返回方式，而return 1则不具备可移植性。</p>
-<p>PyQt 5的底层使用的就是C++，所以不难理解为什么主函数执行成功后exec_()的返回值为0了。</p>
-<p>有关exec_()的下画线问题解释如下： QApplication类的exec_()函数来自于PyQt 4及以前版本，因为在Python 2中，exec是Python的关键字，为避免冲突，PyQt 5使用了exec_()这个名称。这个问题在Python 3中已经解决，所以如果你的代码只在Python 3下运行，那么完全可以写成： app.exec() 当然，为了保持向后兼容，带有下画线的函数还是可以使用的，在本书后面的代码中将保持这种风格。</p>
+<p><strong>信号与槽机制如下</strong>：</p>
+<p><a href="https://imgchr.com/i/YtClGQ"><img src="https://s1.ax1x.com/2020/05/12/YtClGQ.png" alt="YtClGQ.png"></a></p>
+<h1 id="定义信号">定义信号</h1>
+<p>PyQt中的信号是自动定义的。使用<code>PyQt5.Qtcore.pyqtSignal()</code>函数可以为QObject创建一个信号，使用<code>PyqtSignal()</code>函数可以把信号定义为类属性。</p>
+<p>PyqtSignal()函数信息如下:</p>
+<p>PyQt5.QtCore.pyqtSignal(<em>types</em>[, <em>name</em>[, <em>revision=0</em>[, <em>arguments=[]</em>]]])</p>
+<p>Create one or more overloaded unbound signals as a class attribute.</p>
+<ul>
+<li>
+<p>Parameters</p>
+<p><strong>types</strong> – the types that define the C++ signature of the signal. Each type may be a Python type object or a string that is the name of a C++ type. Alternatively each may be a sequence of type arguments. In this case each sequence defines the signature of a different signal overload. The first overload will be the default.<strong>name</strong> – the name of the signal. If it is omitted then the name of the class attribute is used. This may only be given as a keyword argument.<strong>revision</strong> – the revision of the signal that is exported to QML. This may only be given as a keyword argument.<strong>arguments</strong> – the sequence of the names of the signal’s arguments that is exported to QML. This may only be given as a keyword argument.</p>
+</li>
+<li>
+<p>Return type</p>
+<p>an unbound signal</p>
+</li>
+</ul>
+<h2 id="1为qobject对象操作信号">1、为QObject对象操作信号</h2>
+<p>使用<code>pyqtSignal()</code>函数创建一个或多个重载的未绑定信号作为累的属性，信号只能在QObject子类中定义。</p>
+<p>信号必须在类创建时定义，不能在类创建后作为类的属性动态添加进来。Types参数表示定义信号时参数的类型，name参数表示信号名字，该项缺省时实用类的属性名字</p>
+<p>使用<code>pyqtSignal()</code>函数创建信号时，信号可以床底多个参数，并指定参数的类型，参数类型是标准的Python数据类型（字符串、日期、布尔值、数字、列表、元组和字典）</p>
+<h2 id="2为控件创建信号">2、为控件创建信号</h2>
+<pre><code class="language-python">from PyQt5.Qtcore import pyqtSignal
+from PyQt5.QtWidgets import QMainWindow
+class WinForm(QMainWindow):
+    btnClickedSignal = pyqtSignal()  
+</code></pre>
+<h2 id="操作信号">操作信号</h2>
+<p><strong>使用<code>connect()</code>将信号绑定在函数上。</strong></p>
+<p>connect(<em>slot</em>[, <em>type=PyQt5.QtCore.Qt.AutoConnection</em>[, <em>no_receiver_check=False</em>]]) → PyQt5.QtCore.QMetaObject.Connection</p>
+<p>Connect a signal to a slot. An exception will be raised if the connection failed.Parameters<strong>slot</strong> – the slot to connect to, either a Python callable or another bound signal.<strong>type</strong> – the type of the connection to make.<strong>no_receiver_check</strong> – suppress the check that the underlying C++ receiver instance still exists and deliver the signal anyway.Returnsa <a href="https://www.riverbankcomputing.com/static/Docs/PyQt5/api/qtcore/qmetaobject-connection.html">Connection</a> object which can be passed to <a href="https://www.riverbankcomputing.com/static/Docs/PyQt5/signals_slots.html#disconnect"><code>disconnect()</code></a>. This is the only way to disconnect a connection to a lambda function.</p>
+<p>Signals are disconnected from slots using the <a href="https://www.riverbankcomputing.com/static/Docs/PyQt5/signals_slots.html#disconnect"><code>disconnect()</code></a> method of a bound signal.</p>
+<p><strong>使用<code>disconnect()</code>解除信号与槽函数的绑定</strong></p>
+<p>disconnect([<em>slot</em>])</p>
+<p>Disconnect one or more slots from a signal. An exception will be raised if the slot is not connected to the signal or if the signal has no connections at all.Parameters<strong>slot</strong> – the optional slot to disconnect from, either a <a href="https://www.riverbankcomputing.com/static/Docs/PyQt5/api/qtcore/qmetaobject-connection.html">Connection</a> object returned by <a href="https://www.riverbankcomputing.com/static/Docs/PyQt5/signals_slots.html#connect"><code>connect()</code></a>, a Python callable or another bound signal. If it is omitted then all slots connected to the signal are disconnected.</p>
+<p>Signals are emitted from using the <a href="https://www.riverbankcomputing.com/static/Docs/PyQt5/signals_slots.html#emit"><code>emit()</code></a> method of a bound signal.</p>
+<p><strong>使用<code>emit()</code>发射信号</strong></p>
+<p>emit(<em>*args</em>)</p>
+<p>Emit a signal.</p>
+<ul>
+<li>
+<p>Parameters</p>
+<p><strong>args</strong> – the optional sequence of arguments to pass to any connected slots.</p>
+</li>
+</ul>
+<h1 id="使用方法">使用方法</h1>
+<h2 id="内置信号与槽">内置信号与槽</h2>
+<p>使用窗口控件的函数，而不是自定义函数。在信号与槽中可以通过<code>QObject.signal,connect</code>将一个QObject信号连接到另一个QObject的槽函数。</p>
+<pre><code class="language-python">from PyQt5.QtWidgets import QPushButton,QApplication,QWidget
+from PyQt5.QtWidgets import QMessageBox
+import sys
+app = QApplication([])
+widget = QWidget()
+def showMsg():
+    QMessageBox.information(widget,&quot;信息提示框&quot;,&quot;OK&quot;)
+btn = QPushButton(&quot;测试点击按钮&quot;,widget)    
+btn.clicked.connect(showMsg)
+widget.show()
+sys.exit(app.exec_())
+</code></pre>
+<h2 id="自定义信号与槽">自定义信号与槽</h2>
+<p>在发射信号时，不使用窗口控件，而是使用自定义的函数（就是使用pyqtSignal类实例发射信号）。</p>
+<p>内置函数只包含一些常用信号，有些信号的发射找不到对应的内置函数；其次，只有在特定情况下（如点击按钮）才能发送信号；最后内置函数床底的参数是特定的，不可以自定义。</p>
+<pre><code class="language-python"># -*- coding: utf-8 -*-
+from PyQt5.QtCore import QObject, pyqtSignal
+
+# 信号对象
+class QTypeSignal(QObject):
+    # 定义一个信号
+    sendmsg = pyqtSignal(object)
+
+    def __init__(self):
+        super(QTypeSignal, self).__init__()
+
+    def run(self):
+        # 发射信号
+        self.sendmsg.emit('Hello Pyqt5')
+
+
+# 槽对象          
+class QTypeSlot(QObject):
+    def __init__(self):
+        super(QTypeSlot, self).__init__()
+
+        # 槽对象里的槽函数
+
+    def get(self, msg):
+        print(&quot;QSlot get msg =&gt; &quot; + msg)
+
+
+if __name__ == '__main__':
+    send = QTypeSignal()
+    slot = QTypeSlot()
+    # 1
+    print('--- 把信号绑定到槽函数 ---')
+    send.sendmsg.connect(slot.get)
+    send.run()
+
+    # 2
+    print('--- 把信号断开槽函数 ---')
+    send.sendmsg.disconnect(slot.get)
+    send.run()
+
+</code></pre>
+<h2 id="装饰器的信号与槽">装饰器的信号与槽</h2>
+<p>Refer：http://pyqt.sourceforge.net/Docs/PyQt5/signals_ slots.html?highlight=pyqtsignal#PyQt5.QtCore.pyqtSignal</p>
 
     </div>
     <div class="article-footer">
@@ -408,7 +496,7 @@ if __name__ == &quot;__main__&quot;:
   <ul class="post-copyright list-unstyled">
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接: </strong>
-      <a href="https://zhihao2020.github.io/2020/04/%E5%88%9B%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAgui/" title="创建你的第一个GUI" target="_blank" rel="external">https://zhihao2020.github.io/2020/04/%E5%88%9B%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAgui/</a>
+      <a href="https://zhihao2020.github.io/2020/05/pyqt5%E4%B8%AD%E7%9A%84%E4%BF%A1%E5%8F%B7%E6%A7%BD/" title="PyQt5中的信号槽" target="_blank" rel="external">https://zhihao2020.github.io/2020/05/pyqt5%E4%B8%AD%E7%9A%84%E4%BF%A1%E5%8F%B7%E6%A7%BD/</a>
     </li>
     <li class="post-copyright-license">
       <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
@@ -441,13 +529,13 @@ if __name__ == &quot;__main__&quot;:
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://zhihao2020.github.io/2020/04/git%E5%88%86%E6%94%AF1/" title="Git分支(1)"><i
+                <a href="https://zhihao2020.github.io/2020/05/tkinker%E7%AE%80%E5%8D%95%E4%BA%86%E8%A7%A3/" title="Tkinker简单了解"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
             </li>
             <li class="next">
-                <a href="https://zhihao2020.github.io/2020/04/git%E9%94%99%E8%AF%AFnon-fast-forward%E5%90%8E%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"
-                    title="Git错误non-fast-forward后的解决方案"><span>上一篇&nbsp;&nbsp;</span><i
+                <a href="https://zhihao2020.github.io/2020/05/%E5%9C%A8pyqt5%E4%B8%AD%E4%BD%BF%E7%94%A8matplotlib/"
+                    title="在PyQt5中使用Matplotlib"><span>上一篇&nbsp;&nbsp;</span><i
                         class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             

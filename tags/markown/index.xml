@@ -29,6 +29,15 @@
     </item>
     
     <item>
+      <title>PyQt5中的信号槽</title>
+      <link>https://zhihao2020.github.io/2020/05/pyqt5%E4%B8%AD%E7%9A%84%E4%BF%A1%E5%8F%B7%E6%A7%BD/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/pyqt5%E4%B8%AD%E7%9A%84%E4%BF%A1%E5%8F%B7%E6%A7%BD/</guid>
+      <description>介绍 信号（Signal）和信号槽（Slot）是Qt的核心机制，它是PyQT编程对象之间进行通信的机制。 在Qt中，每一给QObject对象和P</description>
+    </item>
+    
+    <item>
       <title>Tkinker简单了解</title>
       <link>https://zhihao2020.github.io/2020/05/tkinker%E7%AE%80%E5%8D%95%E4%BA%86%E8%A7%A3/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
@@ -179,15 +188,6 @@
       
       <guid>https://zhihao2020.github.io/2020/05/python%E7%BB%84%E7%BB%87%E6%96%87%E4%BB%B6/</guid>
       <description>shutil函数可以让你能够复制、移动、改名和删除文件。 复制文件和文件夹 shutil.copy(source,destination),这个</description>
-    </item>
-    
-    <item>
-      <title>ASCII表-Nonprintable Characters</title>
-      <link>https://zhihao2020.github.io/2020/05/ascii%E8%A1%A8-nonprintable-characters/</link>
-      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/05/ascii%E8%A1%A8-nonprintable-characters/</guid>
-      <description>ASCII Table &amp;ndash; Nonprintable Characters Control Character Python &amp;amp; Java Hexadecimal Decimal Description ^@ \0 00 0 Null character ^A \1 01 1 Start of heading ^B \2 02 2 Start of text ^C \3 03 3 End of text ^D \4 04 4 End of transmission ^E \5 05 5 Enquiry ^F \6 06 6 Acknowledge ^G \a 07 7 Audible bell ^H \b 08 8 Backspace ^I \t</description>
     </item>
     
   </channel>
