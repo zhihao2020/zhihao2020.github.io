@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Git基本操作(1)</title>
+      <link>https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C1/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C1/</guid>
+      <description>配置并初始化一个仓库（repository）、开始或停止跟踪（track）文件、暂存（stage）或提交（commit）更改。配置Git来忽</description>
+    </item>
+    
+    <item>
       <title>Mrakdown中插入数学公式</title>
       <link>https://zhihao2020.github.io/2020/04/markdown%E4%B8%AD%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>

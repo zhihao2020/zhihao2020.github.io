@@ -5,10 +5,19 @@
     <link>https://zhihao2020.github.io/tags/pyqt5/</link>
     <description>Recent content in PyQt5 on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 12 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zhihao2020.github.io/tags/pyqt5/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>PyQt5应用最小化到托盘</title>
+      <link>https://zhihao2020.github.io/2020/05/pyqt5%E5%BA%94%E7%94%A8%E6%9C%80%E5%B0%8F%E5%8C%96%E5%88%B0%E6%89%98%E7%9B%98/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/pyqt5%E5%BA%94%E7%94%A8%E6%9C%80%E5%B0%8F%E5%8C%96%E5%88%B0%E6%89%98%E7%9B%98/</guid>
+      <description>import sys # 从PyQt库导入QtWidget通用窗口类,基本的窗口集在PyQt5.QtWidgets模块里. from PyQt5.QtWidgets import QApplication, QWidget, QSystemTrayIcon, QAction, QMenu, qApp, QMessageBox from PyQt5.QtGui import QIcon from PyQt5.QtCore import QCoreApplication if</description>
+    </item>
     
     <item>
       <title>Qtdesigner提升窗口控件</title>
@@ -179,15 +188,6 @@
       
       <guid>https://zhihao2020.github.io/2020/05/python%E6%8E%A7%E5%88%B6%E9%94%AE%E7%9B%98%E5%92%8C%E9%BC%A0%E6%A0%87/</guid>
       <description>使用pyautogui模块。 在Windows上，不需要安装其他模块。 在OS X上，运行sudo pip3 install pyobjc-framework-Quart</description>
-    </item>
-    
-    <item>
-      <title>Python组织文件</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E7%BB%84%E7%BB%87%E6%96%87%E4%BB%B6/</link>
-      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/05/python%E7%BB%84%E7%BB%87%E6%96%87%E4%BB%B6/</guid>
-      <description>shutil函数可以让你能够复制、移动、改名和删除文件。 复制文件和文件夹 shutil.copy(source,destination),这个</description>
     </item>
     
   </channel>
