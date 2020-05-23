@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Python控制键盘和鼠标</title>
+      <link>https://zhihao2020.github.io/2020/05/python%E6%8E%A7%E5%88%B6%E9%94%AE%E7%9B%98%E5%92%8C%E9%BC%A0%E6%A0%87/</link>
+      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/python%E6%8E%A7%E5%88%B6%E9%94%AE%E7%9B%98%E5%92%8C%E9%BC%A0%E6%A0%87/</guid>
+      <description>使用pyautogui模块。 在Windows上，不需要安装其他模块。 在OS X上，运行sudo pip3 install pyobjc-framework-Quart</description>
+    </item>
+    
+    <item>
       <title>Python组织文件</title>
       <link>https://zhihao2020.github.io/2020/05/python%E7%BB%84%E7%BB%87%E6%96%87%E4%BB%B6/</link>
       <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
@@ -179,15 +188,6 @@
       
       <guid>https://zhihao2020.github.io/2020/04/git%E9%94%99%E8%AF%AFnon-fast-forward%E5%90%8E%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
       <description>在Push文件到github时候，出现了这个问题。这个问题是本地和Github中Repository中的文件出现冲突所造成的。在提交之前你需</description>
-    </item>
-    
-    <item>
-      <title>创建你的第一个GUI</title>
-      <link>https://zhihao2020.github.io/2020/04/%E5%88%9B%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAgui/</link>
-      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/%E5%88%9B%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAgui/</guid>
-      <description>from PyQt5 import QtWidgets import sys if __name__ == &amp;quot;__main__&amp;quot;: app = QtWidgets.QApplication(sys.argv) w = QtWidgets.QWidgst() w.resize(600,600) w.move(600,600) w.setWindowTitle(&amp;quot;第一个Qt程序&amp;quot;) w.show() sys.exit(app.exec_()) 其中， app = QtWidgets.QApplication(sys.argv) 每一个PyQt</description>
     </item>
     
   </channel>

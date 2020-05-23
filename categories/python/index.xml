@@ -5,10 +5,19 @@
     <link>https://zhihao2020.github.io/categories/python/</link>
     <description>Recent content in Python on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 13 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zhihao2020.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>自动填充Word文档</title>
+      <link>https://zhihao2020.github.io/2020/05/%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85word%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Sat, 23 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85word%E6%96%87%E6%A1%A3/</guid>
+      <description>首先 pip install lxml pip install docx-mailmerge 处理Word文档 为了让docx-mailmerge能够正常工作，你需要在word中定义一个MergeField,这个在字段中</description>
+    </item>
     
     <item>
       <title>PyQt5应用最小化到托盘</title>
@@ -179,15 +188,6 @@
       
       <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/</guid>
       <description>当你运行独立的程序时，你的计算机就会生产一个简单的进程。他使用系统的资源（CPU、内存、硬盘存储）和你运行操作系统中的数据结构。 你的计算机看</description>
-    </item>
-    
-    <item>
-      <title>Python控制键盘和鼠标</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E6%8E%A7%E5%88%B6%E9%94%AE%E7%9B%98%E5%92%8C%E9%BC%A0%E6%A0%87/</link>
-      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/05/python%E6%8E%A7%E5%88%B6%E9%94%AE%E7%9B%98%E5%92%8C%E9%BC%A0%E6%A0%87/</guid>
-      <description>使用pyautogui模块。 在Windows上，不需要安装其他模块。 在OS X上，运行sudo pip3 install pyobjc-framework-Quart</description>
     </item>
     
   </channel>
