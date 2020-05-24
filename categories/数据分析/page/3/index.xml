@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Git错误non-fast-forward后的解决方案</title>
+      <link>https://zhihao2020.github.io/2020/04/git%E9%94%99%E8%AF%AFnon-fast-forward%E5%90%8E%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/git%E9%94%99%E8%AF%AFnon-fast-forward%E5%90%8E%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
+      <description>在Push文件到github时候，出现了这个问题。这个问题是本地和Github中Repository中的文件出现冲突所造成的。在提交之前你需</description>
+    </item>
+    
+    <item>
       <title>创建你的第一个GUI</title>
       <link>https://zhihao2020.github.io/2020/04/%E5%88%9B%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAgui/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
@@ -179,15 +188,6 @@
       
       <guid>https://zhihao2020.github.io/2020/04/%E5%9C%A8%E5%8D%95%E5%85%83%E6%A0%BC%E9%87%8C%E6%94%BE%E7%BD%AE%E5%A4%8D%E9%80%89%E6%A1%86/</guid>
       <description>放置 ck = QCheckBox() newItem = XX.setCellWidget(1,0,ck) 检查是否被选 lines = [] sum = 0 i = 0 if (i &amp;lt; self.name.rowCount()): lines.append([self.tableWidget.cellWidget(i, 0), self.tableWidget.item(i, 1), self.tableWidget.item(i, 2), self.tableWidget.cellWidget(i, 5)]) i += 1 for line in lines: if line[0].checkState()==Qt.Checked: pass</description>
-    </item>
-    
-    <item>
-      <title>用Python模拟生命</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/</guid>
-      <description>这个项目会创建一个N×N的细胞网格，随时间推移，模拟Conway生命游戏。 在这个游戏中，细胞处于ON或OFF状态。游戏从一个初始状态开始，每</description>
     </item>
     
   </channel>

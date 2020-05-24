@@ -5,10 +5,19 @@
     <link>https://zhihao2020.github.io/categories/</link>
     <description>Recent content in Categories on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 23 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zhihao2020.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Flask入口</title>
+      <link>https://zhihao2020.github.io/2020/05/flask%E5%85%A5%E5%8F%A3/</link>
+      <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/flask%E5%85%A5%E5%8F%A3/</guid>
+      <description>用Flask可以快速开发，大小网站都可以通过Flask搭建，扩展性也很好。比如有Bootstrap-Flask这样的插件。 先来一个极其简单的</description>
+    </item>
     
     <item>
       <title>自动填充Word文档</title>
@@ -179,15 +188,6 @@
       
       <guid>https://zhihao2020.github.io/2020/05/%E8%BD%AC13%E4%B8%AA%E5%A5%BD%E7%8E%A9%E7%9A%84python%E7%BB%83%E6%89%8B%E9%A1%B9%E7%9B%AE/</guid>
       <description>原文链接：https://realpython.com/intermediate-pythonproject-ideas/ Web 项目设计 内容聚合</description>
-    </item>
-    
-    <item>
-      <title>Python中的进程(1)</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/</link>
-      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/</guid>
-      <description>当你运行独立的程序时，你的计算机就会生产一个简单的进程。他使用系统的资源（CPU、内存、硬盘存储）和你运行操作系统中的数据结构。 你的计算机看</description>
     </item>
     
   </channel>

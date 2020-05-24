@@ -5,10 +5,19 @@
     <link>https://zhihao2020.github.io/tags/</link>
     <description>Recent content in Tags on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 23 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zhihao2020.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python中的进程(1)</title>
+      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/</link>
+      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/</guid>
+      <description>当你运行独立的程序时，你的计算机就会生产一个简单的进程。他使用系统的资源（CPU、内存、硬盘存储）和你运行操作系统中的数据结构。 你的计算机看</description>
+    </item>
     
     <item>
       <title>Python控制键盘和鼠标</title>
@@ -179,15 +188,6 @@
       
       <guid>https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C2/</guid>
       <description>打标签 打标签就是用于给历史中的某一个提交打上标签。 列出标签 在Git中列出已有的标签是非常直观的。只需要输入git tag。 当然，你可以使用特定</description>
-    </item>
-    
-    <item>
-      <title>Git错误non-fast-forward后的解决方案</title>
-      <link>https://zhihao2020.github.io/2020/04/git%E9%94%99%E8%AF%AFnon-fast-forward%E5%90%8E%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
-      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/git%E9%94%99%E8%AF%AFnon-fast-forward%E5%90%8E%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
-      <description>在Push文件到github时候，出现了这个问题。这个问题是本地和Github中Repository中的文件出现冲突所造成的。在提交之前你需</description>
     </item>
     
   </channel>
