@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        爱惜自己的时间 - Zhihao&#39;s Blog
+        Python持久化处理——pickle - Zhihao&#39;s Blog
       </title>
     <head>
 <script data-ad-client="ca-pub-5137727031357129" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -24,32 +24,32 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="时间与精力是人进步的基础" />
+  <meta name="description" content="用于持久性处理" />
   <meta name="generator" content="Hugo 0.69.0 with theme pure" />
-  <title>爱惜自己的时间 - Zhihao&#39;s Blog</title>
+  <title>Python持久化处理——pickle - Zhihao&#39;s Blog</title>
   
   
   <link rel="stylesheet" href="https://zhihao2020.github.io/css/style.min.c4bc7071f132c964c2116bca53b392933f377e5ca7b7051ed245187c621a2d3e.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="爱惜自己的时间" />
-<meta property="og:description" content="时间与精力是人进步的基础" />
+  <meta property="og:title" content="Python持久化处理——pickle" />
+<meta property="og:description" content="用于持久性处理" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://zhihao2020.github.io/2020/04/%E7%88%B1%E6%83%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%B6%E9%97%B4/" />
-<meta property="article:published_time" content="2020-04-20T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-04-20T00:00:00+00:00" />
-<meta itemprop="name" content="爱惜自己的时间">
-<meta itemprop="description" content="时间与精力是人进步的基础">
-<meta itemprop="datePublished" content="2020-04-20T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2020-04-20T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="265">
+<meta property="og:url" content="https://zhihao2020.github.io/2020/05/python%E6%8C%81%E4%B9%85%E5%8C%96%E5%A4%84%E7%90%86pickle/" />
+<meta property="article:published_time" content="2020-05-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-05-27T00:00:00+00:00" />
+<meta itemprop="name" content="Python持久化处理——pickle">
+<meta itemprop="description" content="用于持久性处理">
+<meta itemprop="datePublished" content="2020-05-27T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-05-27T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="615">
 
 
 
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="爱惜自己的时间"/>
-<meta name="twitter:description" content="时间与精力是人进步的基础"/>
+<meta itemprop="keywords" content="Python标准库," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python持久化处理——pickle"/>
+<meta name="twitter:description" content="用于持久性处理"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -334,8 +334,8 @@
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2020/04/%E7%88%B1%E6%83%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%B6%E9%97%B4/"
-    >爱惜自己的时间</a
+    href="/2020/05/python%E6%8C%81%E4%B9%85%E5%8C%96%E5%A4%84%E7%90%86pickle/"
+    >Python持久化处理——pickle</a
   >
 </h1>
 
@@ -343,14 +343,18 @@
         
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://zhihao2020.github.io/2020/04/%E7%88%B1%E6%83%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%B6%E9%97%B4/" class="article-date">
-  <time datetime="2020-04-20 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-20</time>
+<a href="https://zhihao2020.github.io/2020/05/python%E6%8C%81%E4%B9%85%E5%8C%96%E5%A4%84%E7%90%86pickle/" class="article-date">
+  <time datetime="2020-05-27 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-27</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/%E7%94%9F%E6%B4%BB/"> 生活 </a>
-</span>
+  <a class="article-category-link" href="/categories/python/"> Python </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/python%E6%A0%87%E5%87%86%E5%BA%93/"> Python标准库 </a>
+  </span>
 
 	<span class="article-read hidden-xs">
 	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
@@ -360,22 +364,64 @@
 	</span>
 	<span class="article-read hidden-xs">
     	<i class="icon icon-eye-fill" aria-hidden="true"></i>
-    	<span id="https://zhihao2020.github.io/2020/04/%E7%88%B1%E6%83%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%B6%E9%97%B4/" class="leancloud_visitors"  data-flag-title="爱惜自己的时间">0</span>
+    	<span id="https://zhihao2020.github.io/2020/05/python%E6%8C%81%E4%B9%85%E5%8C%96%E5%A4%84%E7%90%86pickle/" class="leancloud_visitors"  data-flag-title="Python持久化处理——pickle">0</span>
     </span>
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/04/%E7%88%B1%E6%83%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%B6%E9%97%B4/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/05/python%E6%8C%81%E4%B9%85%E5%8C%96%E5%A4%84%E7%90%86pickle/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 265字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1分 </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 615字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2分 </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <blockquote>
-<p>人生而就是不平等的，但是在时间上却是平等的</p>
+      <h2 id="简介">简介</h2>
+<p>pickle使用二进制协议，用于对Python对象结构进行序列化和反序列化</p>
+<p>“Pickling”是将Python对象层次结构转化为字节流的过程，“unpickling”是逆运算，将字节流转换回对象层次结构的过程</p>
+<blockquote>
+<p>注意：pickle仅用于释放你信任的数据，陌生数据可能是构造的恶意数据，这些数据将在解码过程中执行任意代码。</p>
+<p>如果处理不安全数据，<code>json</code>模块更加适合</p>
 </blockquote>
-<h1 id="珍惜自己的时间远离焦虑">珍惜自己的时间，远离焦虑</h1>
-<p>这个世界上又这么一个银行，他每天给你1440的资产，让你去消费，而且过了今天就一切清零，再给你1440.资产不会积累，只能不断消耗，但是每天的供应都是一样多。它其实就叫做时间银行。</p>
-<p>与其因焦虑而不断浪费自己的时间，不如去好好的利用它们、好好的享受它们。那些使用这些资产去学习、提升自己的人，其实本质上是相信自己以后的时间会更值钱。</p>
-<p>人就是很奇怪，对有形的东西感知能力还在线，对于那一些不容易感知的就会失去感觉，不信的话，想想你自己在家的这段时间，还能记得今天是周几吗？</p>
+<h2 id="模块接口">模块接口</h2>
+<p>序列化Python对象，使用<code>dumps()</code>函数。反序列化数据，要调用<code>loads()</code>函数。</p>
+<p>但是，要更多的控制序列化和反序列化，则应该创建一个<code>Pickler</code>或一个<code>Unpickler</code>对象。</p>
+<h3 id="pickledumpobjfileprotocolnonefix_importtruebuffer_callbacknone">pickle.dump(obj,file,protocol=None,*,fix_import=True,buffer_callback=None)</h3>
+<p>将Python对象写入文件中，这等效为<code>Pickler(file,protocol).dump(obj)</code></p>
+<h3 id="pickledumpsobjprotocolnonefix_importstruebuffer_callbacknone">pickle.dumps(obj,protocol=None,*,fix_imports=True,buffer_callback=None)</h3>
+<p>将Python对象 表示为pickled后的作为字节的对象，这并不是写入文件中。</p>
+<h3 id="pickleloadfilefix_importstrueencodingasciierrorsstrictbuffersnone">pickle.load(file,*,fix_imports=True.encoding=&quot;ASCII&rdquo;,errors=&quot;strict&rdquo;,buffers=None)</h3>
+<p>从一个open的文件对象中读取已经被腌制的Python对象，返回原有的Python结构。它等效于<code>Unpickler(file).load()</code></p>
+<h3 id="pickleloadsdatafix_importstrueencodingasciierrorsstrictbuffersnone">pickle.loads(data,*,fix_imports=True,encoding=&quot;ASCII&rdquo;,errors=&quot;strict&rdquo;,buffers=None)</h3>
+<p>返回对象的腌制表示数据的重构对象层次结构 。注意data必须是bytes-like object.</p>
+<h2 id="异常">异常</h2>
+<h3 id="picklepickleerror">pickle.PickleError</h3>
+<p>是pickle的通用基类，它继承了PickleError</p>
+<h3 id="picklepicklingerror">pickle.PicklingError</h3>
+<p>当遇到无法拾取的对象时引发的错误</p>
+<h3 id="pickleunpicklingerror">pickle.UnpicklingError</h3>
+<p>解开对象时出现问题，例如数据损坏或安全冲突，将引发错误</p>
+<h2 id="例子">例子</h2>
+<h3 id="写入与读取">写入与读取</h3>
+<pre><code class="language-python">import pickle
+data = {
+    'a': [1, 2.0, 3, 4+6j],
+    'b': (&quot;character string&quot;, b&quot;byte string&quot;),
+    'c': {None, True, False}
+}
+with open('data.pickle','wb') as f:
+    pickle.dump(data,f,pickle.HIGHEST_PROTOCOL)
+</code></pre>
+<pre><code class="language-python">import pickle
+with open('data.pickle','rb') as f:
+    data = pickle.load(f)
+</code></pre>
+<h3 id="修改">修改</h3>
+<pre><code class="language-python">import pickle
+a={}
+with open(&quot;temp.io&quot;,&quot;rb&quot;) as f:
+    a=pickle.load(f)
+with open(&quot;temp.io&quot;,&quot;wb&quot;) as f:
+    a['test'] = 10
+    pickle.dump(a,f)
+</code></pre>
 
     </div>
     <div class="article-footer">
@@ -383,7 +429,7 @@
   <ul class="post-copyright list-unstyled">
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接: </strong>
-      <a href="https://zhihao2020.github.io/2020/04/%E7%88%B1%E6%83%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%B6%E9%97%B4/" title="爱惜自己的时间" target="_blank" rel="external">https://zhihao2020.github.io/2020/04/%E7%88%B1%E6%83%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%B6%E9%97%B4/</a>
+      <a href="https://zhihao2020.github.io/2020/05/python%E6%8C%81%E4%B9%85%E5%8C%96%E5%A4%84%E7%90%86pickle/" title="Python持久化处理——pickle" target="_blank" rel="external">https://zhihao2020.github.io/2020/05/python%E6%8C%81%E4%B9%85%E5%8C%96%E5%A4%84%E7%90%86pickle/</a>
     </li>
     <li class="post-copyright-license">
       <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
@@ -415,10 +461,10 @@
 </div><nav class="bar bar-footer clearfix" data-stick-bottom>
     <div class="bar-inner">
         <ul class="pager pull-left">
-            <li class="next">
-                <a href="https://zhihao2020.github.io/2020/04/%E5%85%B3%E4%BA%8E%E8%87%AA%E5%AD%A6%E7%9A%84%E6%84%9F%E6%83%B31/"
-                    title="关于自学的感想（1）"><span>上一篇&nbsp;&nbsp;</span><i
-                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            <li class="prev">
+                <a href="https://zhihao2020.github.io/2020/05/flask%E5%85%A5%E5%8F%A3/" title="Flask入口"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
             </li>
             
             <li class="toggle-toc">

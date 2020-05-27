@@ -4,7 +4,42 @@
   
   <url>
     <loc>https://zhihao2020.github.io/categories/</loc>
-    <lastmod>2020-05-24T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/posts/</loc>
+    <lastmod>2020-05-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/categories/python/</loc>
+    <lastmod>2020-05-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/2020/05/python%E6%8C%81%E4%B9%85%E5%8C%96%E5%A4%84%E7%90%86pickle/</loc>
+    <lastmod>2020-05-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/tags/python%E6%A0%87%E5%87%86%E5%BA%93/</loc>
+    <lastmod>2020-05-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhihao2020.github.io/tags/</loc>
+    <lastmod>2020-05-27T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -17,28 +52,7 @@
   </url>
   
   <url>
-    <loc>https://zhihao2020.github.io/posts/</loc>
-    <lastmod>2020-05-24T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhihao2020.github.io/categories/python/</loc>
-    <lastmod>2020-05-24T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://zhihao2020.github.io/tags/python-web/</loc>
-    <lastmod>2020-05-24T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhihao2020.github.io/tags/</loc>
     <lastmod>2020-05-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -88,13 +102,6 @@
   
   <url>
     <loc>https://zhihao2020.github.io/2020/05/pyqt5%E4%B8%AD%E7%9A%84%E4%BF%A1%E5%8F%B7%E6%A7%BD/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhihao2020.github.io/tags/python%E6%A0%87%E5%87%86%E5%BA%93/</loc>
     <lastmod>2020-05-11T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
