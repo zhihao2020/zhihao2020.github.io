@@ -2,191 +2,191 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>办公自动化 on Zhihao&#39;s Blog</title>
-    <link>https://zhihao2020.github.io/tags/%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
+    <link>https://xuzhihao.top/tags/%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
     <description>Recent content in 办公自动化 on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 23 May 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://zhihao2020.github.io/tags/%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://xuzhihao.top/tags/%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python中的生成器</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E7%94%9F%E6%88%90%E5%99%A8/</link>
+      <link>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E7%94%9F%E6%88%90%E5%99%A8/</link>
       <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E7%94%9F%E6%88%90%E5%99%A8/</guid>
+      <guid>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E7%94%9F%E6%88%90%E5%99%A8/</guid>
       <description>生成器的实现需要yield。 例如这样： def counter(start,stop): while start&amp;lt;=stop: yield start start += 1 for i in counter(101,105): print(i) yield和return最明显的区别是yield之后的语句可以被执行，而r</description>
     </item>
     
     <item>
       <title>Python中的装饰器(2)</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A82/</link>
+      <link>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A82/</link>
       <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A82/</guid>
+      <guid>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A82/</guid>
       <description>使用范本： from functools import wraps def decorator_name(f): @wraps(f) def decorated(*args,**kwargs): if not can_run: return &amp;quot;Function will not run&amp;quot; return decorated @decorator_name def func(): return(&amp;quot;Function is running&amp;quot;) can_run - True print(func()) can_run = False print(func()) 注意：@wraps接受一个函数来进行装饰，并加入了复制函数名称、</description>
     </item>
     
     <item>
       <title>【转】13个好玩的Python练手项目</title>
-      <link>https://zhihao2020.github.io/2020/05/%E8%BD%AC13%E4%B8%AA%E5%A5%BD%E7%8E%A9%E7%9A%84python%E7%BB%83%E6%89%8B%E9%A1%B9%E7%9B%AE/</link>
+      <link>https://xuzhihao.top/2020/05/%E8%BD%AC13%E4%B8%AA%E5%A5%BD%E7%8E%A9%E7%9A%84python%E7%BB%83%E6%89%8B%E9%A1%B9%E7%9B%AE/</link>
       <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/%E8%BD%AC13%E4%B8%AA%E5%A5%BD%E7%8E%A9%E7%9A%84python%E7%BB%83%E6%89%8B%E9%A1%B9%E7%9B%AE/</guid>
+      <guid>https://xuzhihao.top/2020/05/%E8%BD%AC13%E4%B8%AA%E5%A5%BD%E7%8E%A9%E7%9A%84python%E7%BB%83%E6%89%8B%E9%A1%B9%E7%9B%AE/</guid>
       <description>原文链接：https://realpython.com/intermediate-pythonproject-ideas/ Web 项目设计 内容聚合</description>
     </item>
     
     <item>
       <title>Python中的进程(1)</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/</link>
+      <link>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/</link>
       <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/</guid>
+      <guid>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/</guid>
       <description>当你运行独立的程序时，你的计算机就会生产一个简单的进程。他使用系统的资源（CPU、内存、硬盘存储）和你运行操作系统中的数据结构。 你的计算机看</description>
     </item>
     
     <item>
       <title>Python控制键盘和鼠标</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E6%8E%A7%E5%88%B6%E9%94%AE%E7%9B%98%E5%92%8C%E9%BC%A0%E6%A0%87/</link>
+      <link>https://xuzhihao.top/2020/05/python%E6%8E%A7%E5%88%B6%E9%94%AE%E7%9B%98%E5%92%8C%E9%BC%A0%E6%A0%87/</link>
       <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/python%E6%8E%A7%E5%88%B6%E9%94%AE%E7%9B%98%E5%92%8C%E9%BC%A0%E6%A0%87/</guid>
+      <guid>https://xuzhihao.top/2020/05/python%E6%8E%A7%E5%88%B6%E9%94%AE%E7%9B%98%E5%92%8C%E9%BC%A0%E6%A0%87/</guid>
       <description>使用pyautogui模块。 在Windows上，不需要安装其他模块。 在OS X上，运行sudo pip3 install pyobjc-framework-Quart</description>
     </item>
     
     <item>
       <title>Python组织文件</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E7%BB%84%E7%BB%87%E6%96%87%E4%BB%B6/</link>
+      <link>https://xuzhihao.top/2020/05/python%E7%BB%84%E7%BB%87%E6%96%87%E4%BB%B6/</link>
       <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/python%E7%BB%84%E7%BB%87%E6%96%87%E4%BB%B6/</guid>
+      <guid>https://xuzhihao.top/2020/05/python%E7%BB%84%E7%BB%87%E6%96%87%E4%BB%B6/</guid>
       <description>shutil函数可以让你能够复制、移动、改名和删除文件。 复制文件和文件夹 shutil.copy(source,destination),这个</description>
     </item>
     
     <item>
       <title>ASCII表-Nonprintable Characters</title>
-      <link>https://zhihao2020.github.io/2020/05/ascii%E8%A1%A8-nonprintable-characters/</link>
+      <link>https://xuzhihao.top/2020/05/ascii%E8%A1%A8-nonprintable-characters/</link>
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/ascii%E8%A1%A8-nonprintable-characters/</guid>
+      <guid>https://xuzhihao.top/2020/05/ascii%E8%A1%A8-nonprintable-characters/</guid>
       <description>ASCII Table &amp;ndash; Nonprintable Characters Control Character Python &amp;amp; Java Hexadecimal Decimal Description ^@ \0 00 0 Null character ^A \1 01 1 Start of heading ^B \2 02 2 Start of text ^C \3 03 3 End of text ^D \4 04 4 End of transmission ^E \5 05 5 Enquiry ^F \6 06 6 Acknowledge ^G \a 07 7 Audible bell ^H \b 08 8 Backspace ^I \t</description>
     </item>
     
     <item>
       <title>Python中win32print</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%ADwin32print/</link>
+      <link>https://xuzhihao.top/2020/05/python%E4%B8%ADwin32print/</link>
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%ADwin32print/</guid>
+      <guid>https://xuzhihao.top/2020/05/python%E4%B8%ADwin32print/</guid>
       <description>OpenPrinter 打开打印机 win32print.OpenPrinter(string,Defaults) string就是打印机的名字，当为空的时候打开本地打印机 StartDocPrinter StartDocPrinter(hprinter, level , tuple ) level=1 tuple:对应于level参数的元组 ​ [0]:字符串：</description>
     </item>
     
     <item>
       <title>Python中的enumerate()</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84enumerate/</link>
+      <link>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84enumerate/</link>
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84enumerate/</guid>
+      <guid>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84enumerate/</guid>
       <description>enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中 写法 enumerate(sequence,[start=0]) 参数 sequen</description>
     </item>
     
     <item>
       <title>Python中的textwrap</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84textwrap/</link>
+      <link>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84textwrap/</link>
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84textwrap/</guid>
+      <guid>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84textwrap/</guid>
       <description>用于对文本字符串进行自动换行或填充。 textwrap.wrap(text,width=70,**kwargs) ​ 对text中的单独段落自动换行以使每行长度最多为width个字符。返回输出行组成的列表，行尾不带换行</description>
     </item>
     
     <item>
       <title>Python中的异常处理</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</link>
+      <link>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</link>
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</guid>
+      <guid>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</guid>
       <description>捕捉异常 使用try/except语句实现。 except() except语句可以使用不止一次： try: xxx except ZeroDivisionError: print() except TypeError: print() 或者像这样 try: XXX except (ZeroDivisionError,TypeError): print() 如果你想记录原因的话，可以</description>
     </item>
     
     <item>
       <title>Python的webbrowser</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E7%9A%84webbrowser/</link>
+      <link>https://xuzhihao.top/2020/05/python%E7%9A%84webbrowser/</link>
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/python%E7%9A%84webbrowser/</guid>
+      <guid>https://xuzhihao.top/2020/05/python%E7%9A%84webbrowser/</guid>
       <description>允许向用户显示基于Web的文档。在大多数情况下，只需要调用open()函数就可以。 脚本 webbrowser 可以用作模块的命令行界面。它接受一个 URL 作为参数。还接</description>
     </item>
     
     <item>
       <title>SQLite常用操作</title>
-      <link>https://zhihao2020.github.io/2020/05/sqlite%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
+      <link>https://xuzhihao.top/2020/05/sqlite%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/sqlite%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
+      <guid>https://xuzhihao.top/2020/05/sqlite%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
       <description>新建一个数据库文件 使用cd命令进入到数据库文件的目录下，用sqlite3命令创建数据库文件。 sqlite3 DatabaseName.db 查看已建立的数据库文件 使用database命</description>
     </item>
     
     <item>
       <title>html转为图片</title>
-      <link>https://zhihao2020.github.io/2020/04/html%E8%BD%AC%E4%B8%BA%E5%9B%BE%E7%89%87/</link>
+      <link>https://xuzhihao.top/2020/04/html%E8%BD%AC%E4%B8%BA%E5%9B%BE%E7%89%87/</link>
       <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/html%E8%BD%AC%E4%B8%BA%E5%9B%BE%E7%89%87/</guid>
+      <guid>https://xuzhihao.top/2020/04/html%E8%BD%AC%E4%B8%BA%E5%9B%BE%E7%89%87/</guid>
       <description>安装python-pdfkit： pip install pdfkit 安装wkhtmlopdf https://wkhtmltopdf.org/downloads.html下</description>
     </item>
     
     <item>
       <title>Python中的logging模块</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84logging%E6%A8%A1%E5%9D%97/</link>
+      <link>https://xuzhihao.top/2020/04/python%E4%B8%AD%E7%9A%84logging%E6%A8%A1%E5%9D%97/</link>
       <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84logging%E6%A8%A1%E5%9D%97/</guid>
+      <guid>https://xuzhihao.top/2020/04/python%E4%B8%AD%E7%9A%84logging%E6%A8%A1%E5%9D%97/</guid>
       <description>使用日志模块要启用logging模块， 开始 在程序运行时将日志信息显示在屏幕上，请将下面的代码复制到程序顶部（但在Python的#!行之下） import</description>
     </item>
     
     <item>
       <title>ShellExecute简单控制打印机</title>
-      <link>https://zhihao2020.github.io/2020/04/shellexecute%E7%AE%80%E5%8D%95%E6%8E%A7%E5%88%B6%E6%89%93%E5%8D%B0%E6%9C%BA/</link>
+      <link>https://xuzhihao.top/2020/04/shellexecute%E7%AE%80%E5%8D%95%E6%8E%A7%E5%88%B6%E6%89%93%E5%8D%B0%E6%9C%BA/</link>
       <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/shellexecute%E7%AE%80%E5%8D%95%E6%8E%A7%E5%88%B6%E6%89%93%E5%8D%B0%E6%9C%BA/</guid>
+      <guid>https://xuzhihao.top/2020/04/shellexecute%E7%AE%80%E5%8D%95%E6%8E%A7%E5%88%B6%E6%89%93%E5%8D%B0%E6%9C%BA/</guid>
       <description>使用ShellExecute方法，可以打印Microsoft Office文档，PDF文件，文本文件以及几乎搜友主要应用程序。 import tempfile import win32api import win32print filename =</description>
     </item>
     
     <item>
       <title>Window下安装SQLite</title>
-      <link>https://zhihao2020.github.io/2020/04/%E5%AE%89%E8%A3%85sqlite/</link>
+      <link>https://xuzhihao.top/2020/04/%E5%AE%89%E8%A3%85sqlite/</link>
       <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/%E5%AE%89%E8%A3%85sqlite/</guid>
+      <guid>https://xuzhihao.top/2020/04/%E5%AE%89%E8%A3%85sqlite/</guid>
       <description>SQLite官方安装地址：http://www.sqlite.org/download.html 我下载了压缩包sqlite-tools-wi</description>
     </item>
     
     <item>
       <title>用Matplotlib画折线图</title>
-      <link>https://zhihao2020.github.io/2020/04/%E7%94%A8matplotlib%E7%94%BB%E6%8A%98%E7%BA%BF%E5%9B%BE/</link>
+      <link>https://xuzhihao.top/2020/04/%E7%94%A8matplotlib%E7%94%BB%E6%8A%98%E7%BA%BF%E5%9B%BE/</link>
       <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/%E7%94%A8matplotlib%E7%94%BB%E6%8A%98%E7%BA%BF%E5%9B%BE/</guid>
+      <guid>https://xuzhihao.top/2020/04/%E7%94%A8matplotlib%E7%94%BB%E6%8A%98%E7%BA%BF%E5%9B%BE/</guid>
       <description>plt.plot()函数参数详解 plt.plot(x,y,linestyle, linewidth,color,marker, markersize,markeredgecolor, markerfactcolor,label,alpha) x：指定折现图的x轴数据 y：指定折线图的y轴数据 linestyle：指定折线类型，可以是实线、虚线、</description>
     </item>
     
     <item>
       <title>pip使用指南</title>
-      <link>https://zhihao2020.github.io/2020/04/pip%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</link>
+      <link>https://xuzhihao.top/2020/04/pip%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</link>
       <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/pip%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</guid>
+      <guid>https://xuzhihao.top/2020/04/pip%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</guid>
       <description>安装时，换个源 pip install -i http://pypi.tuna.tsinghua.edu.cn/simple XXX https://pypi.douban.com/simple 豆瓣的源 显示版本和路径 pip --version 升级pip pip install -U pip 安装包 pip install SomePackage #这是下载最新版本 pip install SomePackage==1.0.4 #指定版本 pip install SomePackafe&amp;gt;=1.0.4 #最小版本 升级包 pip</description>
     </item>
     
     <item>
       <title>Windows下CMD常用命令</title>
-      <link>https://zhihao2020.github.io/2020/04/windows%E4%B8%8Bcmd%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <link>https://xuzhihao.top/2020/04/windows%E4%B8%8Bcmd%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/windows%E4%B8%8Bcmd%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https://xuzhihao.top/2020/04/windows%E4%B8%8Bcmd%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description>1、进入某个盘 D: #进入D盘 2、查看目录文件 dir 3、创建目录和删除目录 md 目录名 //创建目录 rd 目录名 //删除目录 4、查看本机ip ipconfig 5、清楚屏幕 cls 6</description>
     </item>
     
