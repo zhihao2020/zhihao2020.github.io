@@ -5,10 +5,28 @@
     <link>https://zhihao2020.github.io/categories/python/</link>
     <description>Recent content in Python on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 27 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zhihao2020.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>QtableWidget中单元格排序</title>
+      <link>https://zhihao2020.github.io/2020/05/qtablewidget%E4%B8%AD%E5%8D%95%E5%85%83%E6%A0%BC%E6%8E%92%E5%BA%8F/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/qtablewidget%E4%B8%AD%E5%8D%95%E5%85%83%E6%A0%BC%E6%8E%92%E5%BA%8F/</guid>
+      <description>PyQt5 中的QtableWidget项排序 项排序是指针对表格部件中的数据行进行排序，调用语法如下： sortItems(column,Qt.AscendingOrder) 排序依据参数column指定列进行。Qt.So</description>
+    </item>
+    
+    <item>
+      <title>TensorFlow的建模流程</title>
+      <link>https://zhihao2020.github.io/2020/05/tensorflow%E7%9A%84%E5%BB%BA%E6%A8%A1%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/tensorflow%E7%9A%84%E5%BB%BA%E6%A8%A1%E6%B5%81%E7%A8%8B/</guid>
+      <description>从原理上说可以使用张量构建计算图来定义神经网络，并通过自动微分机制训练模型。 但为简洁，我们大多使用TensorFlow的高层次keras接口</description>
+    </item>
     
     <item>
       <title>Python持久化处理——pickle</title>
@@ -170,24 +188,6 @@
       
       <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E5%8D%8F%E7%A8%8B/</guid>
       <description>Python中的协程和生成器相似但又有不同。主要区别在于： 生成器是数据的生成器 协程则是数据的消费者 首先，我们先来回顾下生成器的创建过程。 def fib():</description>
-    </item>
-    
-    <item>
-      <title>Python中的生成器</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E7%94%9F%E6%88%90%E5%99%A8/</link>
-      <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E7%94%9F%E6%88%90%E5%99%A8/</guid>
-      <description>生成器的实现需要yield。 例如这样： def counter(start,stop): while start&amp;lt;=stop: yield start start += 1 for i in counter(101,105): print(i) yield和return最明显的区别是yield之后的语句可以被执行，而r</description>
-    </item>
-    
-    <item>
-      <title>Python中的装饰器(2)</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A82/</link>
-      <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A82/</guid>
-      <description>使用范本： from functools import wraps def decorator_name(f): @wraps(f) def decorated(*args,**kwargs): if not can_run: return &amp;quot;Function will not run&amp;quot; return decorated @decorator_name def func(): return(&amp;quot;Function is running&amp;quot;) can_run - True print(func()) can_run = False print(func()) 注意：@wraps接受一个函数来进行装饰，并加入了复制函数名称、</description>
     </item>
     
   </channel>

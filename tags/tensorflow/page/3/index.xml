@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TensorFlow on Zhihao&#39;s Blog</title>
+    <link>https://zhihao2020.github.io/tags/tensorflow/</link>
+    <description>Recent content in TensorFlow on Zhihao&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://zhihao2020.github.io/tags/tensorflow/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>【Tensorflow安装问题】总是无法安装tensorflow：Could not find a version that satisfies the requirement tensorflow</title>
+      <link>https://zhihao2020.github.io/2020/04/tensorflow%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98%E6%80%BB%E6%98%AF%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85tensorflowcould-not-find-a-version-that-satisfies-the-requirement-tensorflow/</link>
+      <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/tensorflow%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98%E6%80%BB%E6%98%AF%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85tensorflowcould-not-find-a-version-that-satisfies-the-requirement-tensorflow/</guid>
+      <description>我在使用pip 安装Tendorflow时，出现了错误。 我查阅了好多博客，发现他们大多都是一个版本的&amp;hellip;.. Tensorflow能</description>
+    </item>
+    
+    <item>
+      <title>操作CSV表格</title>
+      <link>https://zhihao2020.github.io/2020/04/%E4%BD%BF%E7%94%A8csv%E6%A8%A1%E5%9D%97/</link>
+      <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E4%BD%BF%E7%94%A8csv%E6%A8%A1%E5%9D%97/</guid>
+      <description>CSV表示&amp;quot;Comma-Sparated Values（逗号分隔的值）&amp;quot;,CSV文件是简化的电子表格，保存为纯文本文件。 不</description>
+    </item>
+    
+    <item>
+      <title>Git基本操作(2)</title>
+      <link>https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C2/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C2/</guid>
+      <description>打标签 打标签就是用于给历史中的某一个提交打上标签。 列出标签 在Git中列出已有的标签是非常直观的。只需要输入git tag。 当然，你可以使用特定</description>
+    </item>
+    
+    <item>
+      <title>Git错误non-fast-forward后的解决方案</title>
+      <link>https://zhihao2020.github.io/2020/04/git%E9%94%99%E8%AF%AFnon-fast-forward%E5%90%8E%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/git%E9%94%99%E8%AF%AFnon-fast-forward%E5%90%8E%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
+      <description>在Push文件到github时候，出现了这个问题。这个问题是本地和Github中Repository中的文件出现冲突所造成的。在提交之前你需</description>
+    </item>
+    
+    <item>
+      <title>创建你的第一个GUI</title>
+      <link>https://zhihao2020.github.io/2020/04/%E5%88%9B%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAgui/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E5%88%9B%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAgui/</guid>
+      <description>from PyQt5 import QtWidgets import sys if __name__ == &amp;quot;__main__&amp;quot;: app = QtWidgets.QApplication(sys.argv) w = QtWidgets.QWidgst() w.resize(600,600) w.move(600,600) w.setWindowTitle(&amp;quot;第一个Qt程序&amp;quot;) w.show() sys.exit(app.exec_()) 其中， app = QtWidgets.QApplication(sys.argv) 每一个PyQt</description>
+    </item>
+    
+    <item>
+      <title>Git分支(1)</title>
+      <link>https://zhihao2020.github.io/2020/04/git%E5%88%86%E6%94%AF1/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/git%E5%88%86%E6%94%AF1/</guid>
+      <description>使用分支意味着你可以把你的工作从开发主线上分离开来，以免影响开发主线。 分支简介 在进行提交操作时，Git会保存一个提交对象（commit obj</description>
+    </item>
+    
+    <item>
+      <title>Python中的shelve</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84shelve/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84shelve/</guid>
+      <description>shelve可以当做是简单的存储。 使用方法如下： import shelve d = shelve.open(filename) # open -- file may get suffix added by low-level # library d[key] = data # store data at key (overwrites old data if # using an existing key) data = d[key] # retrieve a COPY of data at key (raise</description>
+    </item>
+    
+    <item>
+      <title>打包Python程序</title>
+      <link>https://zhihao2020.github.io/2020/04/%E6%89%93%E5%8C%85python%E7%A8%8B%E5%BA%8F/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E6%89%93%E5%8C%85python%E7%A8%8B%E5%BA%8F/</guid>
+      <description>PyInstaller原理 PyInstaller其实就是把Python解释器和脚本打包成一个可执行文件，和编译成真正的机器码完全是两回事。所</description>
+    </item>
+    
+    <item>
+      <title>让Google和百度搜索到你的Hugo博客</title>
+      <link>https://zhihao2020.github.io/2020/04/%E8%AE%A9google%E5%92%8C%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E5%88%B0%E4%BD%A0%E7%9A%84hugo%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E8%AE%A9google%E5%92%8C%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E5%88%B0%E4%BD%A0%E7%9A%84hugo%E5%8D%9A%E5%AE%A2/</guid>
+      <description>提交给Google网站站长 打开 Google网站站长，点击 “SEARCH CONSOLE ” 进入，然后添加资源。 会要求下载一个html文件如google571</description>
+    </item>
+    
+    <item>
+      <title>Python中的__call__方法</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__call__/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__call__/</guid>
+      <description>调用 关于 __call__ 方法，不得不先提到一个概念，就是可调用对象（callable），我们平时自定义的函数、内置函数和类都属于可调用对象，但凡是可以把一</description>
+    </item>
+    
+    <item>
+      <title>Python中的__new__方法</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__new__/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__new__/</guid>
+      <description>在python中方法名如果是__xxxx__()的，那么就有特殊的功能，因此叫做“魔法”方法 __new__的作用 在Python中__new_</description>
+    </item>
+    
+    <item>
+      <title>Python中的__str__方法</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__str__/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84__str__/</guid>
+      <description>在python中方法名如果是__xxxx__()的，那么就有特殊的功能，因此叫做“魔法”方法 class Cat: def __init__(self, new_name, new_age): &amp;quot;&amp;quot;&amp;quot;</description>
+    </item>
+    
+    <item>
+      <title>Python中的staticmethod和classmethod</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84staticmethod%E5%92%8Cclassmethod/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84staticmethod%E5%92%8Cclassmethod/</guid>
+      <description>@classmethod 返回函数的类方法 classmethod修饰符对应的函数不需要实例化，不需要self参数，但第一个参数需要是表示自身类的cls参数，可以调用</description>
+    </item>
+    
+    <item>
+      <title>Python中的super()函数</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84super%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84super%E5%87%BD%E6%95%B0/</guid>
+      <description>介绍 **super()**函数是用于条用父类（超类)的一个方法。 super 是用来解决多重继承问题的，直接用类名调用父类方法在使用单继承的时候没问题，</description>
+    </item>
+    
+    <item>
+      <title>Python中的装饰器(1)</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A81/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A81/</guid>
+      <description>函数也是对象 首先要明确一个概念，函数也是对象。 于是，函数本身其实可以与其他的数据类型一样，作为其他函数的参数或者返回值。 def decorator(func): def wrapper(): print(&amp;quot;we can do sth.Befor the func()</description>
+    </item>
+    
+    <item>
+      <title>Python中的装饰器(1)</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E5%87%BD%E6%95%B0%E5%B7%A5%E5%85%B71/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E5%87%BD%E6%95%B0%E5%B7%A5%E5%85%B71/</guid>
+      <description>函数也是对象 首先要明确一个概念，函数也是对象。 于是，函数本身其实可以与其他的数据类型一样，作为其他函数的参数或者返回值。 def decorator(func): def wrapper(): print(&amp;quot;we can do sth.Befor the func()</description>
+    </item>
+    
+    <item>
+      <title>Python的一种简单配置文件的方法</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/</guid>
+      <description>配置文件： [numbers] pi: 3.1415926 [messages] greeting: welcome to the area calculation program! question: Please emter the radius result_message: The area is 使用示例 from ConfigParser import ConfigParser CONFIGFILE = ‘XXX.ini&#39; config = ConfigParser() #读取配置文件 config.read(CONFIGFILE) #打印初始问候语 #要查看的区段</description>
+    </item>
+    
+    <item>
+      <title>面向对象的三大特性和五大原则</title>
+      <link>https://zhihao2020.github.io/2020/04/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7%E5%92%8C%E4%BA%94%E5%A4%A7%E5%8E%9F%E5%88%99/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7%E5%92%8C%E4%BA%94%E5%A4%A7%E5%8E%9F%E5%88%99/</guid>
+      <description>面向对象的三大基本特性，五大基本原则 透切理解面向对象三大基本特性是理解面向对象五大基本原则的基础. 三大特性是：封装,继承,多态 封装 封装最好理</description>
+    </item>
+    
+    <item>
+      <title>JupyterLab快捷键</title>
+      <link>https://zhihao2020.github.io/2020/04/jupyterlab%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/jupyterlab%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <description>JupyterLab 有两种键盘输入模式，分别为编辑模式和命令模式。 一、命令行模式 (按键 Esc 开启) 命令行模式：键盘输入运行程序命令；这时的单元框线是灰色。 快捷键 实</description>
+    </item>
+    
+    <item>
+      <title>Python的Unittest模块</title>
+      <link>https://zhihao2020.github.io/2020/04/python%E7%9A%84unittest%E6%A8%A1%E5%9D%97/</link>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/python%E7%9A%84unittest%E6%A8%A1%E5%9D%97/</guid>
+      <description>测试驱动是先写测试代码，然后写功能代码，通过测试来推动整个开发的进行。这有助于编写简洁可用和高质量的代码 unittest最早由JUnit启发</description>
+    </item>
+    
+  </channel>
+</rss>

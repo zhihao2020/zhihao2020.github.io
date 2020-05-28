@@ -5,10 +5,28 @@
     <link>https://zhihao2020.github.io/categories/python/</link>
     <description>Recent content in Python on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 27 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zhihao2020.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python中的生成器</title>
+      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E7%94%9F%E6%88%90%E5%99%A8/</link>
+      <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E7%94%9F%E6%88%90%E5%99%A8/</guid>
+      <description>生成器的实现需要yield。 例如这样： def counter(start,stop): while start&amp;lt;=stop: yield start start += 1 for i in counter(101,105): print(i) yield和return最明显的区别是yield之后的语句可以被执行，而r</description>
+    </item>
+    
+    <item>
+      <title>Python中的装饰器(2)</title>
+      <link>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A82/</link>
+      <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A82/</guid>
+      <description>使用范本： from functools import wraps def decorator_name(f): @wraps(f) def decorated(*args,**kwargs): if not can_run: return &amp;quot;Function will not run&amp;quot; return decorated @decorator_name def func(): return(&amp;quot;Function is running&amp;quot;) can_run - True print(func()) can_run = False print(func()) 注意：@wraps接受一个函数来进行装饰，并加入了复制函数名称、</description>
+    </item>
     
     <item>
       <title>【转】13个好玩的Python练手项目</title>
@@ -170,24 +188,6 @@
       
       <guid>https://zhihao2020.github.io/2020/04/windows%E4%B8%8Bcmd%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description>1、进入某个盘 D: #进入D盘 2、查看目录文件 dir 3、创建目录和删除目录 md 目录名 //创建目录 rd 目录名 //删除目录 4、查看本机ip ipconfig 5、清楚屏幕 cls 6</description>
-    </item>
-    
-    <item>
-      <title>【Tensorflow安装问题】总是无法安装tensorflow：Could not find a version that satisfies the requirement tensorflow</title>
-      <link>https://zhihao2020.github.io/2020/04/tensorflow%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98%E6%80%BB%E6%98%AF%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85tensorflowcould-not-find-a-version-that-satisfies-the-requirement-tensorflow/</link>
-      <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/tensorflow%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98%E6%80%BB%E6%98%AF%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85tensorflowcould-not-find-a-version-that-satisfies-the-requirement-tensorflow/</guid>
-      <description>我在使用pip 安装Tendorflow时，出现了错误。 我查阅了好多博客，发现他们大多都是一个版本的&amp;hellip;.. Tensorflow能</description>
-    </item>
-    
-    <item>
-      <title>操作CSV表格</title>
-      <link>https://zhihao2020.github.io/2020/04/%E4%BD%BF%E7%94%A8csv%E6%A8%A1%E5%9D%97/</link>
-      <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhihao2020.github.io/2020/04/%E4%BD%BF%E7%94%A8csv%E6%A8%A1%E5%9D%97/</guid>
-      <description>CSV表示&amp;quot;Comma-Sparated Values（逗号分隔的值）&amp;quot;,CSV文件是简化的电子表格，保存为纯文本文件。 不</description>
     </item>
     
   </channel>
