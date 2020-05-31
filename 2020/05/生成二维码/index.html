@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        生成二维码 - Zhihao&#39;s Blog
+      </title>
+    <head>
+<script data-ad-client="ca-pub-5137727031357129" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="pip install qrcode/myqr/zxing 背景知识 二维码整体划分为功能图形和编码区两大部分。功能图形又细分为：空白区、位置探测图形、位置探测图形分隔符、定位图形、校正图形，而编" />
+  <meta name="generator" content="Hugo 0.69.0 with theme pure" />
+  <title>生成二维码 - Zhihao&#39;s Blog</title>
+  
+  
+  <link rel="stylesheet" href="https://zhihao2020.github.io/css/style.min.c4bc7071f132c964c2116bca53b392933f377e5ca7b7051ed245187c621a2d3e.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="生成二维码" />
+<meta property="og:description" content="pip install qrcode/myqr/zxing 背景知识 二维码整体划分为功能图形和编码区两大部分。功能图形又细分为：空白区、位置探测图形、位置探测图形分隔符、定位图形、校正图形，而编" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhihao2020.github.io/2020/05/%E7%94%9F%E6%88%90%E4%BA%8C%E7%BB%B4%E7%A0%81/" />
+<meta property="article:published_time" content="2020-05-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-05-31T00:00:00+00:00" />
+<meta itemprop="name" content="生成二维码">
+<meta itemprop="description" content="pip install qrcode/myqr/zxing 背景知识 二维码整体划分为功能图形和编码区两大部分。功能图形又细分为：空白区、位置探测图形、位置探测图形分隔符、定位图形、校正图形，而编">
+<meta itemprop="datePublished" content="2020-05-31T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-05-31T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="743">
+
+
+
+<meta itemprop="keywords" content="办公自动化," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="生成二维码"/>
+<meta name="twitter:description" content="pip install qrcode/myqr/zxing 背景知识 二维码整体划分为功能图形和编码区两大部分。功能图形又细分为：空白区、位置探测图形、位置探测图形分隔符、定位图形、校正图形，而编"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+<meta name="google-site-verification" content="0gQ8sWKd4zLsJXwb0ZltECHLMlc_BsTe0i-UlxiVC_E" />
+
+<script data-ad-client="ca-pub-5137727031357129" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://zhihao2020.github.io" target="_blank">
+            <img class="img-circle img-rotate" src="https://zhihao2020.github.io/cat.jpg" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Zhihao</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">“教”是最好的学习方式</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Weifang, China</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>有事请联系我的邮箱：daxu1232018@outlook.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/python/" class="category-list-link">python</a><span class="category-list-count">56</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E5%BB%BA%E7%AD%91%E6%96%B9%E9%9D%A2/" class="category-list-link">建筑方面</a><span class="category-list-count">5</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E6%80%9D%E8%80%83/" class="category-list-link">思考</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/" class="category-list-link">效率工具</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" class="category-list-link">数据分析</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="category-list-link">数据库</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" class="category-list-link">杂七杂八</a><span class="category-list-count">7</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E7%94%9F%E6%B4%BB/" class="category-list-link">生活</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" class="category-list-link">神经网络</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://zhihao2020.github.io/categories/%E7%AE%97%E6%B3%95/" class="category-list-link">算法</a><span class="category-list-count">2</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/git/" class="tag-list-link">git</a><span
+                    class="tag-list-count">6</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/hugo/" class="tag-list-link">hugo</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/jupyterlab/" class="tag-list-link">jupyterlab</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/markown/" class="tag-list-link">markown</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/pyqt5/" class="tag-list-link">pyqt5</a><span
+                    class="tag-list-count">7</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/python-web/" class="tag-list-link">python-web</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/python%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0/" class="tag-list-link">python代码学习</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/python%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0/" class="tag-list-link">python内建函数</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/python%E6%A0%87%E5%87%86%E5%BA%93/" class="tag-list-link">python标准库</a><span
+                    class="tag-list-count">12</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/python%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95/" class="tag-list-link">python魔法方法</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/sqlite/" class="tag-list-link">sqlite</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/tensorflow/" class="tag-list-link">tensorflow</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/" class="tag-list-link">办公自动化</a><span
+                    class="tag-list-count">7</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/%E5%B7%A5%E7%A8%8B%E9%80%A0%E4%BB%B7/" class="tag-list-link">工程造价</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/%E5%B8%83%E8%B0%B7%E9%B8%9F%E7%AE%97%E6%B3%95/" class="tag-list-link">布谷鸟算法</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" class="tag-list-link">数据分析</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/" class="tag-list-link">数据可视化</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/%E7%88%AC%E8%99%AB/" class="tag-list-link">爬虫</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://zhihao2020.github.io/tags/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/" class="tag-list-link">错误记录</a><span
+                    class="tag-list-count">3</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://zhihao2020.github.io/2020/05/python-collection/" class="title">Python collection</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-31 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-31</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://zhihao2020.github.io/2020/05/%E7%94%9F%E6%88%90%E4%BA%8C%E7%BB%B4%E7%A0%81/" class="title">生成二维码</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-31 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-31</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://zhihao2020.github.io/2020/05/%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0api%E4%BB%8B%E7%BB%8D/" class="title">印象笔记API介绍</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-30 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-30</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://zhihao2020.github.io/2020/05/python%E5%AE%9E%E7%8E%B0%E5%B8%83%E8%B0%B7%E9%B8%9F%E7%AE%97%E6%B3%95/" class="title">Python实现布谷鸟算法</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-29 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-29</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://zhihao2020.github.io/2020/05/typeerror-range-object-does-not-support-item-assignment/" class="title">TypeError: &#39;range&#39; object does not support item assignment</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-29 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-29</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/05/%E7%94%9F%E6%88%90%E4%BA%8C%E7%BB%B4%E7%A0%81/"
+    >生成二维码</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://zhihao2020.github.io/2020/05/%E7%94%9F%E6%88%90%E4%BA%8C%E7%BB%B4%E7%A0%81/" class="article-date">
+  <time datetime="2020-05-31 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-31</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/python/"> Python </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/%E5%8A%9E%E5%85%AC%E8%87%AA%E5%8A%A8%E5%8C%96/"> 办公自动化 </a>
+  </span>
+
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+	<span class="article-read hidden-xs">
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="https://zhihao2020.github.io/2020/05/%E7%94%9F%E6%88%90%E4%BA%8C%E7%BB%B4%E7%A0%81/" class="leancloud_visitors"  data-flag-title="生成二维码">0</span>
+    </span>
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/05/%E7%94%9F%E6%88%90%E4%BA%8C%E7%BB%B4%E7%A0%81/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 743字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <pre><code>pip install qrcode/myqr/zxing
+</code></pre>
+<h2 id="背景知识">背景知识</h2>
+<p><img src="http://lc-LY2PE4bD.cn-n1.lcfile.com/ea2b4742162c71c2fed8/640.png" alt=""></p>
+<p>二维码整体划分为功能图形和编码区两大部分。功能图形又细分为：空白区、位置探测图形、位置探测图形分隔符、定位图形、校正图形，而编码区细分为：格式信息、版本信息、数据和纠错码字。</p>
+<ul>
+<li>空白区：留白，不需要做任何处理</li>
+<li>位置探测图形：协助扫描软件定位二维码</li>
+<li>位置探测图形分隔符：区分功能图形和编码区</li>
+<li>定位图形：指示标识密度和确定坐标系</li>
+<li>校正图形：校正图形的数量换位置</li>
+<li>格式信息：准方格式化数据的信息</li>
+<li>版本信息：二维码的规格，二维码符号共有40钟规格的矩阵</li>
+<li>数据和纠错码字：实际保存的二维码信息和纠错码（用于修正二维码损坏带来的错误）</li>
+</ul>
+<h2 id="创建二维码">创建二维码</h2>
+<p>使用<code>qrcode</code>和<code>myqr</code>。</p>
+<h3 id="qrcode">qrcode</h3>
+<p>扫描之后跳转到某个地址。</p>
+<pre><code class="language-python">import qrcode
+#二维码内容（链接地址或文字）
+data = &quot;https://www.baidu.com/&quot;
+#生成二维码
+img = qrcode.make(data=data)
+#显示二维码
+img.show()
+#保存二维码
+img.save('qr.jpg')
+</code></pre>
+<pre><code class="language-python">import qrcode
+'''version：二维码的格子矩阵大小，可以是 1 到 40，1 最小为 21*21，40 是 177*177
+error_correction：二维码错误容许率，默认 
+ERROR_CORRECT_M，容许小于 15% 的错误率
+box_size：二维码每个小格子包含的像素数量
+border：二维码到图片边框的小格子数，默认值为 4'''
+qr = qrcode.QRCode( version=2, error_correction=qrcode.constants.ERROR_CORRECT_L, box_size=15, border=3,)
+# 二维码内容
+data = 'https://www.baidu.com/'
+qr.add_data(data=data)
+# 启用二维码颜色设置
+qr.make(fit=True)
+img = qr.make_image(fill_color='blue', back_color='white')# 显示二维码
+img.show()
+</code></pre>
+<h3 id="myqr">myqr</h3>
+<p>qrcode只能生成普通二维码，myqr除了可以生成普通二维码，还可以生成带图片的二维码以及动态二维码，但我们想要查看生成的二维码时，需要到保存位置手动打开查看。</p>
+<h4 id="普通二维码">普通二维码</h4>
+<pre><code class="language-python">from MyQR import myqr
+&quot;&quot;&quot;
+words：内容
+version：容错率
+save_name:保存名字
+&quot;&quot;&quot;
+myqr.run(words=&quot;https://baidu.com&quot;,version=1,save_name='myqr.png')
+</code></pre>
+<h4 id="带图二维码">带图二维码</h4>
+<pre><code class="language-python">from MyQR import myqr
+'''
+picture：生成二维码用到的图片
+colorized：False 为黑白，True 为彩色
+'''
+myqr.run(words='https://www.baidu.com/', 
+	version=1, 
+	picture='bg.jpg', 
+	colorized=True, 
+	save_name='pmyqr.png')
+</code></pre>
+<h4 id="动态二维码">动态二维码</h4>
+<pre><code class="language-python">from MyQR import myqr
+myqr.run(words='https://www.baidu.com/',
+         version=1, picture='my.gif',
+         colorized=True,
+         save_name='myqr.gif')
+</code></pre>
+<h2 id="解析二维码">解析二维码</h2>
+<p>使用<code>zxing</code></p>
+<pre><code class="language-python">import zxing
+reader = zxing.BarCodeReader()
+barcode = reader.decode('myqr.gif')
+print(barcode.parsed)
+</code></pre>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接: </strong>
+      <a href="https://zhihao2020.github.io/2020/05/%E7%94%9F%E6%88%90%E4%BA%8C%E7%BB%B4%E7%A0%81/" title="生成二维码" target="_blank" rel="external">https://zhihao2020.github.io/2020/05/%E7%94%9F%E6%88%90%E4%BA%8C%E7%BB%B4%E7%A0%81/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://zhihao2020.github.io" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://zhihao2020.github.io/cat.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://zhihao2020.github.io" target="_blank"><span class="text-dark">Zhihao</span><small class="ml-1x">“教”是最好的学习方式</small></a></h3>
+        <div>Up up up！</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+    <div id="vcomments"></div>
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://zhihao2020.github.io/2020/05/%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0api%E4%BB%8B%E7%BB%8D/" title="印象笔记API介绍"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="https://zhihao2020.github.io/2020/05/python-collection/"
+                    title="Python collection"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/zhihao2020" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://zhihao2020.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2020  -
+    2020
+    <div class="publishby">
+       xuzhihao
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://zhihao2020.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://zhihao2020.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(未命名)',
+            },
+            ROOT_URL: 'https:\/\/zhihao2020.github.io\/',
+            CONTENT_URL: 'https:\/\/zhihao2020.github.io\/\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://zhihao2020.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine"></script>
+<script type="text/javascript">
+    var GUEST = ['nick', 'mail', 'link'];
+    var meta = 'nick,mail';
+    meta = meta.split(',').filter(function (item) {
+        return GUEST.indexOf(item) > -1;
+    });
+   
+new Valine({
+    el: '#vcomments' ,
+    appId: 'cbb8ajQIRK8ShsDhksAalS5e-gzGzoHsz',
+    appKey: 'H605TalWcvAnd5HAY0z9aS67',
+    notify:false, 
+    recordIP:true,
+    verify:false, 
+    avatar:'mp', 
+});
+
+
+</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-164183479-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

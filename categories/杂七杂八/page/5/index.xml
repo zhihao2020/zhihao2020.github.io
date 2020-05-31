@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>杂七杂八 on Zhihao&#39;s Blog</title>
+    <link>https://zhihao2020.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</link>
+    <description>Recent content in 杂七杂八 on Zhihao&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 04 May 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://zhihao2020.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>从全拼到双拼</title>
+      <link>https://zhihao2020.github.io/2020/04/%E4%BB%8E%E5%85%A8%E6%8B%BC%E5%88%B0%E5%8F%8C%E6%8B%BC/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E4%BB%8E%E5%85%A8%E6%8B%BC%E5%88%B0%E5%8F%8C%E6%8B%BC/</guid>
+      <description>简单介绍一下 汉语拼音，分为声母与韵母。全拼打字的时候，是将它们都打出来，比如[双]字 就需要打出shuang，相比双拼效率就低了。 双拼，是将声</description>
+    </item>
+    
+    <item>
+      <title>关于自学的感想（1）</title>
+      <link>https://zhihao2020.github.io/2020/04/%E5%85%B3%E4%BA%8E%E8%87%AA%E5%AD%A6%E7%9A%84%E6%84%9F%E6%83%B31/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E5%85%B3%E4%BA%8E%E8%87%AA%E5%AD%A6%E7%9A%84%E6%84%9F%E6%83%B31/</guid>
+      <description>def teach_yourself(anything): while not creat(something): learn() practice() return teach_yourself(another) teach_yourself(something) 我挺赞同这个伪代码的，自学的过程就是不断学习、不断创造的过程，并将能否进行创造作为自学成功与否的关键。 自学是时代的要求 在</description>
+    </item>
+    
+    <item>
+      <title>爱惜自己的时间</title>
+      <link>https://zhihao2020.github.io/2020/04/%E7%88%B1%E6%83%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%B6%E9%97%B4/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/04/%E7%88%B1%E6%83%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%B6%E9%97%B4/</guid>
+      <description>人生而就是不平等的，但是在时间上却是平等的 珍惜自己的时间，远离焦虑 这个世界上又这么一个银行，他每天给你1440的资产，让你去消费，而且过了今</description>
+    </item>
+    
+    <item>
+      <title>GTJ2018使用流程</title>
+      <link>https://zhihao2020.github.io/2020/02/gtj2018%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/2020/02/gtj2018%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B/</guid>
+      <description>GTJ2018使用步骤： 建工程。设置工程的计算规则，室外地坪标高 建楼层。楼层层高，首层底标高，每一楼层的混凝土标号 建轴网。上下开间和左右进深</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zhihao2020.github.io/1/01/%E6%93%8D%E4%BD%9C%E5%BE%AE%E4%BF%A1itchat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/1/01/%E6%93%8D%E4%BD%9C%E5%BE%AE%E4%BF%A1itchat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GTJ2018中构件套做法流程</title>
+      <link>https://zhihao2020.github.io/1/01/gtj2018%E4%B8%AD%E6%9E%84%E4%BB%B6%E5%A5%97%E5%81%9A%E6%B3%95%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/1/01/gtj2018%E4%B8%AD%E6%9E%84%E4%BB%B6%E5%A5%97%E5%81%9A%E6%B3%95%E6%B5%81%E7%A8%8B/</guid>
+      <description>砼构件——柱、墙、梁、板 套清单选择条目 定额选择，套混凝土和混凝土模板，并将混凝土模板归类到措施项目 门、窗 套清单 定额选择 没有完全一样的时候，选</description>
+    </item>
+    
+    <item>
+      <title>GTJ2018中绘图输入</title>
+      <link>https://zhihao2020.github.io/1/01/gtj2018%E4%B8%AD%E7%BB%98%E5%9B%BE%E8%BE%93%E5%85%A5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhihao2020.github.io/1/01/gtj2018%E4%B8%AD%E7%BB%98%E5%9B%BE%E8%BE%93%E5%85%A5/</guid>
+      <description>结构 柱 柱子有三种做法： 按柱子. 按墙. 柱/墙。嵌入墙内部分按墙，之外的按柱子 第一种做法，贵；第二种做法，便宜；第三种做法，中等。 剪力墙 定义宽度</description>
+    </item>
+    
+  </channel>
+</rss>
