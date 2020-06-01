@@ -2,191 +2,191 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>杂七杂八 on Zhihao&#39;s Blog</title>
-    <link>https://zhihao2020.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</link>
+    <link>https://xuzhihao.top/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</link>
     <description>Recent content in 杂七杂八 on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 04 May 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://zhihao2020.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://xuzhihao.top/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python中的super()函数</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84super%E5%87%BD%E6%95%B0/</link>
+      <link>https://xuzhihao.top/2020/04/python%E4%B8%AD%E7%9A%84super%E5%87%BD%E6%95%B0/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84super%E5%87%BD%E6%95%B0/</guid>
+      <guid>https://xuzhihao.top/2020/04/python%E4%B8%AD%E7%9A%84super%E5%87%BD%E6%95%B0/</guid>
       <description>介绍 **super()**函数是用于条用父类（超类)的一个方法。 super 是用来解决多重继承问题的，直接用类名调用父类方法在使用单继承的时候没问题，</description>
     </item>
     
     <item>
       <title>Python中的装饰器(1)</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A81/</link>
+      <link>https://xuzhihao.top/2020/04/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A81/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A81/</guid>
+      <guid>https://xuzhihao.top/2020/04/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A81/</guid>
       <description>函数也是对象 首先要明确一个概念，函数也是对象。 于是，函数本身其实可以与其他的数据类型一样，作为其他函数的参数或者返回值。 def decorator(func): def wrapper(): print(&amp;quot;we can do sth.Befor the func()</description>
     </item>
     
     <item>
       <title>Python中的装饰器(1)</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E5%87%BD%E6%95%B0%E5%B7%A5%E5%85%B71/</link>
+      <link>https://xuzhihao.top/2020/04/python%E7%9A%84%E5%87%BD%E6%95%B0%E5%B7%A5%E5%85%B71/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E5%87%BD%E6%95%B0%E5%B7%A5%E5%85%B71/</guid>
+      <guid>https://xuzhihao.top/2020/04/python%E7%9A%84%E5%87%BD%E6%95%B0%E5%B7%A5%E5%85%B71/</guid>
       <description>函数也是对象 首先要明确一个概念，函数也是对象。 于是，函数本身其实可以与其他的数据类型一样，作为其他函数的参数或者返回值。 def decorator(func): def wrapper(): print(&amp;quot;we can do sth.Befor the func()</description>
     </item>
     
     <item>
       <title>Python的一种简单配置文件的方法</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/</link>
+      <link>https://xuzhihao.top/2020/04/python%E7%9A%84%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/python%E7%9A%84%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/</guid>
+      <guid>https://xuzhihao.top/2020/04/python%E7%9A%84%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/</guid>
       <description>配置文件： [numbers] pi: 3.1415926 [messages] greeting: welcome to the area calculation program! question: Please emter the radius result_message: The area is 使用示例 from ConfigParser import ConfigParser CONFIGFILE = ‘XXX.ini&#39; config = ConfigParser() #读取配置文件 config.read(CONFIGFILE) #打印初始问候语 #要查看的区段</description>
     </item>
     
     <item>
       <title>面向对象的三大特性和五大原则</title>
-      <link>https://zhihao2020.github.io/2020/04/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7%E5%92%8C%E4%BA%94%E5%A4%A7%E5%8E%9F%E5%88%99/</link>
+      <link>https://xuzhihao.top/2020/04/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7%E5%92%8C%E4%BA%94%E5%A4%A7%E5%8E%9F%E5%88%99/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7%E5%92%8C%E4%BA%94%E5%A4%A7%E5%8E%9F%E5%88%99/</guid>
+      <guid>https://xuzhihao.top/2020/04/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7%E5%92%8C%E4%BA%94%E5%A4%A7%E5%8E%9F%E5%88%99/</guid>
       <description>面向对象的三大基本特性，五大基本原则 透切理解面向对象三大基本特性是理解面向对象五大基本原则的基础. 三大特性是：封装,继承,多态 封装 封装最好理</description>
     </item>
     
     <item>
       <title>JupyterLab快捷键</title>
-      <link>https://zhihao2020.github.io/2020/04/jupyterlab%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <link>https://xuzhihao.top/2020/04/jupyterlab%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
       <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/jupyterlab%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <guid>https://xuzhihao.top/2020/04/jupyterlab%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
       <description>JupyterLab 有两种键盘输入模式，分别为编辑模式和命令模式。 一、命令行模式 (按键 Esc 开启) 命令行模式：键盘输入运行程序命令；这时的单元框线是灰色。 快捷键 实</description>
     </item>
     
     <item>
       <title>Python的Unittest模块</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E7%9A%84unittest%E6%A8%A1%E5%9D%97/</link>
+      <link>https://xuzhihao.top/2020/04/python%E7%9A%84unittest%E6%A8%A1%E5%9D%97/</link>
       <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/python%E7%9A%84unittest%E6%A8%A1%E5%9D%97/</guid>
+      <guid>https://xuzhihao.top/2020/04/python%E7%9A%84unittest%E6%A8%A1%E5%9D%97/</guid>
       <description>测试驱动是先写测试代码，然后写功能代码，通过测试来推动整个开发的进行。这有助于编写简洁可用和高质量的代码 unittest最早由JUnit启发</description>
     </item>
     
     <item>
       <title>Python 参数解析 Parser 的使用方法</title>
-      <link>https://zhihao2020.github.io/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+      <link>https://xuzhihao.top/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+      <guid>https://xuzhihao.top/2020/04/python-%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90-parser-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
       <description>argparse可以让人编写对用户友好的命令行接口。程序定义好它需要的参数，然后argparse将从sys.argv解析出那些参数。 argp</description>
     </item>
     
     <item>
       <title>Python中的sys</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84sys/</link>
+      <link>https://xuzhihao.top/2020/04/python%E4%B8%AD%E7%9A%84sys/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/python%E4%B8%AD%E7%9A%84sys/</guid>
+      <guid>https://xuzhihao.top/2020/04/python%E4%B8%AD%E7%9A%84sys/</guid>
       <description>sys.argv 传递给Python脚本的命令行参数列表。 例如 import sys print(sys.argv[0]) print(sys.argv[1]) 运行它： python temp.py argv1 sys.py argv1 sys.exit([arg]) 功能：执行到主程序末尾，解释器自动退出，但是如果需要中途退出程序，</description>
     </item>
     
     <item>
       <title>在单元格里放置复选框</title>
-      <link>https://zhihao2020.github.io/2020/04/%E5%9C%A8%E5%8D%95%E5%85%83%E6%A0%BC%E9%87%8C%E6%94%BE%E7%BD%AE%E5%A4%8D%E9%80%89%E6%A1%86/</link>
+      <link>https://xuzhihao.top/2020/04/%E5%9C%A8%E5%8D%95%E5%85%83%E6%A0%BC%E9%87%8C%E6%94%BE%E7%BD%AE%E5%A4%8D%E9%80%89%E6%A1%86/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/%E5%9C%A8%E5%8D%95%E5%85%83%E6%A0%BC%E9%87%8C%E6%94%BE%E7%BD%AE%E5%A4%8D%E9%80%89%E6%A1%86/</guid>
+      <guid>https://xuzhihao.top/2020/04/%E5%9C%A8%E5%8D%95%E5%85%83%E6%A0%BC%E9%87%8C%E6%94%BE%E7%BD%AE%E5%A4%8D%E9%80%89%E6%A1%86/</guid>
       <description>放置 ck = QCheckBox() newItem = XX.setCellWidget(1,0,ck) 检查是否被选 lines = [] sum = 0 i = 0 if (i &amp;lt; self.name.rowCount()): lines.append([self.tableWidget.cellWidget(i, 0), self.tableWidget.item(i, 1), self.tableWidget.item(i, 2), self.tableWidget.cellWidget(i, 5)]) i += 1 for line in lines: if line[0].checkState()==Qt.Checked: pass</description>
     </item>
     
     <item>
       <title>用Python模拟生命</title>
-      <link>https://zhihao2020.github.io/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/</link>
+      <link>https://xuzhihao.top/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/</guid>
+      <guid>https://xuzhihao.top/2020/04/python%E6%A8%A1%E6%8B%9F%E7%94%9F%E5%91%BD/</guid>
       <description>这个项目会创建一个N×N的细胞网格，随时间推移，模拟Conway生命游戏。 在这个游戏中，细胞处于ON或OFF状态。游戏从一个初始状态开始，每</description>
     </item>
     
     <item>
       <title>精读代码(1)</title>
-      <link>https://zhihao2020.github.io/2020/04/%E7%B2%BE%E8%AF%BB%E4%BB%A3%E7%A0%811/</link>
+      <link>https://xuzhihao.top/2020/04/%E7%B2%BE%E8%AF%BB%E4%BB%A3%E7%A0%811/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/%E7%B2%BE%E8%AF%BB%E4%BB%A3%E7%A0%811/</guid>
+      <guid>https://xuzhihao.top/2020/04/%E7%B2%BE%E8%AF%BB%E4%BB%A3%E7%A0%811/</guid>
       <description>#!/usr/bin/env python3 &amp;quot;&amp;quot;&amp;quot; A Python version of the classic &amp;quot;bottles of beer on the wall&amp;quot; programming example. By Guido van Rossum, demystified after a version by Fredrik Lundh. &amp;quot;&amp;quot;&amp;quot; import sys n = 100 if sys.argv[1:]: n = int(sys.argv[1]) def bottle(n): if n == 0: return &amp;quot;no more bottles of beer&amp;quot; if n == 1: return &amp;quot;one bottle of beer&amp;quot; return str(n) + &amp;quot; bottles of beer&amp;quot; for i in</description>
     </item>
     
     <item>
       <title>Git基本操作(1)</title>
-      <link>https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C1/</link>
+      <link>https://xuzhihao.top/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C1/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C1/</guid>
+      <guid>https://xuzhihao.top/2020/04/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C1/</guid>
       <description>配置并初始化一个仓库（repository）、开始或停止跟踪（track）文件、暂存（stage）或提交（commit）更改。配置Git来忽</description>
     </item>
     
     <item>
       <title>Mrakdown中插入数学公式</title>
-      <link>https://zhihao2020.github.io/2020/04/markdown%E4%B8%AD%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</link>
+      <link>https://xuzhihao.top/2020/04/markdown%E4%B8%AD%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/markdown%E4%B8%AD%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</guid>
+      <guid>https://xuzhihao.top/2020/04/markdown%E4%B8%AD%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</guid>
       <description>行内与独行 行内公式：将公式插入到本行内，符号：$公式内容$，如：$xyz$ 独行公式：将公式插入到新的一行内，并且居中，符号：$$公式内容$$</description>
     </item>
     
     <item>
       <title>PEP-8——Python代码的风格指导</title>
-      <link>https://zhihao2020.github.io/2020/04/pep-8python%E4%BB%A3%E7%A0%81%E7%9A%84%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%AF%BC/</link>
+      <link>https://xuzhihao.top/2020/04/pep-8python%E4%BB%A3%E7%A0%81%E7%9A%84%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%AF%BC/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/pep-8python%E4%BB%A3%E7%A0%81%E7%9A%84%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%AF%BC/</guid>
+      <guid>https://xuzhihao.top/2020/04/pep-8python%E4%BB%A3%E7%A0%81%E7%9A%84%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%AF%BC/</guid>
       <description>常量通常定义在代码前面，并且全都大写，分割的时候用_（下划线）分割。比如想，MAX_OVERFLOW和TOTAL这样。 Constants are usually defined on a module level and written in</description>
     </item>
     
     <item>
       <title>定额计价与清单计价</title>
-      <link>https://zhihao2020.github.io/2020/04/%E5%AE%9A%E9%A2%9D%E8%AE%A1%E4%BB%B7%E4%B8%8E%E6%B8%85%E5%8D%95%E8%AE%A1%E4%BB%B7/</link>
+      <link>https://xuzhihao.top/2020/04/%E5%AE%9A%E9%A2%9D%E8%AE%A1%E4%BB%B7%E4%B8%8E%E6%B8%85%E5%8D%95%E8%AE%A1%E4%BB%B7/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/%E5%AE%9A%E9%A2%9D%E8%AE%A1%E4%BB%B7%E4%B8%8E%E6%B8%85%E5%8D%95%E8%AE%A1%E4%BB%B7/</guid>
+      <guid>https://xuzhihao.top/2020/04/%E5%AE%9A%E9%A2%9D%E8%AE%A1%E4%BB%B7%E4%B8%8E%E6%B8%85%E5%8D%95%E8%AE%A1%E4%BB%B7/</guid>
       <description>定额计价法 定额计价法的概念 定额计价是根据招标文件，按照各国家建设行政主管部门发布的建设工程预算定额的“工程量计算规则”，同时参照省级建设主管</description>
     </item>
     
     <item>
       <title>得到真正的业务ID</title>
-      <link>https://zhihao2020.github.io/2020/04/%E5%8F%8D%E6%89%92id%E4%B9%8Bhashids/</link>
+      <link>https://xuzhihao.top/2020/04/%E5%8F%8D%E6%89%92id%E4%B9%8Bhashids/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/%E5%8F%8D%E6%89%92id%E4%B9%8Bhashids/</guid>
+      <guid>https://xuzhihao.top/2020/04/%E5%8F%8D%E6%89%92id%E4%B9%8Bhashids/</guid>
       <description>对于爬虫来说，知道了网站的数据自增ID，那么就能将整个站点爬取下来。不过，那些大站，比如油管之类的，他们绝不会把业务的自增ID暴露出来，而是</description>
     </item>
     
     <item>
       <title>为什么要使用Git</title>
-      <link>https://zhihao2020.github.io/2020/04/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8git/</link>
+      <link>https://xuzhihao.top/2020/04/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8git/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8git/</guid>
+      <guid>https://xuzhihao.top/2020/04/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8git/</guid>
       <description>Git介绍 Git其实就是一个版本控制系统。它记录着文件内容的变化，你可以查阅每次修改的情况。 其实很多人就一直在使用版本控制系统，许多人习惯把</description>
     </item>
     
     <item>
       <title>About Me</title>
-      <link>https://zhihao2020.github.io/about/</link>
+      <link>https://xuzhihao.top/about/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/about/</guid>
+      <guid>https://xuzhihao.top/about/</guid>
       <description>一个不断学习、不断精进的普通人。</description>
     </item>
     
     <item>
       <title>Hugo的操作</title>
-      <link>https://zhihao2020.github.io/2020/04/%E6%9B%B4%E6%96%B0hugo/</link>
+      <link>https://xuzhihao.top/2020/04/%E6%9B%B4%E6%96%B0hugo/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/04/%E6%9B%B4%E6%96%B0hugo/</guid>
+      <guid>https://xuzhihao.top/2020/04/%E6%9B%B4%E6%96%B0hugo/</guid>
       <description>更新文章 hugo --theme= --baseUrl=&amp;quot;&amp;quot; --buildDrafts git remote add origin https://github.com/XXX/XXX.github.io.git cd public git add . git commit -m &amp;quot;XXXX/XX/XX&amp;quot; git push -u origin master 本地运行网站 hugo start</description>
     </item>
     

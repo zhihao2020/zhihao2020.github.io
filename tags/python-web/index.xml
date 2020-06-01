@@ -2,191 +2,191 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python Web on Zhihao&#39;s Blog</title>
-    <link>https://zhihao2020.github.io/tags/python-web/</link>
+    <link>https://xuzhihao.top/tags/python-web/</link>
     <description>Recent content in Python Web on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 24 May 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://zhihao2020.github.io/tags/python-web/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://xuzhihao.top/tags/python-web/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python collection</title>
-      <link>https://zhihao2020.github.io/2020/05/python-collection/</link>
+      <link>https://xuzhihao.top/2020/05/python-collection/</link>
       <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/python-collection/</guid>
+      <guid>https://xuzhihao.top/2020/05/python-collection/</guid>
       <description>常用功能 namedtuple 把元组变成一个针对简单任务的容器。你不需要使用整数索引来访问一个namedtuples的数据。你可以像字典(dict)⼀样访问na</description>
     </item>
     
     <item>
       <title>生成二维码</title>
-      <link>https://zhihao2020.github.io/2020/05/%E7%94%9F%E6%88%90%E4%BA%8C%E7%BB%B4%E7%A0%81/</link>
+      <link>https://xuzhihao.top/2020/05/%E7%94%9F%E6%88%90%E4%BA%8C%E7%BB%B4%E7%A0%81/</link>
       <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/%E7%94%9F%E6%88%90%E4%BA%8C%E7%BB%B4%E7%A0%81/</guid>
+      <guid>https://xuzhihao.top/2020/05/%E7%94%9F%E6%88%90%E4%BA%8C%E7%BB%B4%E7%A0%81/</guid>
       <description>pip install qrcode/myqr/zxing 背景知识 二维码整体划分为功能图形和编码区两大部分。功能图形又细分为：空白区、位置探测图形、位置探测图形分隔符、定位图形、校正图形，而编</description>
     </item>
     
     <item>
       <title>印象笔记API介绍</title>
-      <link>https://zhihao2020.github.io/2020/05/%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0api%E4%BB%8B%E7%BB%8D/</link>
+      <link>https://xuzhihao.top/2020/05/%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0api%E4%BB%8B%E7%BB%8D/</link>
       <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0api%E4%BB%8B%E7%BB%8D/</guid>
+      <guid>https://xuzhihao.top/2020/05/%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0api%E4%BB%8B%E7%BB%8D/</guid>
       <description>我感觉印象笔记就是一个不错的笔记软件 概念和原理 要用好 印象笔记 的 API 需要了解一些概念和原理。 概念 NoteStore：NoteStore 是印象笔记</description>
     </item>
     
     <item>
       <title>Python实现布谷鸟算法</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E5%AE%9E%E7%8E%B0%E5%B8%83%E8%B0%B7%E9%B8%9F%E7%AE%97%E6%B3%95/</link>
+      <link>https://xuzhihao.top/2020/05/python%E5%AE%9E%E7%8E%B0%E5%B8%83%E8%B0%B7%E9%B8%9F%E7%AE%97%E6%B3%95/</link>
       <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/python%E5%AE%9E%E7%8E%B0%E5%B8%83%E8%B0%B7%E9%B8%9F%E7%AE%97%E6%B3%95/</guid>
+      <guid>https://xuzhihao.top/2020/05/python%E5%AE%9E%E7%8E%B0%E5%B8%83%E8%B0%B7%E9%B8%9F%E7%AE%97%E6%B3%95/</guid>
       <description>布谷鸟算法，英文叫做Cuckoo search(CS algorithm)。它是为了寻找最小值而产生的一种算法。 举一个例子： $$ y=(x-0.5)^2+1 $$ 我们有4个布谷鸟蛋（也就是4个</description>
     </item>
     
     <item>
       <title>TypeError: &#39;range&#39; object does not support item assignment</title>
-      <link>https://zhihao2020.github.io/2020/05/typeerror-range-object-does-not-support-item-assignment/</link>
+      <link>https://xuzhihao.top/2020/05/typeerror-range-object-does-not-support-item-assignment/</link>
       <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/typeerror-range-object-does-not-support-item-assignment/</guid>
+      <guid>https://xuzhihao.top/2020/05/typeerror-range-object-does-not-support-item-assignment/</guid>
       <description>在Python 3中，range返回一个惰性序列对象-它不返回列表。无法重新排列范围对象中的元素，因此无法重新排列它。 python2.x改为p</description>
     </item>
     
     <item>
       <title>基于布谷鸟搜索算法的无线传感器网络节点定位</title>
-      <link>https://zhihao2020.github.io/2020/05/%E5%9F%BA%E4%BA%8E%E5%B8%83%E8%B0%B7%E9%B8%9F%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%A0%E7%BA%BF%E4%BC%A0%E6%84%9F%E5%99%A8%E7%BD%91%E7%BB%9C%E8%8A%82%E7%82%B9%E5%AE%9A%E4%BD%8D/</link>
+      <link>https://xuzhihao.top/2020/05/%E5%9F%BA%E4%BA%8E%E5%B8%83%E8%B0%B7%E9%B8%9F%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%A0%E7%BA%BF%E4%BC%A0%E6%84%9F%E5%99%A8%E7%BD%91%E7%BB%9C%E8%8A%82%E7%82%B9%E5%AE%9A%E4%BD%8D/</link>
       <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/%E5%9F%BA%E4%BA%8E%E5%B8%83%E8%B0%B7%E9%B8%9F%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%A0%E7%BA%BF%E4%BC%A0%E6%84%9F%E5%99%A8%E7%BD%91%E7%BB%9C%E8%8A%82%E7%82%B9%E5%AE%9A%E4%BD%8D/</guid>
+      <guid>https://xuzhihao.top/2020/05/%E5%9F%BA%E4%BA%8E%E5%B8%83%E8%B0%B7%E9%B8%9F%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%A0%E7%BA%BF%E4%BC%A0%E6%84%9F%E5%99%A8%E7%BD%91%E7%BB%9C%E8%8A%82%E7%82%B9%E5%AE%9A%E4%BD%8D/</guid>
       <description>定位算法大致分为基于距离的定位算法和距离无关的定位算法。 在传感器节点定位中，已知自身位置信息的节点成为锚节点，锚节点能通过自身的定位设备获取</description>
     </item>
     
     <item>
       <title>QtableWidget中单元格排序</title>
-      <link>https://zhihao2020.github.io/2020/05/qtablewidget%E4%B8%AD%E5%8D%95%E5%85%83%E6%A0%BC%E6%8E%92%E5%BA%8F/</link>
+      <link>https://xuzhihao.top/2020/05/qtablewidget%E4%B8%AD%E5%8D%95%E5%85%83%E6%A0%BC%E6%8E%92%E5%BA%8F/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/qtablewidget%E4%B8%AD%E5%8D%95%E5%85%83%E6%A0%BC%E6%8E%92%E5%BA%8F/</guid>
+      <guid>https://xuzhihao.top/2020/05/qtablewidget%E4%B8%AD%E5%8D%95%E5%85%83%E6%A0%BC%E6%8E%92%E5%BA%8F/</guid>
       <description>PyQt5 中的QtableWidget项排序 项排序是指针对表格部件中的数据行进行排序，调用语法如下： sortItems(column,Qt.AscendingOrder) 排序依据参数column指定列进行。Qt.So</description>
     </item>
     
     <item>
       <title>TensorFlow的建模流程</title>
-      <link>https://zhihao2020.github.io/2020/05/tensorflow%E7%9A%84%E5%BB%BA%E6%A8%A1%E6%B5%81%E7%A8%8B/</link>
+      <link>https://xuzhihao.top/2020/05/tensorflow%E7%9A%84%E5%BB%BA%E6%A8%A1%E6%B5%81%E7%A8%8B/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/tensorflow%E7%9A%84%E5%BB%BA%E6%A8%A1%E6%B5%81%E7%A8%8B/</guid>
+      <guid>https://xuzhihao.top/2020/05/tensorflow%E7%9A%84%E5%BB%BA%E6%A8%A1%E6%B5%81%E7%A8%8B/</guid>
       <description>从原理上说可以使用张量构建计算图来定义神经网络，并通过自动微分机制训练模型。 但为简洁，我们大多使用TensorFlow的高层次keras接口</description>
     </item>
     
     <item>
       <title>Python持久化处理——pickle</title>
-      <link>https://zhihao2020.github.io/2020/05/python%E6%8C%81%E4%B9%85%E5%8C%96%E5%A4%84%E7%90%86pickle/</link>
+      <link>https://xuzhihao.top/2020/05/python%E6%8C%81%E4%B9%85%E5%8C%96%E5%A4%84%E7%90%86pickle/</link>
       <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/python%E6%8C%81%E4%B9%85%E5%8C%96%E5%A4%84%E7%90%86pickle/</guid>
+      <guid>https://xuzhihao.top/2020/05/python%E6%8C%81%E4%B9%85%E5%8C%96%E5%A4%84%E7%90%86pickle/</guid>
       <description>简介 pickle使用二进制协议，用于对Python对象结构进行序列化和反序列化 “Pickling”是将Python对象层次结构转化为字节流的</description>
     </item>
     
     <item>
       <title>Flask入口</title>
-      <link>https://zhihao2020.github.io/2020/05/flask%E5%85%A5%E5%8F%A3/</link>
+      <link>https://xuzhihao.top/2020/05/flask%E5%85%A5%E5%8F%A3/</link>
       <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/flask%E5%85%A5%E5%8F%A3/</guid>
+      <guid>https://xuzhihao.top/2020/05/flask%E5%85%A5%E5%8F%A3/</guid>
       <description>用Flask可以快速开发，大小网站都可以通过Flask搭建，扩展性也很好。比如有Bootstrap-Flask这样的插件。 先来一个极其简单的</description>
     </item>
     
     <item>
       <title>自动填充Word文档</title>
-      <link>https://zhihao2020.github.io/2020/05/%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85word%E6%96%87%E6%A1%A3/</link>
+      <link>https://xuzhihao.top/2020/05/%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85word%E6%96%87%E6%A1%A3/</link>
       <pubDate>Sat, 23 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85word%E6%96%87%E6%A1%A3/</guid>
+      <guid>https://xuzhihao.top/2020/05/%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85word%E6%96%87%E6%A1%A3/</guid>
       <description>首先 pip install lxml pip install docx-mailmerge 处理Word文档 为了让docx-mailmerge能够正常工作，你需要在word中定义一个MergeField,这个在字段中</description>
     </item>
     
     <item>
       <title>PyQt5应用最小化到托盘</title>
-      <link>https://zhihao2020.github.io/2020/05/pyqt5%E5%BA%94%E7%94%A8%E6%9C%80%E5%B0%8F%E5%8C%96%E5%88%B0%E6%89%98%E7%9B%98/</link>
+      <link>https://xuzhihao.top/2020/05/pyqt5%E5%BA%94%E7%94%A8%E6%9C%80%E5%B0%8F%E5%8C%96%E5%88%B0%E6%89%98%E7%9B%98/</link>
       <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/pyqt5%E5%BA%94%E7%94%A8%E6%9C%80%E5%B0%8F%E5%8C%96%E5%88%B0%E6%89%98%E7%9B%98/</guid>
+      <guid>https://xuzhihao.top/2020/05/pyqt5%E5%BA%94%E7%94%A8%E6%9C%80%E5%B0%8F%E5%8C%96%E5%88%B0%E6%89%98%E7%9B%98/</guid>
       <description>import sys # 从PyQt库导入QtWidget通用窗口类,基本的窗口集在PyQt5.QtWidgets模块里. from PyQt5.QtWidgets import QApplication, QWidget, QSystemTrayIcon, QAction, QMenu, qApp, QMessageBox from PyQt5.QtGui import QIcon from PyQt5.QtCore import QCoreApplication if</description>
     </item>
     
     <item>
       <title>Qtdesigner提升窗口控件</title>
-      <link>https://zhihao2020.github.io/2020/05/qtdesigner%E6%8F%90%E5%8D%87%E7%AA%97%E5%8F%A3%E6%8E%A7%E4%BB%B6/</link>
+      <link>https://xuzhihao.top/2020/05/qtdesigner%E6%8F%90%E5%8D%87%E7%AA%97%E5%8F%A3%E6%8E%A7%E4%BB%B6/</link>
       <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/qtdesigner%E6%8F%90%E5%8D%87%E7%AA%97%E5%8F%A3%E6%8E%A7%E4%BB%B6/</guid>
+      <guid>https://xuzhihao.top/2020/05/qtdesigner%E6%8F%90%E5%8D%87%E7%AA%97%E5%8F%A3%E6%8E%A7%E4%BB%B6/</guid>
       <description>提升窗口控件，就是指有些窗口控件是用户自己基于PyQt定义的衍生窗口控件，这些窗口控件在Qt Designer中没有直接提供，但是可以通过提升</description>
     </item>
     
     <item>
       <title>在PyQt5中使用Matplotlib</title>
-      <link>https://zhihao2020.github.io/2020/05/%E5%9C%A8pyqt5%E4%B8%AD%E4%BD%BF%E7%94%A8matplotlib/</link>
+      <link>https://xuzhihao.top/2020/05/%E5%9C%A8pyqt5%E4%B8%AD%E4%BD%BF%E7%94%A8matplotlib/</link>
       <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/%E5%9C%A8pyqt5%E4%B8%AD%E4%BD%BF%E7%94%A8matplotlib/</guid>
+      <guid>https://xuzhihao.top/2020/05/%E5%9C%A8pyqt5%E4%B8%AD%E4%BD%BF%E7%94%A8matplotlib/</guid>
       <description>使用MatplotlibWidget 设置绘图类 class Canvas(FigureCanvas): def __init__(self,parent=None,width=5,height=4,dpi=100): plt.rcParams[&#39;font.family&#39;] = [&#39;SimHei&#39;]#显示中文标签 plt.reParams[&#39;axes.unicode_minus&#39;] = False#显示负号 self.fig = Figure(figsize=(eidth,height),dpi=dpi) self.axes = self.fig.add_subplot(111) self.a</description>
     </item>
     
     <item>
       <title>PyQt5中的信号槽</title>
-      <link>https://zhihao2020.github.io/2020/05/pyqt5%E4%B8%AD%E7%9A%84%E4%BF%A1%E5%8F%B7%E6%A7%BD/</link>
+      <link>https://xuzhihao.top/2020/05/pyqt5%E4%B8%AD%E7%9A%84%E4%BF%A1%E5%8F%B7%E6%A7%BD/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/pyqt5%E4%B8%AD%E7%9A%84%E4%BF%A1%E5%8F%B7%E6%A7%BD/</guid>
+      <guid>https://xuzhihao.top/2020/05/pyqt5%E4%B8%AD%E7%9A%84%E4%BF%A1%E5%8F%B7%E6%A7%BD/</guid>
       <description>介绍 信号（Signal）和信号槽（Slot）是Qt的核心机制，它是PyQT编程对象之间进行通信的机制。 在Qt中，每一给QObject对象和P</description>
     </item>
     
     <item>
       <title>Tkinker简单了解</title>
-      <link>https://zhihao2020.github.io/2020/05/tkinker%E7%AE%80%E5%8D%95%E4%BA%86%E8%A7%A3/</link>
+      <link>https://xuzhihao.top/2020/05/tkinker%E7%AE%80%E5%8D%95%E4%BA%86%E8%A7%A3/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/tkinker%E7%AE%80%E5%8D%95%E4%BA%86%E8%A7%A3/</guid>
+      <guid>https://xuzhihao.top/2020/05/tkinker%E7%AE%80%E5%8D%95%E4%BA%86%E8%A7%A3/</guid>
       <description>tkinker编程就像是作画，先支起一个画架，放上画板，蒙上画布，构思内容，用铅笔画草图，组织结构和比例，调色板调色，最后画笔勾勒。这对应到</description>
     </item>
     
     <item>
       <title>爬虫解决乱码</title>
-      <link>https://zhihao2020.github.io/2020/05/%E7%88%AC%E8%99%AB%E8%A7%A3%E5%86%B3%E4%B9%B1%E7%A0%81/</link>
+      <link>https://xuzhihao.top/2020/05/%E7%88%AC%E8%99%AB%E8%A7%A3%E5%86%B3%E4%B9%B1%E7%A0%81/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/%E7%88%AC%E8%99%AB%E8%A7%A3%E5%86%B3%E4%B9%B1%E7%A0%81/</guid>
+      <guid>https://xuzhihao.top/2020/05/%E7%88%AC%E8%99%AB%E8%A7%A3%E5%86%B3%E4%B9%B1%E7%A0%81/</guid>
       <description>方法一: 我们要使用到两个方法：decode解码 、encode编码 假设一个网站的编码是&amp;rsquo;iso-8859-1&amp;rsquo;，通过r</description>
     </item>
     
     <item>
       <title>Sympy解代数问题</title>
-      <link>https://zhihao2020.github.io/2020/05/sympy%E8%A7%A3%E4%BB%A3%E6%95%B0%E9%97%AE%E9%A2%98/</link>
+      <link>https://xuzhihao.top/2020/05/sympy%E8%A7%A3%E4%BB%A3%E6%95%B0%E9%97%AE%E9%A2%98/</link>
       <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/sympy%E8%A7%A3%E4%BB%A3%E6%95%B0%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://xuzhihao.top/2020/05/sympy%E8%A7%A3%E4%BB%A3%E6%95%B0%E9%97%AE%E9%A2%98/</guid>
       <description>我们大多数都是数学运算，其实我们还有另外一种方式——符号数学（symbolic math）。这个需要我们是要第三方库Sympy。 定义符号与运算</description>
     </item>
     
     <item>
       <title>Matplotlib绘制动画</title>
-      <link>https://zhihao2020.github.io/2020/05/matplotlib%E7%BB%98%E5%88%B6%E5%8A%A8%E7%94%BB/</link>
+      <link>https://xuzhihao.top/2020/05/matplotlib%E7%BB%98%E5%88%B6%E5%8A%A8%E7%94%BB/</link>
       <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/matplotlib%E7%BB%98%E5%88%B6%E5%8A%A8%E7%94%BB/</guid>
+      <guid>https://xuzhihao.top/2020/05/matplotlib%E7%BB%98%E5%88%B6%E5%8A%A8%E7%94%BB/</guid>
       <description>简单介绍下基础 import matplotlib.pyplot as plt x = [1,2,3] y = [1,2,3] fig = plt.figure() ax = plt.axes() plt.plot(x,y) plt.show() 这里，我们使用figure()函数创建Figure对象（fig），然后使用axes()创建</description>
     </item>
     
     <item>
       <title>正则表达</title>
-      <link>https://zhihao2020.github.io/2020/05/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE/</link>
+      <link>https://xuzhihao.top/2020/05/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE/</link>
       <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zhihao2020.github.io/2020/05/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE/</guid>
+      <guid>https://xuzhihao.top/2020/05/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE/</guid>
       <description>正则表达式本质上是个独立的语言，短小却格外强悍。 他的含义就是：我们可以书写特定的规则，用来在文本中捕获与规则一致的字符串，而后对其进行操作&amp;</description>
     </item>
     
