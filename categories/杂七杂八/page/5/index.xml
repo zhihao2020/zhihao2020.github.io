@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Hugo的操作</title>
+      <link>https://xuzhihao.top/2020/04/%E6%9B%B4%E6%96%B0hugo/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/04/%E6%9B%B4%E6%96%B0hugo/</guid>
+      <description>更新文章 hugo --theme= --baseUrl=&amp;quot;&amp;quot; --buildDrafts git remote add origin https://github.com/XXX/XXX.github.io.git cd public git add . git commit -m &amp;quot;XXXX/XX/XX&amp;quot; git push -u origin master 本地运行网站 hugo start</description>
+    </item>
+    
+    <item>
       <title>从全拼到双拼</title>
       <link>https://xuzhihao.top/2020/04/%E4%BB%8E%E5%85%A8%E6%8B%BC%E5%88%B0%E5%8F%8C%E6%8B%BC/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>

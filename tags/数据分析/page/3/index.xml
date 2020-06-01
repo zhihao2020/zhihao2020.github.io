@@ -5,10 +5,19 @@
     <link>https://xuzhihao.top/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</link>
     <description>Recent content in 数据分析 on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 09 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://xuzhihao.top/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GCCP5.0使用流程</title>
+      <link>https://xuzhihao.top/2020/04/gccp5.0%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/04/gccp5.0%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B/</guid>
+      <description>新建工程 建立分部分项（编制清单、描述项目特征、套定额） 建立单价措施项目（编制清单、描述项目特套定额等） 建立总价措施项目（取费） 建立其他项目费</description>
+    </item>
     
     <item>
       <title>html转为图片</title>
@@ -179,15 +188,6 @@
       
       <guid>https://xuzhihao.top/2020/04/python%E4%B8%AD%E7%9A%84__str__/</guid>
       <description>在python中方法名如果是__xxxx__()的，那么就有特殊的功能，因此叫做“魔法”方法 class Cat: def __init__(self, new_name, new_age): &amp;quot;&amp;quot;&amp;quot;</description>
-    </item>
-    
-    <item>
-      <title>Python中的staticmethod和classmethod</title>
-      <link>https://xuzhihao.top/2020/04/python%E4%B8%AD%E7%9A%84staticmethod%E5%92%8Cclassmethod/</link>
-      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xuzhihao.top/2020/04/python%E4%B8%AD%E7%9A%84staticmethod%E5%92%8Cclassmethod/</guid>
-      <description>@classmethod 返回函数的类方法 classmethod修饰符对应的函数不需要实例化，不需要self参数，但第一个参数需要是表示自身类的cls参数，可以调用</description>
     </item>
     
   </channel>
