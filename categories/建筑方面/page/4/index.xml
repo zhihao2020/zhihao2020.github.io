@@ -5,10 +5,28 @@
     <link>https://xuzhihao.top/categories/%E5%BB%BA%E7%AD%91%E6%96%B9%E9%9D%A2/</link>
     <description>Recent content in 建筑方面 on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 30 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://xuzhihao.top/categories/%E5%BB%BA%E7%AD%91%E6%96%B9%E9%9D%A2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python中的__new__方法</title>
+      <link>https://xuzhihao.top/2020/04/python%E4%B8%AD%E7%9A%84__new__/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/04/python%E4%B8%AD%E7%9A%84__new__/</guid>
+      <description>在python中方法名如果是__xxxx__()的，那么就有特殊的功能，因此叫做“魔法”方法 __new__的作用 在Python中__new_</description>
+    </item>
+    
+    <item>
+      <title>Python中的__str__方法</title>
+      <link>https://xuzhihao.top/2020/04/python%E4%B8%AD%E7%9A%84__str__/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/04/python%E4%B8%AD%E7%9A%84__str__/</guid>
+      <description>在python中方法名如果是__xxxx__()的，那么就有特殊的功能，因此叫做“魔法”方法 class Cat: def __init__(self, new_name, new_age): &amp;quot;&amp;quot;&amp;quot;</description>
+    </item>
     
     <item>
       <title>Python中的staticmethod和classmethod</title>
@@ -170,24 +188,6 @@
       
       <guid>https://xuzhihao.top/2020/04/%E5%8F%8D%E6%89%92id%E4%B9%8Bhashids/</guid>
       <description>对于爬虫来说，知道了网站的数据自增ID，那么就能将整个站点爬取下来。不过，那些大站，比如油管之类的，他们绝不会把业务的自增ID暴露出来，而是</description>
-    </item>
-    
-    <item>
-      <title>为什么要使用Git</title>
-      <link>https://xuzhihao.top/2020/04/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8git/</link>
-      <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xuzhihao.top/2020/04/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8git/</guid>
-      <description>Git介绍 Git其实就是一个版本控制系统。它记录着文件内容的变化，你可以查阅每次修改的情况。 其实很多人就一直在使用版本控制系统，许多人习惯把</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://xuzhihao.top/about/</link>
-      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xuzhihao.top/about/</guid>
-      <description>一个不断学习、不断精进的普通人。</description>
     </item>
     
   </channel>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>项目管理 on Zhihao&#39;s Blog</title>
+    <link>https://xuzhihao.top/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</link>
+    <description>Recent content in 项目管理 on Zhihao&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 02 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://xuzhihao.top/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sympy解代数问题</title>
+      <link>https://xuzhihao.top/2020/05/sympy%E8%A7%A3%E4%BB%A3%E6%95%B0%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/sympy%E8%A7%A3%E4%BB%A3%E6%95%B0%E9%97%AE%E9%A2%98/</guid>
+      <description>我们大多数都是数学运算，其实我们还有另外一种方式——符号数学（symbolic math）。这个需要我们是要第三方库Sympy。 定义符号与运算</description>
+    </item>
+    
+    <item>
+      <title>Matplotlib绘制动画</title>
+      <link>https://xuzhihao.top/2020/05/matplotlib%E7%BB%98%E5%88%B6%E5%8A%A8%E7%94%BB/</link>
+      <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/matplotlib%E7%BB%98%E5%88%B6%E5%8A%A8%E7%94%BB/</guid>
+      <description>简单介绍下基础 import matplotlib.pyplot as plt x = [1,2,3] y = [1,2,3] fig = plt.figure() ax = plt.axes() plt.plot(x,y) plt.show() 这里，我们使用figure()函数创建Figure对象（fig），然后使用axes()创建</description>
+    </item>
+    
+    <item>
+      <title>正则表达</title>
+      <link>https://xuzhihao.top/2020/05/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE/</link>
+      <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE/</guid>
+      <description>正则表达式本质上是个独立的语言，短小却格外强悍。 他的含义就是：我们可以书写特定的规则，用来在文本中捕获与规则一致的字符串，而后对其进行操作&amp;</description>
+    </item>
+    
+    <item>
+      <title>docx转为PDF</title>
+      <link>https://xuzhihao.top/2020/05/docx%E8%BD%AC%E4%B8%BApdf/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/docx%E8%BD%AC%E4%B8%BApdf/</guid>
+      <description>这需要一个comtypes的简单示例,不过这个只能用于Windows import sys import os import comtypes.client wdFormatPDF = 17 in_file = os.path.abspath(sys.argv[1]) out_file = os.path.abspath(sys.argv[2]) word = comtypes.client.CreateObject(&#39;Word.Application&#39;) doc = word.Documents.Open(in_file) doc.SaveAs(out_file, FileFormat=wdFormatPDF) doc.Close() word.Quit()</description>
+    </item>
+    
+    <item>
+      <title>Error in converting file using python COM</title>
+      <link>https://xuzhihao.top/2020/05/error-in-converting-file-using-python-com/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/error-in-converting-file-using-python-com/</guid>
+      <description>这个问题其实就是 它在路径方面出现了问题。 文件路径输出为了D://\\demo,这当然是错误的了 解决方法是 import os os.chdir(&amp;quot;E:/demo&amp;quot;) file = os.getcwd()+&#39;\\&#39;+path</description>
+    </item>
+    
+    <item>
+      <title>Python中的迭代器</title>
+      <link>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%AD%E4%BB%A3%E5%99%A8/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%AD%E4%BB%A3%E5%99%A8/</guid>
+      <description>Python中的容器都是可迭代的，准确说，这些容器都可以通过迭代器遍历每一个元素。 内建函数iter()就是用于把一个可迭代对象转换为迭代器。</description>
+    </item>
+    
+    <item>
+      <title>爬虫——BeautifulSoup</title>
+      <link>https://xuzhihao.top/2020/05/%E7%88%AC%E8%99%ABbeautifulsoup/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/%E7%88%AC%E8%99%ABbeautifulsoup/</guid>
+      <description>参考地址：https://beautifulsoup.readthedocs.io/zh_CN/ Beautiful Soup将复杂HTML文档转化为一个复杂的</description>
+    </item>
+    
+    <item>
+      <title>Python中__slots__</title>
+      <link>https://xuzhihao.top/2020/05/python%E4%B8%AD__slots__/</link>
+      <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/python%E4%B8%AD__slots__/</guid>
+      <description>Python中，每个类都有实例属性。默认情况下Python用一个字典来保存一个对象的实例属性。这样，它允许我们再运行时取设置任意的新属性。 然</description>
+    </item>
+    
+    <item>
+      <title>Python中的协程</title>
+      <link>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E5%8D%8F%E7%A8%8B/</link>
+      <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E5%8D%8F%E7%A8%8B/</guid>
+      <description>Python中的协程和生成器相似但又有不同。主要区别在于： 生成器是数据的生成器 协程则是数据的消费者 首先，我们先来回顾下生成器的创建过程。 def fib():</description>
+    </item>
+    
+    <item>
+      <title>Python中的生成器</title>
+      <link>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E7%94%9F%E6%88%90%E5%99%A8/</link>
+      <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E7%94%9F%E6%88%90%E5%99%A8/</guid>
+      <description>生成器的实现需要yield。 例如这样： def counter(start,stop): while start&amp;lt;=stop: yield start start += 1 for i in counter(101,105): print(i) yield和return最明显的区别是yield之后的语句可以被执行，而r</description>
+    </item>
+    
+    <item>
+      <title>Python中的装饰器(2)</title>
+      <link>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A82/</link>
+      <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E8%A3%85%E9%A5%B0%E5%99%A82/</guid>
+      <description>使用范本： from functools import wraps def decorator_name(f): @wraps(f) def decorated(*args,**kwargs): if not can_run: return &amp;quot;Function will not run&amp;quot; return decorated @decorator_name def func(): return(&amp;quot;Function is running&amp;quot;) can_run - True print(func()) can_run = False print(func()) 注意：@wraps接受一个函数来进行装饰，并加入了复制函数名称、</description>
+    </item>
+    
+    <item>
+      <title>【转】13个好玩的Python练手项目</title>
+      <link>https://xuzhihao.top/2020/05/%E8%BD%AC13%E4%B8%AA%E5%A5%BD%E7%8E%A9%E7%9A%84python%E7%BB%83%E6%89%8B%E9%A1%B9%E7%9B%AE/</link>
+      <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/%E8%BD%AC13%E4%B8%AA%E5%A5%BD%E7%8E%A9%E7%9A%84python%E7%BB%83%E6%89%8B%E9%A1%B9%E7%9B%AE/</guid>
+      <description>原文链接：https://realpython.com/intermediate-pythonproject-ideas/ Web 项目设计 内容聚合</description>
+    </item>
+    
+    <item>
+      <title>Python中的进程(1)</title>
+      <link>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/</link>
+      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/</guid>
+      <description>当你运行独立的程序时，你的计算机就会生产一个简单的进程。他使用系统的资源（CPU、内存、硬盘存储）和你运行操作系统中的数据结构。 你的计算机看</description>
+    </item>
+    
+    <item>
+      <title>Python控制键盘和鼠标</title>
+      <link>https://xuzhihao.top/2020/05/python%E6%8E%A7%E5%88%B6%E9%94%AE%E7%9B%98%E5%92%8C%E9%BC%A0%E6%A0%87/</link>
+      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/python%E6%8E%A7%E5%88%B6%E9%94%AE%E7%9B%98%E5%92%8C%E9%BC%A0%E6%A0%87/</guid>
+      <description>使用pyautogui模块。 在Windows上，不需要安装其他模块。 在OS X上，运行sudo pip3 install pyobjc-framework-Quart</description>
+    </item>
+    
+    <item>
+      <title>Python组织文件</title>
+      <link>https://xuzhihao.top/2020/05/python%E7%BB%84%E7%BB%87%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/python%E7%BB%84%E7%BB%87%E6%96%87%E4%BB%B6/</guid>
+      <description>shutil函数可以让你能够复制、移动、改名和删除文件。 复制文件和文件夹 shutil.copy(source,destination),这个</description>
+    </item>
+    
+    <item>
+      <title>ASCII表-Nonprintable Characters</title>
+      <link>https://xuzhihao.top/2020/05/ascii%E8%A1%A8-nonprintable-characters/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/ascii%E8%A1%A8-nonprintable-characters/</guid>
+      <description>ASCII Table &amp;ndash; Nonprintable Characters Control Character Python &amp;amp; Java Hexadecimal Decimal Description ^@ \0 00 0 Null character ^A \1 01 1 Start of heading ^B \2 02 2 Start of text ^C \3 03 3 End of text ^D \4 04 4 End of transmission ^E \5 05 5 Enquiry ^F \6 06 6 Acknowledge ^G \a 07 7 Audible bell ^H \b 08 8 Backspace ^I \t</description>
+    </item>
+    
+    <item>
+      <title>Python中win32print</title>
+      <link>https://xuzhihao.top/2020/05/python%E4%B8%ADwin32print/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/python%E4%B8%ADwin32print/</guid>
+      <description>OpenPrinter 打开打印机 win32print.OpenPrinter(string,Defaults) string就是打印机的名字，当为空的时候打开本地打印机 StartDocPrinter StartDocPrinter(hprinter, level , tuple ) level=1 tuple:对应于level参数的元组 ​ [0]:字符串：</description>
+    </item>
+    
+    <item>
+      <title>Python中的enumerate()</title>
+      <link>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84enumerate/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84enumerate/</guid>
+      <description>enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中 写法 enumerate(sequence,[start=0]) 参数 sequen</description>
+    </item>
+    
+    <item>
+      <title>Python中的textwrap</title>
+      <link>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84textwrap/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84textwrap/</guid>
+      <description>用于对文本字符串进行自动换行或填充。 textwrap.wrap(text,width=70,**kwargs) ​ 对text中的单独段落自动换行以使每行长度最多为width个字符。返回输出行组成的列表，行尾不带换行</description>
+    </item>
+    
+    <item>
+      <title>Python中的异常处理</title>
+      <link>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</guid>
+      <description>捕捉异常 使用try/except语句实现。 except() except语句可以使用不止一次： try: xxx except ZeroDivisionError: print() except TypeError: print() 或者像这样 try: XXX except (ZeroDivisionError,TypeError): print() 如果你想记录原因的话，可以</description>
+    </item>
+    
+  </channel>
+</rss>

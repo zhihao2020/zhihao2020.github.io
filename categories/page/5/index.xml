@@ -5,10 +5,28 @@
     <link>https://xuzhihao.top/categories/</link>
     <description>Recent content in Categories on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://xuzhihao.top/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>为什么要使用Git</title>
+      <link>https://xuzhihao.top/2020/04/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8git/</link>
+      <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/04/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8git/</guid>
+      <description>Git介绍 Git其实就是一个版本控制系统。它记录着文件内容的变化，你可以查阅每次修改的情况。 其实很多人就一直在使用版本控制系统，许多人习惯把</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://xuzhihao.top/about/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/about/</guid>
+      <description>一个不断学习、不断精进的普通人。</description>
+    </item>
     
     <item>
       <title>Hugo的操作</title>
@@ -44,6 +62,15 @@
       
       <guid>https://xuzhihao.top/2020/04/%E7%88%B1%E6%83%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%B6%E9%97%B4/</guid>
       <description>人生而就是不平等的，但是在时间上却是平等的 珍惜自己的时间，远离焦虑 这个世界上又这么一个银行，他每天给你1440的资产，让你去消费，而且过了今</description>
+    </item>
+    
+    <item>
+      <title>GTJ2018中布置筏板基础的 基础土方</title>
+      <link>https://xuzhihao.top/2020/02/gtj2018%E4%B8%AD%E5%B8%83%E7%BD%AE%E7%AD%8F%E6%9D%BF%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/02/gtj2018%E4%B8%AD%E5%B8%83%E7%BD%AE%E7%AD%8F%E6%9D%BF%E5%9F%BA%E7%A1%80/</guid>
+      <description>构成： 筏板 使用面式垫层 大开挖土方 集水坑 使用集水坑柱墩垫层 基坑土方</description>
     </item>
     
     <item>
