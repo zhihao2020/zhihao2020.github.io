@@ -43,7 +43,7 @@
 <meta itemprop="description" content="布谷鸟算法">
 <meta itemprop="datePublished" content="2020-05-29T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-05-29T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1951">
+<meta itemprop="wordCount" content="2715">
 
 
 
@@ -280,6 +280,16 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
+                        <a href="https://xuzhihao.top/2020/06/%E5%9F%BA%E4%BA%8E%E5%B8%83%E8%B0%B7%E9%B8%9F%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%A0%E7%BA%BF%E4%BC%A0%E6%84%9F%E5%99%A8%E7%BD%91%E7%BB%9C%E8%8A%82%E7%82%B9%E5%AE%9A%E4%BD%8D/" class="title">基于布谷鸟搜索算法的无线传感器网络节点定位</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-04 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-06-04</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
                         <a href="https://xuzhihao.top/2020/06/python%E5%AE%9E%E7%8E%B0%E7%B2%92%E5%AD%90%E7%AE%97%E6%B3%95/" class="title">Python实现粒子算法</a>
                     </p>
                     <p class="item-date">
@@ -311,16 +321,6 @@
                 <div class="item-inner">
                     <p class="item-title">
                         <a href="https://xuzhihao.top/2020/05/python-collection/" class="title">Python collection</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-05-31 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-31</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://xuzhihao.top/2020/05/%E7%94%9F%E6%88%90%E4%BA%8C%E7%BB%B4%E7%A0%81/" class="title">生成二维码</a>
                     </p>
                     <p class="item-date">
                         <time datetime="2020-05-31 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-31</time>
@@ -385,8 +385,8 @@
     </span>
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/05/python%E5%AE%9E%E7%8E%B0%E5%B8%83%E8%B0%B7%E9%B8%9F%E7%AE%97%E6%B3%95/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1951字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 4分 </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2715字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 6分 </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
@@ -526,7 +526,114 @@ self.best_nest = self.nests[self.best_index]
             self.best_nest = self.nests[list(self.fit_val).index(new_best_fit)]
 </code></pre>
 <p><strong>汇总：</strong></p>
-<pre><code class="language-python">from numpy import random, sin, power, pi, dot
+<pre><code class="language-python">import numpy as np
+from numpy import random, sin, power, pi, dot
+from math import gamma
+import matplotlib.pyplot as plt
+
+class CS(object):
+    def __init__(self, x_min, x_max, iters=10000,  n=12, pa=0.25):
+        &quot;&quot;&quot;
+        x_min, x_max：x取值范围
+        iters：迭代次数（遗传代数）
+        dim：输入数据维度
+        n：鸟巢个数
+        pa：布谷鸟蛋被发现概率
+        &quot;&quot;&quot;
+        self.x_min = x_min
+        self.x_max = x_max
+        self.iters = iters
+        self.n = n
+        self.pa = pa
+
+        # 初始化n个解
+        self.nests = [random.uniform(x_min, x_max,1) for i in range(n)]
+        print(&quot;初始化鸟巢：&quot;,self.nests)
+        # 计算适应度
+        self.fit_val = self.fit_fun(self.nests)
+       # print(&quot;初始适应度：&quot;,self.fit_val)
+        # 适应度最优值与位置
+        self.best_fit = min(self.fit_val)
+        #print(&quot;初始化最优解:&quot;,self.best_fit)
+        self.best_index = list(self.fit_val).index(self.best_fit)#最优值 所在索引
+        self.best_nest = self.nests[self.best_index]
+        #print(&quot;初始化最优解位置：&quot;,self.best_nest)
+
+
+    def fit_fun(self,xs):
+        ys = [(x-0.5)**2+1 for x in xs]
+        return ys
+
+    def levyFlight(self,val_min, val_max, location,  beta=1.5, alpha=0.01):
+        &quot;&quot;&quot;
+        Args:
+            val_min: 输入值的最大值
+            val_max: 输入值的最小值
+            location: 位置
+            count: 飞行次数
+            beta: 公式中的β
+            alpha: 公式中的α
+        Returns:如果count==1，则返回飞行后的位置
+                否则返回包括初始位置在内的所有位置
+        &quot;&quot;&quot;
+
+        x = location# 初始化位置
+        # 公式中u和v的sigma
+        # sigma_u = 0.6965745025576967 (beta=1.5)
+        sigma_u = power(gamma(1 + beta) * sin(pi*beta / 2) / (gamma((1 + beta) / 2) * beta * power(2, (beta - 1) / 2)),1 / beta)
+        sigma_v = 1
+
+        # 获得一对x的u和v
+        u_x = random.normal(0, sigma_u)
+        v_x = random.normal(0, sigma_v)
+        x_new = dot(alpha, u_x / power(abs(v_x), 1 / beta))
+
+        while (x_new &lt; val_min) or (x_new &gt; val_max):
+            # 不在范围内就重新生成
+            u_x = random.normal(0, sigma_u)
+            v_x = random.normal(0, sigma_v)
+            x_new = dot(alpha, u_x / power(abs(v_x), 1 / beta))
+        #x.append(x[-1] + x_new)  # 更新x
+        #print(&quot;now&quot;,location + x)
+        return (location + x)
+
+    def run(self):
+        for num in range(self.iters):
+            levy_nests = [self.levyFlight(location=nest, val_min=self.x_min, val_max=self.x_max) for nest in self.nests]
+            levy_nests[self.best_index] = self.best_nest
+            self.nests = levy_nests
+
+            # 计算这组解的适应度
+            self.fit_val = self.fit_fun(self.nests)
+
+            # 找到这组解中的最优值
+            levy_best_fit = min(self.fit_val)
+
+            # 如果新解更好则更新适应度与位置
+            if levy_best_fit &lt; self.best_fit:
+                self.best_fit = levy_best_fit
+                self.best_index = list(self.fit_val).index(levy_best_fit)
+                self.best_nest = self.nests[self.best_index]
+            # 上一代鸟巢经过Levy飞行后的解(除去当前最优位置)
+            # 以pa的概率丢弃旧的解，由Levy飞行产生新解
+
+            probs = random.random(self.n)
+            for i in range(self.n):
+                if probs[i] &lt; self.pa:
+                    self.nests[i] = self.levyFlight(self.x_min, self.x_max, location=self.nests[i])
+
+            # 在新解集中找到最优解
+            self.fit_val = self.fit_fun(self.nests)
+            new_best_fit = min(self.fit_val)
+            if new_best_fit &lt; self.best_fit:
+                self.best_fit = new_best_fit
+                self.best_index = list(self.fit_val).index(new_best_fit)
+                self.best_nest = self.nests[list(self.fit_val).index(new_best_fit)]
+
+cs = CS(x_min=-5, x_max=5)
+cs.run()
+print(cs.best_nest)
+print(cs.best_fit)from numpy import random, sin, power, pi, dot
 from math import gamma
 import matplotlib.pyplot as plt
 

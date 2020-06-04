@@ -4,27 +4,48 @@
   
   <url>
     <loc>https://xuzhihao.top/categories/</loc>
-    <lastmod>2020-06-02T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://xuzhihao.top/posts/</loc>
-    <lastmod>2020-06-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuzhihao.top/2020/06/python%E5%AE%9E%E7%8E%B0%E7%B2%92%E5%AD%90%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2020-06-02T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://xuzhihao.top/tags/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuzhihao.top/2020/06/%E5%9F%BA%E4%BA%8E%E5%B8%83%E8%B0%B7%E9%B8%9F%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%A0%E7%BA%BF%E4%BC%A0%E6%84%9F%E5%99%A8%E7%BD%91%E7%BB%9C%E8%8A%82%E7%82%B9%E5%AE%9A%E4%BD%8D/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuzhihao.top/tags/%E5%B8%83%E8%B0%B7%E9%B8%9F%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuzhihao.top/categories/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuzhihao.top/2020/06/python%E5%AE%9E%E7%8E%B0%E7%B2%92%E5%AD%90%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2020-06-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -39,13 +60,6 @@
   
   <url>
     <loc>https://xuzhihao.top/2020/06/%E6%96%BD%E5%B7%A5%E7%BB%84%E7%BB%87%E5%BD%A2%E5%BC%8F/</loc>
-    <lastmod>2020-06-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuzhihao.top/categories/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2020-06-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -130,20 +144,6 @@
   
   <url>
     <loc>https://xuzhihao.top/2020/05/typeerror-range-object-does-not-support-item-assignment/</loc>
-    <lastmod>2020-05-29T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuzhihao.top/2020/05/%E5%9F%BA%E4%BA%8E%E5%B8%83%E8%B0%B7%E9%B8%9F%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%A0%E7%BA%BF%E4%BC%A0%E6%84%9F%E5%99%A8%E7%BD%91%E7%BB%9C%E8%8A%82%E7%82%B9%E5%AE%9A%E4%BD%8D/</loc>
-    <lastmod>2020-05-29T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuzhihao.top/tags/%E5%B8%83%E8%B0%B7%E9%B8%9F%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2020-05-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

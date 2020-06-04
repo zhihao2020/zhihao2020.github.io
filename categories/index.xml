@@ -5,10 +5,19 @@
     <link>https://xuzhihao.top/categories/</link>
     <description>Recent content in Categories on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 02 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://xuzhihao.top/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>基于布谷鸟搜索算法的无线传感器网络节点定位</title>
+      <link>https://xuzhihao.top/2020/06/%E5%9F%BA%E4%BA%8E%E5%B8%83%E8%B0%B7%E9%B8%9F%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%A0%E7%BA%BF%E4%BC%A0%E6%84%9F%E5%99%A8%E7%BD%91%E7%BB%9C%E8%8A%82%E7%82%B9%E5%AE%9A%E4%BD%8D/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/06/%E5%9F%BA%E4%BA%8E%E5%B8%83%E8%B0%B7%E9%B8%9F%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%A0%E7%BA%BF%E4%BC%A0%E6%84%9F%E5%99%A8%E7%BD%91%E7%BB%9C%E8%8A%82%E7%82%B9%E5%AE%9A%E4%BD%8D/</guid>
+      <description>通过已知锚点 去 推算 未知节点。 原理： 适应度函数： $$ f(x,y)= \sum^{n}_{i=1}{\sqrt{(x-x_i)^2+(y-y_i)^2-d_i^2}} $$ $x_i$，$y_i$为锚节点，$d_i$为距离。 约束条件： 定义$r_i$ 为锚节点i 与</description>
+    </item>
     
     <item>
       <title>Python实现粒子算法</title>
@@ -80,15 +89,6 @@
       
       <guid>https://xuzhihao.top/2020/05/typeerror-range-object-does-not-support-item-assignment/</guid>
       <description>在Python 3中，range返回一个惰性序列对象-它不返回列表。无法重新排列范围对象中的元素，因此无法重新排列它。 python2.x改为p</description>
-    </item>
-    
-    <item>
-      <title>基于布谷鸟搜索算法的无线传感器网络节点定位</title>
-      <link>https://xuzhihao.top/2020/05/%E5%9F%BA%E4%BA%8E%E5%B8%83%E8%B0%B7%E9%B8%9F%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%A0%E7%BA%BF%E4%BC%A0%E6%84%9F%E5%99%A8%E7%BD%91%E7%BB%9C%E8%8A%82%E7%82%B9%E5%AE%9A%E4%BD%8D/</link>
-      <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xuzhihao.top/2020/05/%E5%9F%BA%E4%BA%8E%E5%B8%83%E8%B0%B7%E9%B8%9F%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%A0%E7%BA%BF%E4%BC%A0%E6%84%9F%E5%99%A8%E7%BD%91%E7%BB%9C%E8%8A%82%E7%82%B9%E5%AE%9A%E4%BD%8D/</guid>
-      <description>定位算法大致分为基于距离的定位算法和距离无关的定位算法。 在传感器节点定位中，已知自身位置信息的节点成为锚节点，锚节点能通过自身的定位设备获取</description>
     </item>
     
     <item>
