@@ -5,10 +5,19 @@
     <link>https://xuzhihao.top/categories/python/</link>
     <description>Recent content in Python on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://xuzhihao.top/categories/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python中的__call__方法</title>
+      <link>https://xuzhihao.top/2020/04/python%E4%B8%AD%E7%9A%84__call__/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/04/python%E4%B8%AD%E7%9A%84__call__/</guid>
+      <description>调用 关于 __call__ 方法，不得不先提到一个概念，就是可调用对象（callable），我们平时自定义的函数、内置函数和类都属于可调用对象，但凡是可以把一</description>
+    </item>
     
     <item>
       <title>Python中的__new__方法</title>
@@ -179,15 +188,6 @@
       
       <guid>https://xuzhihao.top/2020/04/%E5%AE%9A%E9%A2%9D%E8%AE%A1%E4%BB%B7%E4%B8%8E%E6%B8%85%E5%8D%95%E8%AE%A1%E4%BB%B7/</guid>
       <description>定额计价法 定额计价法的概念 定额计价是根据招标文件，按照各国家建设行政主管部门发布的建设工程预算定额的“工程量计算规则”，同时参照省级建设主管</description>
-    </item>
-    
-    <item>
-      <title>得到真正的业务ID</title>
-      <link>https://xuzhihao.top/2020/04/%E5%8F%8D%E6%89%92id%E4%B9%8Bhashids/</link>
-      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xuzhihao.top/2020/04/%E5%8F%8D%E6%89%92id%E4%B9%8Bhashids/</guid>
-      <description>对于爬虫来说，知道了网站的数据自增ID，那么就能将整个站点爬取下来。不过，那些大站，比如油管之类的，他们绝不会把业务的自增ID暴露出来，而是</description>
     </item>
     
   </channel>

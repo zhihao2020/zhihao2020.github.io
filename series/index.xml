@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>【译】matplotlib用户指导</title>
+      <link>https://xuzhihao.top/2020/06/%E8%AF%91matplotlib%E7%94%A8%E6%88%B7%E6%8C%87%E5%AF%BC/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/06/%E8%AF%91matplotlib%E7%94%A8%E6%88%B7%E6%8C%87%E5%AF%BC/</guid>
+      <description>介绍一些基本的用法模式和最佳实践。 import matplotlib.pyplot as plt import numpy as np 简单例子 Matplotlib在Figure（窗口）上绘制数据图，每个数据可以包含一个或多个</description>
+    </item>
+    
+    <item>
       <title>基于布谷鸟搜索算法的无线传感器网络节点定位</title>
       <link>https://xuzhihao.top/2020/06/%E5%9F%BA%E4%BA%8E%E5%B8%83%E8%B0%B7%E9%B8%9F%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%A0%E7%BA%BF%E4%BC%A0%E6%84%9F%E5%99%A8%E7%BD%91%E7%BB%9C%E8%8A%82%E7%82%B9%E5%AE%9A%E4%BD%8D/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
@@ -178,15 +187,6 @@
       
       <guid>https://xuzhihao.top/2020/05/tkinker%E7%AE%80%E5%8D%95%E4%BA%86%E8%A7%A3/</guid>
       <description>tkinker编程就像是作画，先支起一个画架，放上画板，蒙上画布，构思内容，用铅笔画草图，组织结构和比例，调色板调色，最后画笔勾勒。这对应到</description>
-    </item>
-    
-    <item>
-      <title>爬虫解决乱码</title>
-      <link>https://xuzhihao.top/2020/05/%E7%88%AC%E8%99%AB%E8%A7%A3%E5%86%B3%E4%B9%B1%E7%A0%81/</link>
-      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xuzhihao.top/2020/05/%E7%88%AC%E8%99%AB%E8%A7%A3%E5%86%B3%E4%B9%B1%E7%A0%81/</guid>
-      <description>方法一: 我们要使用到两个方法：decode解码 、encode编码 假设一个网站的编码是&amp;rsquo;iso-8859-1&amp;rsquo;，通过r</description>
     </item>
     
   </channel>

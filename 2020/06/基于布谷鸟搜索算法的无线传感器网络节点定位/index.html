@@ -43,7 +43,7 @@
 <meta itemprop="description" content="通过已知锚点 去 推算 未知节点。 原理： 适应度函数： $$ f(x,y)= \sum^{n}_{i=1}{\sqrt{(x-x_i)^2&#43;(y-y_i)^2-d_i^2}} $$ $x_i$，$y_i$为锚节点，$d_i$为距离。 约束条件： 定义$r_i$ 为锚节点i 与">
 <meta itemprop="datePublished" content="2020-06-04T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-06-04T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="344">
+<meta itemprop="wordCount" content="1188">
 
 
 
@@ -166,7 +166,7 @@
     <h3 class="widget-title"> 分类</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://xuzhihao.top/categories/python/" class="category-list-link">python</a><span class="category-list-count">57</span></li>
+            <li class="category-list-item"><a href="https://xuzhihao.top/categories/python/" class="category-list-link">python</a><span class="category-list-count">58</span></li>
             <li class="category-list-item"><a href="https://xuzhihao.top/categories/%E5%BB%BA%E7%AD%91%E6%96%B9%E9%9D%A2/" class="category-list-link">建筑方面</a><span class="category-list-count">7</span></li>
             <li class="category-list-item"><a href="https://xuzhihao.top/categories/%E6%80%9D%E8%80%83/" class="category-list-link">思考</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://xuzhihao.top/categories/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/" class="category-list-link">效率工具</a><span class="category-list-count">2</span></li>
@@ -250,7 +250,7 @@
             
             
             <li class="tag-list-item"><a href="https://xuzhihao.top/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/" class="tag-list-link">数据可视化</a><span
-                    class="tag-list-count">2</span></li>
+                    class="tag-list-count">3</span></li>
             
             
             <li class="tag-list-item"><a href="https://xuzhihao.top/tags/%E7%88%AC%E8%99%AB/" class="tag-list-link">爬虫</a><span
@@ -277,6 +277,16 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget-body">
         <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://xuzhihao.top/2020/06/%E8%AF%91matplotlib%E7%94%A8%E6%88%B7%E6%8C%87%E5%AF%BC/" class="title">【译】matplotlib用户指导</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-06 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-06-06</time>
+                    </p>
+                </div>
+            </li>
             <li>
                 <div class="item-inner">
                     <p class="item-title">
@@ -314,16 +324,6 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2020-06-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-06-01</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://xuzhihao.top/2020/05/python-collection/" class="title">Python collection</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-05-31 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-31</time>
                     </p>
                 </div>
             </li>
@@ -385,8 +385,8 @@
     </span>
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/06/%E5%9F%BA%E4%BA%8E%E5%B8%83%E8%B0%B7%E9%B8%9F%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%A0%E7%BA%BF%E4%BC%A0%E6%84%9F%E5%99%A8%E7%BD%91%E7%BB%9C%E8%8A%82%E7%82%B9%E5%AE%9A%E4%BD%8D/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 344字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1分 </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1188字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3分 </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
@@ -423,7 +423,141 @@ AError=\frac{1}{N}\sqrt{((\hat{x_i}-x_i)^2+(\hat{y_i}-y_i)^2}\times100 %
 $$
 其中，$( \hat{x_i},\hat{y_i})$表示算法估算的未知节点位置，而$(x_i,y_i)$则表示未知节点的真实位置；N 表示未知节点的数量。</p>
 <h2 id="代码实现">代码实现：</h2>
-<p>下一期将会告诉大家。</p>
+<pre><code class="language-python">import numpy as np
+from numpy import random, sin, power, pi, dot, sqrt
+from math import gamma
+import matplotlib.pyplot as plt
+class CS(object):
+    def __init__(self, x_min, x_max, iters=1000, dim=2, pa=0.25):
+        &quot;&quot;&quot;
+        x_min, x_max：x取值范围
+        iters：迭代次数（遗传代数）
+        dim：输入数据维度
+        dis:距离
+        pa：布谷鸟蛋被发现概率
+        &quot;&quot;&quot;
+        self.x_min = x_min
+        self.x_max = x_max
+        self.iters = iters
+        self.dim = dim
+        self.pa = pa
+        #初始化锚节点（已知节点位置）
+        self.known = [random.uniform(x_min, x_max, dim) for i in range(10)]
+        # 初始化未知节点个数
+        self.nests = [random.uniform(x_min, x_max, dim) for i in range(20)]
+        print(&quot;初始化的未知节点：&quot;,self.nests)
+        #随机生成的未知节点
+        self.unknown = [random.uniform(x_min, x_max, dim) for i in range(20)]
+        #各个未知点到已知点的距离
+        self.d = self.get_distance(self.known,self.nests)
+        # 计算适应度
+        self.fit_val = self.fit_fun(self.known,self.unknown)
+        # 适应度最优值与位置
+        self.best_fit = min(self.fit_val)
+        self.best_index = list(self.fit_val).index(self.best_fit)
+        self.best_nest = self.unknown[self.best_index]
+
+    def get_distance(self,known,unknown):
+        &quot;&quot;&quot;
+        计算已知点到 未知点的距离
+        Args:
+            known: 已知点坐标 [(x,y),(x,y),(x,y),...(x,y)] 10
+            unknown: 未知点坐标[(x,y),...,(x,y)]           20
+        Returns:[[d11,d12,d13,d14,...],[d21,d22,....,],...]
+        &quot;&quot;&quot;
+        lis = []
+        for num in range(20):
+            distance = [sqrt(power((known[n][0]-unknown[num][0]),2)+power(known[n][1]-unknown[num][1],2)) for n in range(10)]
+            lis.append(distance)
+        return lis
+
+    def levyFlight(self,val_min, val_max, location=[0.0, 0.0],beta=1.5, alpha=1):
+        &quot;&quot;&quot;
+        val_min, val_max：输入值的取值范围
+        beta, alpha：公式中的β和α
+        count：飞行次数
+        返回值：如果count==1，则返回飞行后的位置；
+               否则返回包括初始位置在内的所有位置
+        &quot;&quot;&quot;
+        # 初始化位置
+        x,y = location[0],location[1]
+        # 公式中u和v的sigma
+        # sigma_u = 0.6965745025576967 (beta=1.5)
+        sigma_u = power(gamma(1 + beta) * sin(pi * beta / 2) / (gamma((1 + beta) / 2) * beta * power(2, (beta - 1) / 2)), 1 / beta)
+        sigma_v = 1
+        # 获得一对x的u和v
+        u_x = random.normal(0, sigma_u)
+        v_x = random.normal(0, sigma_v)
+        x_new = dot(alpha, u_x / power(abs(v_x), 1 / beta))
+        while (x_new + x &lt; val_min) or (x_new + x &gt; val_max):
+            # 不在范围内就重新生成
+            u_x = random.normal(0, sigma_u)
+            v_x = random.normal(0, sigma_v)
+            x_new = dot(alpha, u_x / power(abs(v_x), 1 / beta))
+        xnew = x + x_new  # 更新x
+        # 获得一对y的u和v
+        u_y = random.normal(0, sigma_u)
+        v_y = random.normal(0, sigma_v)
+        y_new = dot(alpha, u_y / power(abs(v_y), 1 / beta))
+        while (y_new+y &lt; val_min) or (y_new+y &gt; val_max):
+            # 不在范围内就重新生成
+            u_y = random.normal(0, sigma_u)
+            v_y = random.normal(0, sigma_v)
+            y_new = dot(alpha, u_y / power(abs(v_y), 1 / beta))
+        ynew = y + y_new # 更新y
+        return (xnew, ynew)
+
+    def fit_fun(self, xs,x2s):
+        &quot;&quot;&quot;
+        Args:
+            xs: 已知节点
+            x2s: 未知节点
+        Returns:包含所有sum(distance)的列表
+        &quot;&quot;&quot;
+        lis = []
+        for x2,ds in zip(x2s,self.d):
+            ys = [sqrt(abs(power((x[0]-x2[0]),2)+power(x[1]-x2[1],2)-power(d,2))) for x,d in zip(xs,ds)]
+            lis.append(sum(ys))
+        return lis
+
+    def run(self):
+        for i in range(self.iters):
+            # 上一代鸟巢经过Levy飞行后的解(除去当前最优位置)
+            levy_nests = [self.levyFlight(self.x_min,self.x_max,location=nest) for nest in self.unknown]
+            levy_nests[self.best_index] = self.best_nest
+            self.unknown = levy_nests
+
+            # 计算这组解的适应度
+            self.fit_val = self.fit_fun(self.known,self.unknown)
+
+            # 找到这组解中的最优值
+            levy_best_fit = min(self.fit_val)
+
+            # 如果新解更好则更新适应度与位置
+            if levy_best_fit &lt; self.best_fit:
+                self.best_fit = levy_best_fit
+                self.best_index = list(self.fit_val).index(levy_best_fit)
+                self.best_nest = self.nests[self.best_index]
+
+            # 以pa的概率丢弃旧的解，由Levy飞行产生新解
+            probs = random.random(20)
+            for i in range(20):
+                if probs[i] &gt; self.pa:
+                    self.unknown[i] = self.levyFlight(self.x_min,self.x_max,location=self.unknown[i])
+
+            # 在新解集中找到最优解
+            self.fit_val = self.fit_fun(self.known,self.unknown)
+            new_best_fit = min(self.fit_val)
+            if new_best_fit &lt; self.best_fit:
+                self.best_fit = new_best_fit
+                self.best_index = list(self.fit_val).index(new_best_fit)
+                self.best_nest = self.unknown[list(self.fit_val).index(new_best_fit)]
+        print(sum(self.fit_val))
+        print(cs.unknown)
+
+cs = CS(x_min=0, x_max=100)
+cs.run()
+</code></pre>
 
     </div>
     <div class="article-footer">
@@ -467,6 +601,11 @@ $$
                 <a href="https://xuzhihao.top/2020/06/python%E5%AE%9E%E7%8E%B0%E7%B2%92%E5%AD%90%E7%AE%97%E6%B3%95/" title="Python实现粒子算法"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="https://xuzhihao.top/2020/06/%E8%AF%91matplotlib%E7%94%A8%E6%88%B7%E6%8C%87%E5%AF%BC/"
+                    title="【译】matplotlib用户指导"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">

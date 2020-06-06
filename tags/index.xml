@@ -5,10 +5,19 @@
     <link>https://xuzhihao.top/tags/</link>
     <description>Recent content in Tags on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://xuzhihao.top/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>【译】matplotlib用户指导</title>
+      <link>https://xuzhihao.top/2020/06/%E8%AF%91matplotlib%E7%94%A8%E6%88%B7%E6%8C%87%E5%AF%BC/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/06/%E8%AF%91matplotlib%E7%94%A8%E6%88%B7%E6%8C%87%E5%AF%BC/</guid>
+      <description>介绍一些基本的用法模式和最佳实践。 import matplotlib.pyplot as plt import numpy as np 简单例子 Matplotlib在Figure（窗口）上绘制数据图，每个数据可以包含一个或多个</description>
+    </item>
     
     <item>
       <title>基于布谷鸟搜索算法的无线传感器网络节点定位</title>
@@ -179,15 +188,6 @@
       
       <guid>https://xuzhihao.top/2020/05/tkinker%E7%AE%80%E5%8D%95%E4%BA%86%E8%A7%A3/</guid>
       <description>tkinker编程就像是作画，先支起一个画架，放上画板，蒙上画布，构思内容，用铅笔画草图，组织结构和比例，调色板调色，最后画笔勾勒。这对应到</description>
-    </item>
-    
-    <item>
-      <title>爬虫解决乱码</title>
-      <link>https://xuzhihao.top/2020/05/%E7%88%AC%E8%99%AB%E8%A7%A3%E5%86%B3%E4%B9%B1%E7%A0%81/</link>
-      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xuzhihao.top/2020/05/%E7%88%AC%E8%99%AB%E8%A7%A3%E5%86%B3%E4%B9%B1%E7%A0%81/</guid>
-      <description>方法一: 我们要使用到两个方法：decode解码 、encode编码 假设一个网站的编码是&amp;rsquo;iso-8859-1&amp;rsquo;，通过r</description>
     </item>
     
   </channel>
