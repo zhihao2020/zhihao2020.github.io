@@ -5,10 +5,37 @@
     <link>https://xuzhihao.top/categories/%E7%AE%97%E6%B3%95/</link>
     <description>Recent content in 算法 on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://xuzhihao.top/categories/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>在PyQt5中使用Matplotlib</title>
+      <link>https://xuzhihao.top/2020/05/%E5%9C%A8pyqt5%E4%B8%AD%E4%BD%BF%E7%94%A8matplotlib/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/%E5%9C%A8pyqt5%E4%B8%AD%E4%BD%BF%E7%94%A8matplotlib/</guid>
+      <description>使用MatplotlibWidget 设置绘图类 class Canvas(FigureCanvas): def __init__(self,parent=None,width=5,height=4,dpi=100): plt.rcParams[&#39;font.family&#39;] = [&#39;SimHei&#39;]#显示中文标签 plt.reParams[&#39;axes.unicode_minus&#39;] = False#显示负号 self.fig = Figure(figsize=(eidth,height),dpi=dpi) self.axes = self.fig.add_subplot(111) self.a</description>
+    </item>
+    
+    <item>
+      <title>PyQt5中的信号槽</title>
+      <link>https://xuzhihao.top/2020/05/pyqt5%E4%B8%AD%E7%9A%84%E4%BF%A1%E5%8F%B7%E6%A7%BD/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/pyqt5%E4%B8%AD%E7%9A%84%E4%BF%A1%E5%8F%B7%E6%A7%BD/</guid>
+      <description>介绍 信号（Signal）和信号槽（Slot）是Qt的核心机制，它是PyQT编程对象之间进行通信的机制。 在Qt中，每一给QObject对象和P</description>
+    </item>
+    
+    <item>
+      <title>Tkinker简单了解</title>
+      <link>https://xuzhihao.top/2020/05/tkinker%E7%AE%80%E5%8D%95%E4%BA%86%E8%A7%A3/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/05/tkinker%E7%AE%80%E5%8D%95%E4%BA%86%E8%A7%A3/</guid>
+      <description>tkinker编程就像是作画，先支起一个画架，放上画板，蒙上画布，构思内容，用铅笔画草图，组织结构和比例，调色板调色，最后画笔勾勒。这对应到</description>
+    </item>
     
     <item>
       <title>爬虫解决乱码</title>
@@ -119,15 +146,6 @@
     </item>
     
     <item>
-      <title>【转】13个好玩的Python练手项目</title>
-      <link>https://xuzhihao.top/2020/05/%E8%BD%AC13%E4%B8%AA%E5%A5%BD%E7%8E%A9%E7%9A%84python%E7%BB%83%E6%89%8B%E9%A1%B9%E7%9B%AE/</link>
-      <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xuzhihao.top/2020/05/%E8%BD%AC13%E4%B8%AA%E5%A5%BD%E7%8E%A9%E7%9A%84python%E7%BB%83%E6%89%8B%E9%A1%B9%E7%9B%AE/</guid>
-      <description>原文链接：https://realpython.com/intermediate-pythonproject-ideas/ Web 项目设计 内容聚合</description>
-    </item>
-    
-    <item>
       <title>Python中的进程(1)</title>
       <link>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/</link>
       <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
@@ -170,24 +188,6 @@
       
       <guid>https://xuzhihao.top/2020/05/python%E4%B8%ADwin32print/</guid>
       <description>OpenPrinter 打开打印机 win32print.OpenPrinter(string,Defaults) string就是打印机的名字，当为空的时候打开本地打印机 StartDocPrinter StartDocPrinter(hprinter, level , tuple ) level=1 tuple:对应于level参数的元组 ​ [0]:字符串：</description>
-    </item>
-    
-    <item>
-      <title>Python中的enumerate()</title>
-      <link>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84enumerate/</link>
-      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84enumerate/</guid>
-      <description>enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中 写法 enumerate(sequence,[start=0]) 参数 sequen</description>
-    </item>
-    
-    <item>
-      <title>Python中的textwrap</title>
-      <link>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84textwrap/</link>
-      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84textwrap/</guid>
-      <description>用于对文本字符串进行自动换行或填充。 textwrap.wrap(text,width=70,**kwargs) ​ 对text中的单独段落自动换行以使每行长度最多为width个字符。返回输出行组成的列表，行尾不带换行</description>
     </item>
     
   </channel>

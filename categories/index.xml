@@ -5,10 +5,37 @@
     <link>https://xuzhihao.top/categories/</link>
     <description>Recent content in Categories on Zhihao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://xuzhihao.top/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>借助github的release实现软件更新</title>
+      <link>https://xuzhihao.top/2020/10/%E5%80%9F%E5%8A%A9github%E7%9A%84release%E5%AE%9E%E7%8E%B0%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B0/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/10/%E5%80%9F%E5%8A%A9github%E7%9A%84release%E5%AE%9E%E7%8E%B0%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B0/</guid>
+      <description>介绍 依赖的库 requests json psutil shutil zipfile 当你将打包好的应用程序 提交到github上的release时，访问https://api.github.com/rep</description>
+    </item>
+    
+    <item>
+      <title>商店管理软件开发——应用自动关闭</title>
+      <link>https://xuzhihao.top/2020/10/%E5%95%86%E5%BA%97%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%BA%94%E7%94%A8%E8%87%AA%E5%8A%A8%E5%85%B3%E9%97%AD/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/10/%E5%95%86%E5%BA%97%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%BA%94%E7%94%A8%E8%87%AA%E5%8A%A8%E5%85%B3%E9%97%AD/</guid>
+      <description>介绍 使用PyQt5中的QThread，在主UI界面之外跑一个线程，用于检测用户的鼠标位置。 当到了休眠时间，软件将自动弹出 提示对话框，并在5s</description>
+    </item>
+    
+    <item>
+      <title>Python实现粒子群算法</title>
+      <link>https://xuzhihao.top/2020/06/python%E5%AE%9E%E7%8E%B0%E7%B2%92%E5%AD%90%E7%BE%A4%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/06/python%E5%AE%9E%E7%8E%B0%E7%B2%92%E5%AD%90%E7%BE%A4%E7%AE%97%E6%B3%95/</guid>
+      <description>介绍 粒子群算法(PSO)是一种仿生算法，它模拟的是鸟类迷失过程。刚开始的时候也需要初始化一个种群，每个粒子都携带着位置信息和当前的运动速度。</description>
+    </item>
     
     <item>
       <title>【译】matplotlib用户指导</title>
@@ -161,33 +188,6 @@
       
       <guid>https://xuzhihao.top/2020/05/qtdesigner%E6%8F%90%E5%8D%87%E7%AA%97%E5%8F%A3%E6%8E%A7%E4%BB%B6/</guid>
       <description>提升窗口控件，就是指有些窗口控件是用户自己基于PyQt定义的衍生窗口控件，这些窗口控件在Qt Designer中没有直接提供，但是可以通过提升</description>
-    </item>
-    
-    <item>
-      <title>在PyQt5中使用Matplotlib</title>
-      <link>https://xuzhihao.top/2020/05/%E5%9C%A8pyqt5%E4%B8%AD%E4%BD%BF%E7%94%A8matplotlib/</link>
-      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xuzhihao.top/2020/05/%E5%9C%A8pyqt5%E4%B8%AD%E4%BD%BF%E7%94%A8matplotlib/</guid>
-      <description>使用MatplotlibWidget 设置绘图类 class Canvas(FigureCanvas): def __init__(self,parent=None,width=5,height=4,dpi=100): plt.rcParams[&#39;font.family&#39;] = [&#39;SimHei&#39;]#显示中文标签 plt.reParams[&#39;axes.unicode_minus&#39;] = False#显示负号 self.fig = Figure(figsize=(eidth,height),dpi=dpi) self.axes = self.fig.add_subplot(111) self.a</description>
-    </item>
-    
-    <item>
-      <title>PyQt5中的信号槽</title>
-      <link>https://xuzhihao.top/2020/05/pyqt5%E4%B8%AD%E7%9A%84%E4%BF%A1%E5%8F%B7%E6%A7%BD/</link>
-      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xuzhihao.top/2020/05/pyqt5%E4%B8%AD%E7%9A%84%E4%BF%A1%E5%8F%B7%E6%A7%BD/</guid>
-      <description>介绍 信号（Signal）和信号槽（Slot）是Qt的核心机制，它是PyQT编程对象之间进行通信的机制。 在Qt中，每一给QObject对象和P</description>
-    </item>
-    
-    <item>
-      <title>Tkinker简单了解</title>
-      <link>https://xuzhihao.top/2020/05/tkinker%E7%AE%80%E5%8D%95%E4%BA%86%E8%A7%A3/</link>
-      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xuzhihao.top/2020/05/tkinker%E7%AE%80%E5%8D%95%E4%BA%86%E8%A7%A3/</guid>
-      <description>tkinker编程就像是作画，先支起一个画架，放上画板，蒙上画布，构思内容，用铅笔画草图，组织结构和比例，调色板调色，最后画笔勾勒。这对应到</description>
     </item>
     
   </channel>

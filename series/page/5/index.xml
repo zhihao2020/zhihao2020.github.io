@@ -10,6 +10,24 @@
     
     
     <item>
+      <title>PEP-8——Python代码的风格指导</title>
+      <link>https://xuzhihao.top/2020/04/pep-8python%E4%BB%A3%E7%A0%81%E7%9A%84%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%AF%BC/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/04/pep-8python%E4%BB%A3%E7%A0%81%E7%9A%84%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%AF%BC/</guid>
+      <description>常量通常定义在代码前面，并且全都大写，分割的时候用_（下划线）分割。比如想，MAX_OVERFLOW和TOTAL这样。 Constants are usually defined on a module level and written in</description>
+    </item>
+    
+    <item>
+      <title>定额计价与清单计价</title>
+      <link>https://xuzhihao.top/2020/04/%E5%AE%9A%E9%A2%9D%E8%AE%A1%E4%BB%B7%E4%B8%8E%E6%B8%85%E5%8D%95%E8%AE%A1%E4%BB%B7/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuzhihao.top/2020/04/%E5%AE%9A%E9%A2%9D%E8%AE%A1%E4%BB%B7%E4%B8%8E%E6%B8%85%E5%8D%95%E8%AE%A1%E4%BB%B7/</guid>
+      <description>定额计价法 定额计价法的概念 定额计价是根据招标文件，按照各国家建设行政主管部门发布的建设工程预算定额的“工程量计算规则”，同时参照省级建设主管</description>
+    </item>
+    
+    <item>
       <title>得到真正的业务ID</title>
       <link>https://xuzhihao.top/2020/04/%E5%8F%8D%E6%89%92id%E4%B9%8Bhashids/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>

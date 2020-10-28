@@ -4,27 +4,76 @@
   
   <url>
     <loc>https://xuzhihao.top/categories/</loc>
-    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://xuzhihao.top/posts/</loc>
-    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://xuzhihao.top/categories/python/</loc>
-    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+    <loc>https://xuzhihao.top/tags/pyqt5/</loc>
+    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://xuzhihao.top/tags/</loc>
+    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuzhihao.top/2020/10/%E5%80%9F%E5%8A%A9github%E7%9A%84release%E5%AE%9E%E7%8E%B0%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B0/</loc>
+    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuzhihao.top/2020/10/%E5%95%86%E5%BA%97%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%BA%94%E7%94%A8%E8%87%AA%E5%8A%A8%E5%85%B3%E9%97%AD/</loc>
+    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuzhihao.top/categories/%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuzhihao.top/2020/06/python%E5%AE%9E%E7%8E%B0%E7%B2%92%E5%AD%90%E7%BE%A4%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuzhihao.top/categories/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuzhihao.top/tags/%E7%B2%92%E5%AD%90%E7%BE%A4%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuzhihao.top/categories/python/</loc>
     <lastmod>2020-06-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -53,13 +102,6 @@
   
   <url>
     <loc>https://xuzhihao.top/tags/%E5%B8%83%E8%B0%B7%E9%B8%9F%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuzhihao.top/categories/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -166,13 +208,6 @@
   <url>
     <loc>https://xuzhihao.top/tags/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2020-05-29T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuzhihao.top/tags/pyqt5/</loc>
-    <lastmod>2020-05-28T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -367,20 +402,6 @@
   </url>
   
   <url>
-    <loc>https://xuzhihao.top/2020/05/%E8%BD%AC13%E4%B8%AA%E5%A5%BD%E7%8E%A9%E7%9A%84python%E7%BB%83%E6%89%8B%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2020-05-04T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://xuzhihao.top/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</loc>
-    <lastmod>2020-05-04T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://xuzhihao.top/2020/05/python%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B/</loc>
     <lastmod>2020-05-03T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -452,6 +473,13 @@
   
   <url>
     <loc>https://xuzhihao.top/2020/05/sqlite%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</loc>
+    <lastmod>2020-05-02T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://xuzhihao.top/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</loc>
     <lastmod>2020-05-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
